@@ -38,6 +38,23 @@ def generate_unified_endorsements(client, date_from="2025-12-01"):
     print(f"📄 Endorsements descargados: {len(endorsements)}")
     print(f"🏢 Agency Commissions: {len(agency_comms)}")
     print(f"👤 Agent Commissions: {len(agent_comms)}")
+    
+    # Guardar datos en data_raw
+    import json
+    import os
+    
+    data_raw_dir = "data_raw"
+    os.makedirs(data_raw_dir, exist_ok=True)
+    
+    # Guardar Agency Commissions
+    with open(os.path.join(data_raw_dir, "PolicyEndorsementAgencyCommissionDetailList.json"), "w") as f:
+        json.dump(agency_comms, f, indent=2)
+    print(f"💾 Agency Commissions guardadas en data_raw/")
+    
+    # Guardar Agent Commissions
+    with open(os.path.join(data_raw_dir, "PolicyEndorsementAgentsCommissionDetailList.json"), "w") as f:
+        json.dump(agent_comms, f, indent=2)
+    print(f"💾 Agent Commissions guardadas en data_raw/")
 
     # 2. Filtrar endorsements por fecha
     date_from_obj = datetime.strptime(date_from, "%Y-%m-%d")

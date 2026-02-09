@@ -47,7 +47,6 @@ def export_endorsements_to_excel(endorsements, filename):
         "CSRs",    # 1 CSR por fila
         "Agency Commission",
         "Agent Commission",
-        "Total Commission",
     ]
 
     ws.append(headers)
@@ -106,20 +105,17 @@ def export_endorsements_to_excel(endorsements, filename):
         ws.cell(row=row_idx, column=11, value=e.get("csrs"))    # 1 CSR
         ws.cell(row=row_idx, column=12, value=agency_comm)
         ws.cell(row=row_idx, column=13, value=agent_comm)
-        ws.cell(row=row_idx, column=14, value=total_comm)
         
         # Formato dinero
         ws.cell(row=row_idx, column=3).number_format = MONEY_FORMAT
         ws.cell(row=row_idx, column=12).number_format = MONEY_FORMAT
         ws.cell(row=row_idx, column=13).number_format = MONEY_FORMAT
-        ws.cell(row=row_idx, column=14).number_format = MONEY_FORMAT
         
         # Si es cancel: valores en rojo
         if is_cancel:
             ws.cell(row=row_idx, column=3).font = Font(name="Arial", size=10, color="FF0000")
             ws.cell(row=row_idx, column=12).font = Font(name="Arial", size=10, color="FF0000")
             ws.cell(row=row_idx, column=13).font = Font(name="Arial", size=10, color="FF0000")
-            ws.cell(row=row_idx, column=14).font = Font(name="Arial", size=10, color="FF0000")
 
         # Font y bordes
         for col in range(1, len(headers) + 1):
@@ -147,7 +143,6 @@ def export_endorsements_to_excel(endorsements, filename):
         "K": 28,  # CSRs (1 solo)
         "L": 18,  # Agency Comm
         "M": 18,  # Agent Comm
-        "N": 18,  # Total Comm
     }
 
     for col, width in widths.items():
