@@ -43,8 +43,7 @@ def export_endorsements_to_excel(endorsements, filename):
         "Policy Effective",
         "Policy Expiration",
         "Insured",
-        "Agents",  # 1 agente por fila
-        "CSRs",    # 1 CSR por fila
+        "Agent/CSR",  # Cambiado: ahora muestra el agente individual
         "Agency Commission",
         "Agent Commission",
     ]
@@ -101,21 +100,20 @@ def export_endorsements_to_excel(endorsements, filename):
         ws.cell(row=row_idx, column=7, value=_format_date(e.get("policy_effective_date")))
         ws.cell(row=row_idx, column=8, value=_format_date(e.get("policy_expiration_date")))
         ws.cell(row=row_idx, column=9, value=e.get("insured"))
-        ws.cell(row=row_idx, column=10, value=e.get("agents"))  # 1 agente
-        ws.cell(row=row_idx, column=11, value=e.get("csrs"))    # 1 CSR
-        ws.cell(row=row_idx, column=12, value=agency_comm)
-        ws.cell(row=row_idx, column=13, value=agent_comm)
+        ws.cell(row=row_idx, column=10, value=e.get("agent"))  # Agente individual
+        ws.cell(row=row_idx, column=11, value=agency_comm)
+        ws.cell(row=row_idx, column=12, value=agent_comm)
         
         # Formato dinero
         ws.cell(row=row_idx, column=3).number_format = MONEY_FORMAT
+        ws.cell(row=row_idx, column=11).number_format = MONEY_FORMAT
         ws.cell(row=row_idx, column=12).number_format = MONEY_FORMAT
-        ws.cell(row=row_idx, column=13).number_format = MONEY_FORMAT
         
         # Si es cancel: valores en rojo
         if is_cancel:
             ws.cell(row=row_idx, column=3).font = Font(name="Arial", size=10, color="FF0000")
+            ws.cell(row=row_idx, column=11).font = Font(name="Arial", size=10, color="FF0000")
             ws.cell(row=row_idx, column=12).font = Font(name="Arial", size=10, color="FF0000")
-            ws.cell(row=row_idx, column=13).font = Font(name="Arial", size=10, color="FF0000")
 
         # Font y bordes
         for col in range(1, len(headers) + 1):
@@ -139,10 +137,9 @@ def export_endorsements_to_excel(endorsements, filename):
         "G": 15,  # Effective
         "H": 15,  # Expiration
         "I": 30,  # Insured
-        "J": 28,  # Agents (1 solo)
-        "K": 28,  # CSRs (1 solo)
-        "L": 18,  # Agency Comm
-        "M": 18,  # Agent Comm
+        "J": 30,  # Agent/CSR (individual)
+        "K": 18,  # Agency Comm
+        "L": 18,  # Agent Comm
     }
 
     for col, width in widths.items():

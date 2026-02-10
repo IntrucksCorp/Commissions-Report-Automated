@@ -130,51 +130,57 @@ def generate_unified_endorsements(client, date_from="2025-12-01"):
         csrs_raw = policy_data.get("csrs", "")
         csrs_list = [c.strip() for c in csrs_raw.split(",") if c.strip()] if csrs_raw else []
         
-        # Crear un mapa de agente -> comisión
-        agent_commissions_map = {}
-        for agent_comm in agent_comms_list:
-            agent_name = agent_comm.get("agentName", "").strip()
-            if agent_name:
-                agent_commissions_map[agent_name] = calculate_agent_commission_value(
-                    agent_comm, endorsement_amount, agency_commission_total
-                )
-        
         # Si NO hay agentes en agent_comms_list, usar la lista completa de la póliza
         if agent_comms_list:
-            # Usar los agentes que tienen comisión configurada
-            agents_to_process = [ac.get("agentName", "").strip() for ac in agent_comms_list if ac.get("agentName")]
-        else:
-            # Usar TODOS los agentes de la póliza
-            agents_to_process = agents_list_full
-        
-        # Si no hay agentes para procesar, crear 1 fila con agency commission
-        if not agents_to_process:
-            if agency_commission_total > 0:
+            # IMPORTANTE: Crear 1 fila por cada agent commission
+            # (puede haber múltiples del mismo agente con diferentes montos)
+            for agent_comm in agent_comms_list:
+                agent_name = agent_comm.get("agentName", "").strip()
+                
+                if not agent_name:
+                    continue
+                
+                # Calcular comisión individual de este agent_comm específico
+                agent_commission_value = calculate_agent_commission_value(
+                    agent_comm, endorsement_amount, agency_commission_total
+                )
+                
+                # Filtrar si no queremos endorsements sin comisión
+                if agency_commission_total == 0 and agent_commission_value == 0:
+                    continue
+                
                 record = create_record(
                     e, policy_data, endorsement_id, policy_id,
-                    agents_raw, csrs_list[0] if csrs_list else "",
-                    agency_commission_total, 0
+                    agent_name,  # Agente individual de este agent_comm
+                    agency_commission_total,
+                    agent_commission_value
+                )
+                
+                unified.append(record)
+        else:
+            # Sin agent commissions configuradas, usar agentes de la póliza
+            agents_to_process = agents_list_full
+            
+            # Si no hay agentes para procesar, crear 1 fila con agency commission
+            if not agents_to_process:
+                if agency_commission_total > 0:
+                    record = create_record(
+                        e, policy_data, endorsement_id, policy_id,
+                        "",  # Sin agente
+                        agency_commission_total, 0
+                    )
+                    unified.append(record)
+                continue
+            
+            # Crear 1 fila por agente de la póliza (con comisión = 0)
+            for agent_name in agents_to_process:
+                record = create_record(
+                    e, policy_data, endorsement_id, policy_id,
+                    agent_name,
+                    agency_commission_total,
+                    0  # Sin comisión individual
                 )
                 unified.append(record)
-            continue
-        
-        # Crear 1 fila por agente
-        for idx, agent_name in enumerate(agents_to_process):
-            # Obtener comisión de este agente (puede ser 0 si no está configurada)
-            agent_commission_value = agent_commissions_map.get(agent_name, 0)
-            
-            # Asignar 1 CSR a esta fila (distribuir)
-            csr_for_this_row = csrs_list[idx % len(csrs_list)] if csrs_list else ""
-            
-            record = create_record(
-                e, policy_data, endorsement_id, policy_id,
-                agents_raw,  # Lista completa de agentes
-                csr_for_this_row,
-                agency_commission_total,
-                agent_commission_value
-            )
-            
-            unified.append(record)
 
     # 5. Ordenar por fecha (más reciente primero)
     unified_sorted = sorted(
@@ -207,7 +213,7 @@ def calculate_agent_commission_value(agent_comm, endorsement_amount, agency_comm
         return 0
 
 
-def create_record(e, policy_data, endorsement_id, policy_id, agents_full, csr, agency_comm, agent_comm):
+def create_record(e, policy_data, endorsement_id, policy_id, agent_individual, agency_comm, agent_comm):
     """Crea un registro unificado."""
     return {
         # --- IDs ---
@@ -218,8 +224,7 @@ def create_record(e, policy_data, endorsement_id, policy_id, agents_full, csr, a
         "policy_number": policy_data.get("policy_number"),
         "mga": policy_data.get("mga"),
         "insured": policy_data.get("insured"),
-        "agents": agents_full,  # Lista COMPLETA de agentes
-        "csrs": csr,
+        "agent": agent_individual,  # Solo el agente individual de esta fila
         "policy_effective_date": policy_data.get("effective_date"),
         "policy_expiration_date": policy_data.get("expiration_date"),
 
