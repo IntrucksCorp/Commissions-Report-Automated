@@ -162,11 +162,18 @@ def export_endorsements_to_excel(endorsements, filename):
 # -----------------------
 
 def _format_date(value):
-    """Formatea fechas ISO a formato corto."""
+    """Formatea fechas ISO a formato MM/DD/YYYY."""
     if not value:
         return None
     try:
-        return value.split("T")[0]
+        # Si viene como "2025-12-13T00:00:00" o "2025-12-13"
+        date_str = value.split("T")[0]
+        # Separar año-mes-día
+        parts = date_str.split("-")
+        if len(parts) == 3:
+            year, month, day = parts
+            return f"{month}/{day}/{year}"
+        return value
     except:
         return value
 
