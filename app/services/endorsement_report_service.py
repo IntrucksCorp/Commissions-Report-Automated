@@ -1,21 +1,26 @@
 from app.api.policies import get_policies_map
 from app.services.commision_calculator import calculate_commissions
-from datetime import datetime
+from app.services.validators import parse_date, get_today_utc_str, validate_date_range
+from datetime import timedelta
 
 
-def generate_unified_endorsements(client, date_from="2025-12-01"):
+def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
     """
     Genera lista de endorsements con detalle por agente.
 
     Args:
         client: Cliente de NowCerts API
         date_from: Fecha inicial en formato "YYYY-MM-DD" (default: 2025-12-01)
+        date_to: Fecha final en formato "YYYY-MM-DD" (default: hoy UTC)
 
     Returns:
         Lista de endorsements con 1 fila por agente, filtrados por fecha
     """
-    print("🔹 Generando reporte con detalle por agente...")
-    print(f"📅 Filtro de fecha: desde {date_from} hasta hoy")
+    if date_to is None:
+        date_to = get_today_utc_str()
+
+    print(f"🔹 Generando reporte con detalle por agente...")
+    print(f"📅 Rango de fechas: desde {date_from} hasta {date_to}")
 
     # 1. Descargar datos base
     policies_map = get_policies_map(client)
@@ -60,24 +65,33 @@ def generate_unified_endorsements(client, date_from="2025-12-01"):
     print(f"💾 Agent Commissions guardadas en data_raw/")
 
     # 2. Filtrar endorsements por fecha
-    date_from_obj = datetime.strptime(date_from, "%Y-%m-%d")
+    # Validamos y parseamos el rango completo
+    start_dt, end_dt = validate_date_range(date_from, date_to)
+
+    # Para que sea inclusivo del último día (date_to), filtramos registros < (date_to + 1 día)
+    limit_dt = end_dt + timedelta(days=1)
+
     endorsements_filtered = []
 
     for e in endorsements:
-        endorsement_date = e.get("date") or e.get("createDate")
-        if not endorsement_date:
+        endorsement_date_str = e.get("date") or e.get("createDate")
+        if not endorsement_date_str:
             continue
 
         try:
             # Parse fecha (formato: "2025-12-01T00:00:00" o "2025-12-01")
-            date_str = endorsement_date.split("T")[0]
-            endorsement_date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+            # Extraemos solo YYYY-MM-DD para comparar como fechas
+            date_only_str = endorsement_date_str.split("T")[0]
+            current_dt = parse_date(date_only_str)
 
-            # Filtrar desde date_from
-            if endorsement_date_obj >= date_from_obj:
+            # Filtrar: start_dt <= current_dt < limit_dt
+            if start_dt <= current_dt < limit_dt:
                 endorsements_filtered.append(e)
-        except:
-            # Si no se puede parsear, incluir el endorsement
+        except Exception as ex:
+            # Si no se puede parsear, por seguridad lo incluimos si estamos investigando,
+            # pero aquí seguiremos la lógica de ignorar si es inválida o incluir si falla el parse
+            # pero el usuario quiere ver "todo". Mantendremos la lógica anterior de incluir si falla.
+            # logger.warning(f"Error parseando fecha {endorsement_date_str}: {ex}")
             endorsements_filtered.append(e)
 
     print(

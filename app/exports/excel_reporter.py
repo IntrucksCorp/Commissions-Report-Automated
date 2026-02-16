@@ -1,9 +1,11 @@
+from datetime import datetime
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 
 
 # Colores profesionales
-HEADER_FILL = PatternFill(start_color="2E5C8A", end_color="2E5C8A", fill_type="solid")
+HEADER_FILL = PatternFill(start_color="2E5C8A",
+                          end_color="2E5C8A", fill_type="solid")
 HEADER_FONT = Font(bold=True, color="FFFFFF", size=11)
 NORMAL_FONT = Font(name="Arial", size=10)
 
@@ -19,18 +21,32 @@ THIN_BORDER = Border(
 )
 
 
-def export_endorsements_to_excel(endorsements, filename):
+def export_endorsements_to_excel(endorsements, filename, date_from=None, date_to=None):
     """
-    Exporta endorsements a Excel con formato simplificado.
-    - Sin columnas extra de Agent Name / Agent Commission ID
-    - 1 agente y 1 CSR por fila
-    - Solo endorsements con comisiones
+    Exporta endorsements a Excel con formato simplificado y metadata.
     """
     print(f"🔹 Exportando a Excel en '{filename}' ...")
 
     wb = Workbook()
     ws = wb.active
     ws.title = "Endorsements Report"
+
+    # ---- Metadata ----
+    metadata = [
+        ["REPORTE DE COMISIONES - NOWCERTS"],
+        [f"Fecha Desde:", date_from or "N/A"],
+        [f"Fecha Hasta:", date_to or "Hoy"],
+        [f"Generado el:", datetime.now().strftime("%Y-%m-%d %H:%M:%S")],
+        []  # Fila vacía
+    ]
+
+    for row in metadata:
+        ws.append(row)
+
+    # Estilo para el título
+    ws["A1"].font = Font(bold=True, size=14)
+
+    start_row_headers = len(metadata) + 1
 
     # Headers simplificados
     headers = [
@@ -43,28 +59,23 @@ def export_endorsements_to_excel(endorsements, filename):
         "Policy Effective",
         "Policy Expiration",
         "Insured",
-        "Agent/CSR",  # Cambiado: ahora muestra el agente individual
+        "Agent/CSR",
         "Agency Commission",
         "Agent Commission",
     ]
 
-    ws.append(headers)
-
-    # ---- Estilo headers ----
-    for col in range(1, len(headers) + 1):
-        cell = ws.cell(row=1, column=col)
+    # Escribir headers en la fila correspondiente
+    for col, header in enumerate(headers, 1):
+        cell = ws.cell(row=start_row_headers, column=col, value=header)
         cell.font = HEADER_FONT
         cell.fill = HEADER_FILL
         cell.alignment = Alignment(
-            horizontal="center",
-            vertical="center",
-            wrap_text=True
-        )
+            horizontal="center", vertical="center", wrap_text=True)
         cell.border = THIN_BORDER
 
-    ws.row_dimensions[1].height = 35
+    ws.row_dimensions[start_row_headers].height = 35
 
-    current_row = 2
+    current_row = start_row_headers + 1
 
     # ---- Contenido ----
     for e in endorsements:
@@ -75,45 +86,52 @@ def export_endorsements_to_excel(endorsements, filename):
         amount = safe_money(e.get("endorsement_amount"))
         if is_cancel and amount > 0:
             amount = -amount
-        
+
         agency_comm = safe_money(e.get("agency_commission"))
         agent_comm = safe_money(e.get("agent_commission"))
-        
+
         # Si es cancel, las comisiones también en negativo
         if is_cancel:
             if agency_comm > 0:
                 agency_comm = -agency_comm
             if agent_comm > 0:
                 agent_comm = -agent_comm
-        
+
         total_comm = agency_comm + agent_comm
 
         row_idx = current_row
 
         # Escribir datos
         ws.cell(row=row_idx, column=1, value=e.get("endorsement_id"))
-        ws.cell(row=row_idx, column=2, value=_format_date(e.get("endorsement_effective")))
+        ws.cell(row=row_idx, column=2, value=_format_date(
+            e.get("endorsement_effective")))
         ws.cell(row=row_idx, column=3, value=amount)
         ws.cell(row=row_idx, column=4, value=endorsement_type_raw)
         ws.cell(row=row_idx, column=5, value=e.get("mga"))
         ws.cell(row=row_idx, column=6, value=e.get("policy_number"))
-        ws.cell(row=row_idx, column=7, value=_format_date(e.get("policy_effective_date")))
-        ws.cell(row=row_idx, column=8, value=_format_date(e.get("policy_expiration_date")))
+        ws.cell(row=row_idx, column=7, value=_format_date(
+            e.get("policy_effective_date")))
+        ws.cell(row=row_idx, column=8, value=_format_date(
+            e.get("policy_expiration_date")))
         ws.cell(row=row_idx, column=9, value=e.get("insured"))
-        ws.cell(row=row_idx, column=10, value=e.get("agent"))  # Agente individual
+        ws.cell(row=row_idx, column=10, value=e.get(
+            "agent"))  # Agente individual
         ws.cell(row=row_idx, column=11, value=agency_comm)
         ws.cell(row=row_idx, column=12, value=agent_comm)
-        
+
         # Formato dinero
         ws.cell(row=row_idx, column=3).number_format = MONEY_FORMAT
         ws.cell(row=row_idx, column=11).number_format = MONEY_FORMAT
         ws.cell(row=row_idx, column=12).number_format = MONEY_FORMAT
-        
+
         # Si es cancel: valores en rojo
         if is_cancel:
-            ws.cell(row=row_idx, column=3).font = Font(name="Arial", size=10, color="FF0000")
-            ws.cell(row=row_idx, column=11).font = Font(name="Arial", size=10, color="FF0000")
-            ws.cell(row=row_idx, column=12).font = Font(name="Arial", size=10, color="FF0000")
+            ws.cell(row=row_idx, column=3).font = Font(
+                name="Arial", size=10, color="FF0000")
+            ws.cell(row=row_idx, column=11).font = Font(
+                name="Arial", size=10, color="FF0000")
+            ws.cell(row=row_idx, column=12).font = Font(
+                name="Arial", size=10, color="FF0000")
 
         # Font y bordes
         for col in range(1, len(headers) + 1):
@@ -147,7 +165,7 @@ def export_endorsements_to_excel(endorsements, filename):
 
     # Congelar header y primera columna
     ws.freeze_panes = "B2"
-    
+
     # Agregar autofiltros
     ws.auto_filter.ref = ws.dimensions
     print("✅ Autofiltros agregados a todas las columnas")

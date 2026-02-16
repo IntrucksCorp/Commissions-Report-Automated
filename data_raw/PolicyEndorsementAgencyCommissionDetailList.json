@@ -1,5 +1,31 @@
 [
   {
+    "databaseId": "1433c0c0-9bdd-404a-bc6f-bfbe2660bbe4",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 10.0,
+    "endorsementDatabaseId": "2e9be3dd-c925-40bf-85e6-9db607b2d1b1",
+    "order": 1,
+    "agencyCommissionTypeValue": 2,
+    "agencyCommissionTypeText": "Net",
+    "createDate": "2026-02-16T10:24:00-06:00",
+    "changeDate": "2026-02-16T10:24:00-06:00",
+    "endorsementAgencyCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "741147f6-5880-45bd-b2a0-736fbf089655",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 10.0,
+    "endorsementDatabaseId": "37fc3ddd-0976-422c-8796-f78e544c4c27",
+    "order": 1,
+    "agencyCommissionTypeValue": 2,
+    "agencyCommissionTypeText": "Net",
+    "createDate": "2026-02-16T10:23:00-06:00",
+    "changeDate": "2026-02-16T10:23:00-06:00",
+    "endorsementAgencyCommissionPaymentDetail": []
+  },
+  {
     "databaseId": "58e2dff4-5229-4bad-bc3f-3b68e1ae8354",
     "commissionTypeValue": 0,
     "commissionTypeText": "Percent",
@@ -3822,15 +3848,6 @@
     "changeDate": "2026-01-13T15:46:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "d7c868f0-9163-4cf6-977c-8cc6ea12144b",
-        "agencyCommissionDatabaseId": "ca2c1faa-7796-4d28-9d04-9854f6971c1f",
-        "commissionReceivedAmount": 65.0,
-        "commissionReceivedDate": "2025-07-03T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-07-24T09:29:00-05:00",
-        "changeDate": "2025-07-24T09:29:00-05:00"
-      },
-      {
         "databaseId": "fa05ef74-88b3-4d8d-b307-ed2594fc1d8c",
         "agencyCommissionDatabaseId": "ca2c1faa-7796-4d28-9d04-9854f6971c1f",
         "commissionReceivedAmount": 32.5,
@@ -3838,6 +3855,15 @@
         "order": 2,
         "createDate": "2026-01-13T15:46:00-06:00",
         "changeDate": "2026-01-13T15:46:00-06:00"
+      },
+      {
+        "databaseId": "d7c868f0-9163-4cf6-977c-8cc6ea12144b",
+        "agencyCommissionDatabaseId": "ca2c1faa-7796-4d28-9d04-9854f6971c1f",
+        "commissionReceivedAmount": 65.0,
+        "commissionReceivedDate": "2025-07-03T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-07-24T09:29:00-05:00",
+        "changeDate": "2025-07-24T09:29:00-05:00"
       }
     ]
   },
@@ -3867,13 +3893,13 @@
     "changeDate": "2026-01-13T15:22:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "bd923dc8-c835-42cf-b805-8e380369557f",
+        "databaseId": "6ebc7d82-760b-4551-b584-7339a7ca9499",
         "agencyCommissionDatabaseId": "81b667d1-ea1a-46e1-a321-0ba961ad8a25",
-        "commissionReceivedAmount": 35.84,
-        "commissionReceivedDate": "2025-11-04T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2026-01-13T15:22:00-06:00",
-        "changeDate": "2026-01-13T15:22:00-06:00"
+        "commissionReceivedAmount": 10.48,
+        "commissionReceivedDate": "2025-09-24T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-09-30T10:40:00-05:00",
+        "changeDate": "2025-09-30T10:40:00-05:00"
       },
       {
         "databaseId": "6071ac85-c130-426b-bbec-09b7a1d812dd",
@@ -3894,13 +3920,13 @@
         "changeDate": "2026-01-13T15:22:00-06:00"
       },
       {
-        "databaseId": "6ebc7d82-760b-4551-b584-7339a7ca9499",
+        "databaseId": "bd923dc8-c835-42cf-b805-8e380369557f",
         "agencyCommissionDatabaseId": "81b667d1-ea1a-46e1-a321-0ba961ad8a25",
-        "commissionReceivedAmount": 10.48,
-        "commissionReceivedDate": "2025-09-24T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-09-30T10:40:00-05:00",
-        "changeDate": "2025-09-30T10:40:00-05:00"
+        "commissionReceivedAmount": 35.84,
+        "commissionReceivedDate": "2025-11-04T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2026-01-13T15:22:00-06:00",
+        "changeDate": "2026-01-13T15:22:00-06:00"
       }
     ]
   },
@@ -3917,15 +3943,6 @@
     "changeDate": "2026-01-13T15:10:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "97e04ef2-4661-4631-ad20-95c64643f0b3",
-        "agencyCommissionDatabaseId": "e971a6bc-6fee-4b71-a7e9-a71e1260460f",
-        "commissionReceivedAmount": 7.01,
-        "commissionReceivedDate": "2026-01-30T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2026-02-09T15:42:00-06:00",
-        "changeDate": "2026-02-09T15:42:00-06:00"
-      },
-      {
         "databaseId": "8ce3fca6-12b9-4c95-a6b5-a98727eaebfc",
         "agencyCommissionDatabaseId": "e971a6bc-6fee-4b71-a7e9-a71e1260460f",
         "commissionReceivedAmount": 5.78,
@@ -3933,6 +3950,15 @@
         "order": 1,
         "createDate": "2026-01-13T15:10:00-06:00",
         "changeDate": "2026-01-13T15:10:00-06:00"
+      },
+      {
+        "databaseId": "97e04ef2-4661-4631-ad20-95c64643f0b3",
+        "agencyCommissionDatabaseId": "e971a6bc-6fee-4b71-a7e9-a71e1260460f",
+        "commissionReceivedAmount": 7.01,
+        "commissionReceivedDate": "2026-01-30T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2026-02-09T15:42:00-06:00",
+        "changeDate": "2026-02-09T15:42:00-06:00"
       }
     ]
   },
@@ -6449,15 +6475,6 @@
     "changeDate": "2025-12-15T10:22:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "a608550e-b5b3-423b-881d-9c084547703f",
-        "agencyCommissionDatabaseId": "5d1fbe63-ec23-4d32-a841-89cb6d8e2cde",
-        "commissionReceivedAmount": 197.62,
-        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
-        "order": 1,
-        "createDate": "2025-12-15T10:22:00-06:00",
-        "changeDate": "2025-12-15T10:22:00-06:00"
-      },
-      {
         "databaseId": "065b74af-ebcf-4532-805a-6c44e6b3868f",
         "agencyCommissionDatabaseId": "5d1fbe63-ec23-4d32-a841-89cb6d8e2cde",
         "commissionReceivedAmount": 87.84,
@@ -6465,6 +6482,15 @@
         "order": 2,
         "createDate": "2026-01-15T10:16:00-06:00",
         "changeDate": "2026-01-15T10:16:00-06:00"
+      },
+      {
+        "databaseId": "a608550e-b5b3-423b-881d-9c084547703f",
+        "agencyCommissionDatabaseId": "5d1fbe63-ec23-4d32-a841-89cb6d8e2cde",
+        "commissionReceivedAmount": 197.62,
+        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
+        "order": 1,
+        "createDate": "2025-12-15T10:22:00-06:00",
+        "changeDate": "2025-12-15T10:22:00-06:00"
       }
     ]
   },
@@ -6513,15 +6539,6 @@
     "changeDate": "2025-12-15T10:21:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "6b80b553-37eb-42b6-a73e-9134f4525153",
-        "agencyCommissionDatabaseId": "cc9df61a-b50d-4f65-9c34-611434b26ad9",
-        "commissionReceivedAmount": 153.94,
-        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2026-01-15T10:15:00-06:00",
-        "changeDate": "2026-01-15T10:15:00-06:00"
-      },
-      {
         "databaseId": "c0d29f1b-a9eb-4921-b6b1-db9dec5b7e0a",
         "agencyCommissionDatabaseId": "cc9df61a-b50d-4f65-9c34-611434b26ad9",
         "commissionReceivedAmount": 346.36,
@@ -6529,6 +6546,15 @@
         "order": 1,
         "createDate": "2025-12-15T10:21:00-06:00",
         "changeDate": "2025-12-15T10:21:00-06:00"
+      },
+      {
+        "databaseId": "6b80b553-37eb-42b6-a73e-9134f4525153",
+        "agencyCommissionDatabaseId": "cc9df61a-b50d-4f65-9c34-611434b26ad9",
+        "commissionReceivedAmount": 153.94,
+        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2026-01-15T10:15:00-06:00",
+        "changeDate": "2026-01-15T10:15:00-06:00"
       }
     ]
   },
@@ -6545,15 +6571,6 @@
     "changeDate": "2025-12-15T10:20:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "43aca684-b5cf-418c-bb74-ee0ccb70aa93",
-        "agencyCommissionDatabaseId": "5b233187-efbd-431e-9665-2f849b921ed2",
-        "commissionReceivedAmount": 200.03,
-        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2026-01-15T10:13:00-06:00",
-        "changeDate": "2026-01-15T10:13:00-06:00"
-      },
-      {
         "databaseId": "9d274d8f-aaa7-4779-bbf3-ddf2daf04356",
         "agencyCommissionDatabaseId": "5b233187-efbd-431e-9665-2f849b921ed2",
         "commissionReceivedAmount": 450.07,
@@ -6561,6 +6578,15 @@
         "order": 1,
         "createDate": "2025-12-15T10:20:00-06:00",
         "changeDate": "2025-12-15T10:20:00-06:00"
+      },
+      {
+        "databaseId": "43aca684-b5cf-418c-bb74-ee0ccb70aa93",
+        "agencyCommissionDatabaseId": "5b233187-efbd-431e-9665-2f849b921ed2",
+        "commissionReceivedAmount": 200.03,
+        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2026-01-15T10:13:00-06:00",
+        "changeDate": "2026-01-15T10:13:00-06:00"
       }
     ]
   },
@@ -6730,15 +6756,6 @@
     "changeDate": "2025-12-12T15:52:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "9a4acf39-05e1-4346-97c8-4a29bdec8d38",
-        "agencyCommissionDatabaseId": "0b43e01f-b475-4883-88b2-4c0a06cb563e",
-        "commissionReceivedAmount": 90.22,
-        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2026-01-15T10:38:00-06:00",
-        "changeDate": "2026-01-15T10:38:00-06:00"
-      },
-      {
         "databaseId": "22ce55e5-f817-4f8d-bfa9-8225671f009f",
         "agencyCommissionDatabaseId": "0b43e01f-b475-4883-88b2-4c0a06cb563e",
         "commissionReceivedAmount": 90.22,
@@ -6746,6 +6763,15 @@
         "order": 1,
         "createDate": "2025-12-12T15:52:00-06:00",
         "changeDate": "2025-12-12T15:52:00-06:00"
+      },
+      {
+        "databaseId": "9a4acf39-05e1-4346-97c8-4a29bdec8d38",
+        "agencyCommissionDatabaseId": "0b43e01f-b475-4883-88b2-4c0a06cb563e",
+        "commissionReceivedAmount": 90.22,
+        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2026-01-15T10:38:00-06:00",
+        "changeDate": "2026-01-15T10:38:00-06:00"
       }
     ]
   },
@@ -10948,15 +10974,6 @@
     "changeDate": "2025-11-14T15:35:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "e03e0216-ae92-4e5f-b51c-008f37270723",
-        "agencyCommissionDatabaseId": "78a0e646-5910-46b3-99a3-e420041bc8d0",
-        "commissionReceivedAmount": 154.82,
-        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2026-01-15T10:10:00-06:00",
-        "changeDate": "2026-01-15T10:10:00-06:00"
-      },
-      {
         "databaseId": "32ea0436-7c84-4279-ae34-a506243c24ed",
         "agencyCommissionDatabaseId": "78a0e646-5910-46b3-99a3-e420041bc8d0",
         "commissionReceivedAmount": 174.18,
@@ -10964,6 +10981,15 @@
         "order": 1,
         "createDate": "2025-11-14T15:35:00-06:00",
         "changeDate": "2025-11-14T15:35:00-06:00"
+      },
+      {
+        "databaseId": "e03e0216-ae92-4e5f-b51c-008f37270723",
+        "agencyCommissionDatabaseId": "78a0e646-5910-46b3-99a3-e420041bc8d0",
+        "commissionReceivedAmount": 154.82,
+        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2026-01-15T10:10:00-06:00",
+        "changeDate": "2026-01-15T10:10:00-06:00"
       }
     ]
   },
@@ -11012,15 +11038,6 @@
         "changeDate": "2025-11-14T15:28:00-06:00"
       },
       {
-        "databaseId": "99b3b92a-810c-458f-8dfa-f1f49e9f891d",
-        "agencyCommissionDatabaseId": "6019aab9-c9b6-49eb-a4be-7fb9199cc171",
-        "commissionReceivedAmount": 109.39,
-        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2025-12-15T10:15:00-06:00",
-        "changeDate": "2025-12-15T10:15:00-06:00"
-      },
-      {
         "databaseId": "0b2e2ec1-a351-41d9-b2e6-f7293a6122c5",
         "agencyCommissionDatabaseId": "6019aab9-c9b6-49eb-a4be-7fb9199cc171",
         "commissionReceivedAmount": 109.39,
@@ -11028,6 +11045,15 @@
         "order": 3,
         "createDate": "2026-01-15T10:09:00-06:00",
         "changeDate": "2026-01-15T10:09:00-06:00"
+      },
+      {
+        "databaseId": "99b3b92a-810c-458f-8dfa-f1f49e9f891d",
+        "agencyCommissionDatabaseId": "6019aab9-c9b6-49eb-a4be-7fb9199cc171",
+        "commissionReceivedAmount": 109.39,
+        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2025-12-15T10:15:00-06:00",
+        "changeDate": "2025-12-15T10:15:00-06:00"
       }
     ]
   },
@@ -11085,13 +11111,13 @@
     "changeDate": "2025-11-14T15:16:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "bbde693a-4ab9-4909-9c22-9e8b7e27bf3d",
+        "databaseId": "458fb3a5-557f-40db-bbce-8b53395bfa7e",
         "agencyCommissionDatabaseId": "8733655b-50c3-4782-97b5-d085b3cf1038",
-        "commissionReceivedAmount": 212.06,
-        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
-        "order": 3,
-        "createDate": "2026-01-15T10:05:00-06:00",
-        "changeDate": "2026-01-15T10:05:00-06:00"
+        "commissionReceivedAmount": 212.05,
+        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2025-12-15T10:09:00-06:00",
+        "changeDate": "2025-12-15T10:09:00-06:00"
       },
       {
         "databaseId": "2a5b293f-ae28-4032-bf7e-d409651d7cae",
@@ -11103,13 +11129,13 @@
         "changeDate": "2025-11-14T15:16:00-06:00"
       },
       {
-        "databaseId": "458fb3a5-557f-40db-bbce-8b53395bfa7e",
+        "databaseId": "bbde693a-4ab9-4909-9c22-9e8b7e27bf3d",
         "agencyCommissionDatabaseId": "8733655b-50c3-4782-97b5-d085b3cf1038",
-        "commissionReceivedAmount": 212.05,
-        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2025-12-15T10:09:00-06:00",
-        "changeDate": "2025-12-15T10:09:00-06:00"
+        "commissionReceivedAmount": 212.06,
+        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
+        "order": 3,
+        "createDate": "2026-01-15T10:05:00-06:00",
+        "changeDate": "2026-01-15T10:05:00-06:00"
       }
     ]
   },
@@ -11135,15 +11161,6 @@
         "changeDate": "2025-12-12T15:50:00-06:00"
       },
       {
-        "databaseId": "eb9292fa-7c0b-4257-b6b1-9353ec404e8d",
-        "agencyCommissionDatabaseId": "95fdf097-5b5d-4576-9a84-5f5fdbde17a1",
-        "commissionReceivedAmount": -125.9,
-        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
-        "order": 3,
-        "createDate": "2026-01-15T10:37:00-06:00",
-        "changeDate": "2026-01-15T10:37:00-06:00"
-      },
-      {
         "databaseId": "3aca39e1-3ddb-4f7a-a3c4-05c8d3e11d17",
         "agencyCommissionDatabaseId": "95fdf097-5b5d-4576-9a84-5f5fdbde17a1",
         "commissionReceivedAmount": -125.9,
@@ -11151,6 +11168,15 @@
         "order": 1,
         "createDate": "2025-11-14T14:54:00-06:00",
         "changeDate": "2025-11-14T14:54:00-06:00"
+      },
+      {
+        "databaseId": "eb9292fa-7c0b-4257-b6b1-9353ec404e8d",
+        "agencyCommissionDatabaseId": "95fdf097-5b5d-4576-9a84-5f5fdbde17a1",
+        "commissionReceivedAmount": -125.9,
+        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
+        "order": 3,
+        "createDate": "2026-01-15T10:37:00-06:00",
+        "changeDate": "2026-01-15T10:37:00-06:00"
       }
     ]
   },
@@ -16517,15 +16543,6 @@
     "changeDate": "2025-10-15T15:23:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "80ee9e09-231d-43e5-97c6-f163334778d6",
-        "agencyCommissionDatabaseId": "d4fc382c-1e3f-4191-8eb5-820b5bc96416",
-        "commissionReceivedAmount": 106.37,
-        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
-        "order": 4,
-        "createDate": "2026-01-15T10:04:00-06:00",
-        "changeDate": "2026-01-15T10:04:00-06:00"
-      },
-      {
         "databaseId": "a00548cc-5331-44c0-9633-195ad64ad4e2",
         "agencyCommissionDatabaseId": "d4fc382c-1e3f-4191-8eb5-820b5bc96416",
         "commissionReceivedAmount": 239.32,
@@ -16535,13 +16552,13 @@
         "changeDate": "2025-10-15T15:48:00-05:00"
       },
       {
-        "databaseId": "5d33fa67-2fef-4a0a-80d3-91ebf0de75f7",
+        "databaseId": "80ee9e09-231d-43e5-97c6-f163334778d6",
         "agencyCommissionDatabaseId": "d4fc382c-1e3f-4191-8eb5-820b5bc96416",
-        "commissionReceivedAmount": 106.36,
-        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
-        "order": 3,
-        "createDate": "2025-12-15T10:08:00-06:00",
-        "changeDate": "2025-12-15T10:08:00-06:00"
+        "commissionReceivedAmount": 106.37,
+        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
+        "order": 4,
+        "createDate": "2026-01-15T10:04:00-06:00",
+        "changeDate": "2026-01-15T10:04:00-06:00"
       },
       {
         "databaseId": "76f4d6a4-4653-4e20-b065-abf2bbce0dfa",
@@ -16551,6 +16568,15 @@
         "order": 2,
         "createDate": "2025-11-14T15:13:00-06:00",
         "changeDate": "2025-11-14T15:13:00-06:00"
+      },
+      {
+        "databaseId": "5d33fa67-2fef-4a0a-80d3-91ebf0de75f7",
+        "agencyCommissionDatabaseId": "d4fc382c-1e3f-4191-8eb5-820b5bc96416",
+        "commissionReceivedAmount": 106.36,
+        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
+        "order": 3,
+        "createDate": "2025-12-15T10:08:00-06:00",
+        "changeDate": "2025-12-15T10:08:00-06:00"
       }
     ]
   },
@@ -17508,15 +17534,6 @@
     "changeDate": "2025-10-10T15:18:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "dfd16f59-00ae-46ac-8521-8ff7923b9ecf",
-        "agencyCommissionDatabaseId": "7b00d768-553b-4084-886b-242f047d402d",
-        "commissionReceivedAmount": 1017.0,
-        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2026-01-09T09:46:00-06:00",
-        "changeDate": "2026-01-09T09:46:00-06:00"
-      },
-      {
         "databaseId": "9675da0b-1cb1-4ea8-b940-cf58457efc72",
         "agencyCommissionDatabaseId": "7b00d768-553b-4084-886b-242f047d402d",
         "commissionReceivedAmount": 401.67,
@@ -17524,6 +17541,15 @@
         "order": 1,
         "createDate": "2025-12-01T15:25:00-06:00",
         "changeDate": "2025-12-01T15:25:00-06:00"
+      },
+      {
+        "databaseId": "dfd16f59-00ae-46ac-8521-8ff7923b9ecf",
+        "agencyCommissionDatabaseId": "7b00d768-553b-4084-886b-242f047d402d",
+        "commissionReceivedAmount": 1017.0,
+        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2026-01-09T09:46:00-06:00",
+        "changeDate": "2026-01-09T09:46:00-06:00"
       }
     ]
   },
@@ -19702,6 +19728,24 @@
     "changeDate": "2025-10-01T11:05:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
+        "databaseId": "78c36560-e7ae-4ab0-936b-d51abf7a8766",
+        "agencyCommissionDatabaseId": "ae72efd7-00db-4609-a0e7-d3c88cbe7ae6",
+        "commissionReceivedAmount": 108.27,
+        "commissionReceivedDate": "2025-09-18T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2025-10-01T11:05:00-05:00",
+        "changeDate": "2025-10-01T11:05:00-05:00"
+      },
+      {
+        "databaseId": "0c03774f-8d06-4ade-95d7-032fc2029ab9",
+        "agencyCommissionDatabaseId": "ae72efd7-00db-4609-a0e7-d3c88cbe7ae6",
+        "commissionReceivedAmount": 108.26,
+        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
+        "order": 6,
+        "createDate": "2026-01-15T10:02:00-06:00",
+        "changeDate": "2026-01-15T10:02:00-06:00"
+      },
+      {
         "databaseId": "2b4349eb-c0b3-4c49-9cd6-2702dcd96f8c",
         "agencyCommissionDatabaseId": "ae72efd7-00db-4609-a0e7-d3c88cbe7ae6",
         "commissionReceivedAmount": 108.27,
@@ -19711,13 +19755,13 @@
         "changeDate": "2025-12-15T10:01:00-06:00"
       },
       {
-        "databaseId": "78c36560-e7ae-4ab0-936b-d51abf7a8766",
+        "databaseId": "e437f9e8-99f1-4beb-a7f7-a9baf6461132",
         "agencyCommissionDatabaseId": "ae72efd7-00db-4609-a0e7-d3c88cbe7ae6",
-        "commissionReceivedAmount": 108.27,
-        "commissionReceivedDate": "2025-09-18T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-10-01T11:05:00-05:00",
-        "changeDate": "2025-10-01T11:05:00-05:00"
+        "commissionReceivedAmount": 108.26,
+        "commissionReceivedDate": "2025-10-14T00:00:00-05:00",
+        "order": 3,
+        "createDate": "2025-10-15T15:55:00-05:00",
+        "changeDate": "2025-10-15T15:55:00-05:00"
       },
       {
         "databaseId": "80f3a53a-fdb0-44b8-9f4a-31daea54f3b8",
@@ -19736,24 +19780,6 @@
         "order": 1,
         "createDate": "2025-09-02T14:29:00-05:00",
         "changeDate": "2025-09-02T14:29:00-05:00"
-      },
-      {
-        "databaseId": "0c03774f-8d06-4ade-95d7-032fc2029ab9",
-        "agencyCommissionDatabaseId": "ae72efd7-00db-4609-a0e7-d3c88cbe7ae6",
-        "commissionReceivedAmount": 108.26,
-        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
-        "order": 6,
-        "createDate": "2026-01-15T10:02:00-06:00",
-        "changeDate": "2026-01-15T10:02:00-06:00"
-      },
-      {
-        "databaseId": "e437f9e8-99f1-4beb-a7f7-a9baf6461132",
-        "agencyCommissionDatabaseId": "ae72efd7-00db-4609-a0e7-d3c88cbe7ae6",
-        "commissionReceivedAmount": 108.26,
-        "commissionReceivedDate": "2025-10-14T00:00:00-05:00",
-        "order": 3,
-        "createDate": "2025-10-15T15:55:00-05:00",
-        "changeDate": "2025-10-15T15:55:00-05:00"
       }
     ]
   },
@@ -19770,6 +19796,24 @@
     "changeDate": "2025-10-01T11:04:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
+        "databaseId": "da037331-b121-446f-8df4-2c6212594169",
+        "agencyCommissionDatabaseId": "6d8724b2-9643-4162-8968-1fc063ad9223",
+        "commissionReceivedAmount": 94.04,
+        "commissionReceivedDate": "2025-11-13T00:00:00-06:00",
+        "order": 4,
+        "createDate": "2025-11-14T15:09:00-06:00",
+        "changeDate": "2025-11-14T15:09:00-06:00"
+      },
+      {
+        "databaseId": "53989ab5-a9d4-4d55-bb6b-241a6a80cf66",
+        "agencyCommissionDatabaseId": "6d8724b2-9643-4162-8968-1fc063ad9223",
+        "commissionReceivedAmount": 94.03,
+        "commissionReceivedDate": "2025-09-18T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2025-10-01T11:04:00-05:00",
+        "changeDate": "2025-10-01T11:04:00-05:00"
+      },
+      {
         "databaseId": "ec42a859-130a-42a2-a4d4-964cd1b93d12",
         "agencyCommissionDatabaseId": "6d8724b2-9643-4162-8968-1fc063ad9223",
         "commissionReceivedAmount": 94.04,
@@ -19777,6 +19821,15 @@
         "order": 6,
         "createDate": "2026-01-15T10:01:00-06:00",
         "changeDate": "2026-01-15T10:01:00-06:00"
+      },
+      {
+        "databaseId": "ed1ddc2e-9891-46aa-bf89-d2f311d5ea6b",
+        "agencyCommissionDatabaseId": "6d8724b2-9643-4162-8968-1fc063ad9223",
+        "commissionReceivedAmount": 94.04,
+        "commissionReceivedDate": "2025-10-14T00:00:00-05:00",
+        "order": 3,
+        "createDate": "2025-10-15T15:59:00-05:00",
+        "changeDate": "2025-10-15T15:59:00-05:00"
       },
       {
         "databaseId": "dbdeb9ca-3ee4-43b8-9c9a-9f3db77e98f0",
@@ -19795,33 +19848,6 @@
         "order": 1,
         "createDate": "2025-09-02T14:28:00-05:00",
         "changeDate": "2025-09-02T14:28:00-05:00"
-      },
-      {
-        "databaseId": "ed1ddc2e-9891-46aa-bf89-d2f311d5ea6b",
-        "agencyCommissionDatabaseId": "6d8724b2-9643-4162-8968-1fc063ad9223",
-        "commissionReceivedAmount": 94.04,
-        "commissionReceivedDate": "2025-10-14T00:00:00-05:00",
-        "order": 3,
-        "createDate": "2025-10-15T15:59:00-05:00",
-        "changeDate": "2025-10-15T15:59:00-05:00"
-      },
-      {
-        "databaseId": "da037331-b121-446f-8df4-2c6212594169",
-        "agencyCommissionDatabaseId": "6d8724b2-9643-4162-8968-1fc063ad9223",
-        "commissionReceivedAmount": 94.04,
-        "commissionReceivedDate": "2025-11-13T00:00:00-06:00",
-        "order": 4,
-        "createDate": "2025-11-14T15:09:00-06:00",
-        "changeDate": "2025-11-14T15:09:00-06:00"
-      },
-      {
-        "databaseId": "53989ab5-a9d4-4d55-bb6b-241a6a80cf66",
-        "agencyCommissionDatabaseId": "6d8724b2-9643-4162-8968-1fc063ad9223",
-        "commissionReceivedAmount": 94.03,
-        "commissionReceivedDate": "2025-09-18T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-10-01T11:04:00-05:00",
-        "changeDate": "2025-10-01T11:04:00-05:00"
       }
     ]
   },
@@ -19956,6 +19982,15 @@
     "changeDate": "2025-10-01T09:22:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
+        "databaseId": "f176107b-3a9c-4bd1-9840-28130fdd51a8",
+        "agencyCommissionDatabaseId": "1f9f904a-bcdd-4ba0-b598-fa4acf157860",
+        "commissionReceivedAmount": 174.65,
+        "commissionReceivedDate": "2025-11-13T00:00:00-06:00",
+        "order": 1,
+        "createDate": "2025-11-14T14:57:00-06:00",
+        "changeDate": "2025-11-14T14:57:00-06:00"
+      },
+      {
         "databaseId": "17dc70b1-0d74-43d9-a44a-a1f6b07a8122",
         "agencyCommissionDatabaseId": "1f9f904a-bcdd-4ba0-b598-fa4acf157860",
         "commissionReceivedAmount": 87.33,
@@ -19972,15 +20007,6 @@
         "order": 2,
         "createDate": "2025-12-12T15:38:00-06:00",
         "changeDate": "2025-12-12T15:38:00-06:00"
-      },
-      {
-        "databaseId": "f176107b-3a9c-4bd1-9840-28130fdd51a8",
-        "agencyCommissionDatabaseId": "1f9f904a-bcdd-4ba0-b598-fa4acf157860",
-        "commissionReceivedAmount": 174.65,
-        "commissionReceivedDate": "2025-11-13T00:00:00-06:00",
-        "order": 1,
-        "createDate": "2025-11-14T14:57:00-06:00",
-        "changeDate": "2025-11-14T14:57:00-06:00"
       }
     ]
   },
@@ -19996,24 +20022,6 @@
     "createDate": "2025-08-12T12:05:00-05:00",
     "changeDate": "2025-10-01T09:18:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
-      {
-        "databaseId": "58424f7f-2d3b-48e4-9103-92bedc860cfa",
-        "agencyCommissionDatabaseId": "a440ea96-62d6-4a9e-ae35-3c95e689da2b",
-        "commissionReceivedAmount": 11.42,
-        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
-        "order": 4,
-        "createDate": "2026-01-15T10:35:00-06:00",
-        "changeDate": "2026-01-15T10:35:00-06:00"
-      },
-      {
-        "databaseId": "5cfd95d3-4136-439e-950f-7b27cd210a72",
-        "agencyCommissionDatabaseId": "a440ea96-62d6-4a9e-ae35-3c95e689da2b",
-        "commissionReceivedAmount": 11.42,
-        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
-        "order": 3,
-        "createDate": "2025-12-12T15:37:00-06:00",
-        "changeDate": "2025-12-12T15:37:00-06:00"
-      },
       {
         "databaseId": "ac238bdc-c72e-4973-b04f-b9f87f9d1635",
         "agencyCommissionDatabaseId": "a440ea96-62d6-4a9e-ae35-3c95e689da2b",
@@ -20031,6 +20039,24 @@
         "order": 2,
         "createDate": "2025-11-14T14:58:00-06:00",
         "changeDate": "2025-11-14T14:58:00-06:00"
+      },
+      {
+        "databaseId": "58424f7f-2d3b-48e4-9103-92bedc860cfa",
+        "agencyCommissionDatabaseId": "a440ea96-62d6-4a9e-ae35-3c95e689da2b",
+        "commissionReceivedAmount": 11.42,
+        "commissionReceivedDate": "2026-01-14T00:00:00-06:00",
+        "order": 4,
+        "createDate": "2026-01-15T10:35:00-06:00",
+        "changeDate": "2026-01-15T10:35:00-06:00"
+      },
+      {
+        "databaseId": "5cfd95d3-4136-439e-950f-7b27cd210a72",
+        "agencyCommissionDatabaseId": "a440ea96-62d6-4a9e-ae35-3c95e689da2b",
+        "commissionReceivedAmount": 11.42,
+        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
+        "order": 3,
+        "createDate": "2025-12-12T15:37:00-06:00",
+        "changeDate": "2025-12-12T15:37:00-06:00"
       }
     ]
   },
@@ -20047,31 +20073,13 @@
     "changeDate": "2025-10-01T09:13:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "14a5a9db-e7df-4bb7-aa94-f1d65d29c48a",
+        "databaseId": "7194a996-0856-47fe-ab61-b2ccb52a94a6",
         "agencyCommissionDatabaseId": "5bcd16ce-262e-4009-9579-69c8205bbd65",
-        "commissionReceivedAmount": 130.88,
-        "commissionReceivedDate": "2025-09-18T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-10-01T09:13:00-05:00",
-        "changeDate": "2025-10-01T10:57:00-05:00"
-      },
-      {
-        "databaseId": "5044de90-3487-4511-9dcc-2a83e22a59ef",
-        "agencyCommissionDatabaseId": "5bcd16ce-262e-4009-9579-69c8205bbd65",
-        "commissionReceivedAmount": 130.88,
-        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
-        "order": 4,
-        "createDate": "2025-12-12T15:37:00-06:00",
-        "changeDate": "2025-12-12T15:37:00-06:00"
-      },
-      {
-        "databaseId": "e23dbfd8-9bd2-457a-88d6-151cebbe8507",
-        "agencyCommissionDatabaseId": "5bcd16ce-262e-4009-9579-69c8205bbd65",
-        "commissionReceivedAmount": 294.48,
-        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-09-02T14:28:00-05:00",
-        "changeDate": "2025-09-02T14:28:00-05:00"
+        "commissionReceivedAmount": 261.76,
+        "commissionReceivedDate": "2025-11-13T00:00:00-06:00",
+        "order": 3,
+        "createDate": "2025-11-14T14:59:00-06:00",
+        "changeDate": "2025-11-14T14:59:00-06:00"
       },
       {
         "databaseId": "560bb40f-3b36-4edb-92ac-4f429b4f7f5c",
@@ -20083,13 +20091,31 @@
         "changeDate": "2026-01-15T10:34:00-06:00"
       },
       {
-        "databaseId": "7194a996-0856-47fe-ab61-b2ccb52a94a6",
+        "databaseId": "5044de90-3487-4511-9dcc-2a83e22a59ef",
         "agencyCommissionDatabaseId": "5bcd16ce-262e-4009-9579-69c8205bbd65",
-        "commissionReceivedAmount": 261.76,
-        "commissionReceivedDate": "2025-11-13T00:00:00-06:00",
-        "order": 3,
-        "createDate": "2025-11-14T14:59:00-06:00",
-        "changeDate": "2025-11-14T14:59:00-06:00"
+        "commissionReceivedAmount": 130.88,
+        "commissionReceivedDate": "2025-12-12T00:00:00-06:00",
+        "order": 4,
+        "createDate": "2025-12-12T15:37:00-06:00",
+        "changeDate": "2025-12-12T15:37:00-06:00"
+      },
+      {
+        "databaseId": "14a5a9db-e7df-4bb7-aa94-f1d65d29c48a",
+        "agencyCommissionDatabaseId": "5bcd16ce-262e-4009-9579-69c8205bbd65",
+        "commissionReceivedAmount": 130.88,
+        "commissionReceivedDate": "2025-09-18T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2025-10-01T09:13:00-05:00",
+        "changeDate": "2025-10-01T10:57:00-05:00"
+      },
+      {
+        "databaseId": "e23dbfd8-9bd2-457a-88d6-151cebbe8507",
+        "agencyCommissionDatabaseId": "5bcd16ce-262e-4009-9579-69c8205bbd65",
+        "commissionReceivedAmount": 294.48,
+        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-09-02T14:28:00-05:00",
+        "changeDate": "2025-09-02T14:28:00-05:00"
       }
     ]
   },
@@ -80418,12 +80444,48 @@
     "changeDate": "2025-01-23T16:10:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
+        "databaseId": "b239741d-5fde-4e08-81a2-adf72a5f7d67",
+        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
+        "commissionReceivedAmount": 223.83,
+        "commissionReceivedDate": "2025-05-15T00:00:00-05:00",
+        "order": 6,
+        "createDate": "2025-06-03T15:36:00-05:00",
+        "changeDate": "2025-06-03T15:36:00-05:00"
+      },
+      {
+        "databaseId": "e943d86c-d50a-4708-9d48-161484dcf3ef",
+        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
+        "commissionReceivedAmount": 223.83,
+        "commissionReceivedDate": "2025-08-27T00:00:00-05:00",
+        "order": 8,
+        "createDate": "2025-08-28T15:44:00-05:00",
+        "changeDate": "2025-10-23T11:58:00-05:00"
+      },
+      {
         "databaseId": "f7816502-54ec-4fa4-a8a9-b6eed35d225b",
         "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
         "commissionReceivedAmount": 223.83,
         "commissionReceivedDate": "2025-07-24T00:00:00-05:00",
         "order": 7,
         "createDate": "2025-08-13T09:37:00-05:00",
+        "changeDate": "2025-10-23T11:58:00-05:00"
+      },
+      {
+        "databaseId": "284cbfe7-5340-42cf-bd25-cc5ecc7494fc",
+        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
+        "commissionReceivedAmount": 223.83,
+        "commissionReceivedDate": "2025-10-27T00:00:00-05:00",
+        "order": 10,
+        "createDate": "2025-11-13T11:18:00-06:00",
+        "changeDate": "2025-11-13T11:18:00-06:00"
+      },
+      {
+        "databaseId": "57da434f-ac89-481f-a69d-f78455c02719",
+        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
+        "commissionReceivedAmount": 223.83,
+        "commissionReceivedDate": "2025-10-14T00:00:00-05:00",
+        "order": 9,
+        "createDate": "2025-10-23T11:58:00-05:00",
         "changeDate": "2025-10-23T11:58:00-05:00"
       },
       {
@@ -80436,48 +80498,12 @@
         "changeDate": "2025-06-03T15:36:00-05:00"
       },
       {
-        "databaseId": "b239741d-5fde-4e08-81a2-adf72a5f7d67",
-        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
-        "commissionReceivedAmount": 223.83,
-        "commissionReceivedDate": "2025-05-15T00:00:00-05:00",
-        "order": 6,
-        "createDate": "2025-06-03T15:36:00-05:00",
-        "changeDate": "2025-06-03T15:36:00-05:00"
-      },
-      {
-        "databaseId": "57da434f-ac89-481f-a69d-f78455c02719",
-        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
-        "commissionReceivedAmount": 223.83,
-        "commissionReceivedDate": "2025-10-14T00:00:00-05:00",
-        "order": 9,
-        "createDate": "2025-10-23T11:58:00-05:00",
-        "changeDate": "2025-10-23T11:58:00-05:00"
-      },
-      {
         "databaseId": "1d4a16b8-60e8-47d0-bd6e-d6506e34dae4",
         "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
         "commissionReceivedAmount": 223.83,
         "commissionReceivedDate": "2025-04-16T00:00:00-05:00",
         "order": 5,
         "createDate": "2025-06-03T15:36:00-05:00",
-        "changeDate": "2025-06-03T15:36:00-05:00"
-      },
-      {
-        "databaseId": "284cbfe7-5340-42cf-bd25-cc5ecc7494fc",
-        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
-        "commissionReceivedAmount": 223.83,
-        "commissionReceivedDate": "2025-10-27T00:00:00-05:00",
-        "order": 10,
-        "createDate": "2025-11-13T11:18:00-06:00",
-        "changeDate": "2025-11-13T11:18:00-06:00"
-      },
-      {
-        "databaseId": "ee8bab45-48f1-4bea-9b34-6621dd401166",
-        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
-        "commissionReceivedAmount": 223.83,
-        "commissionReceivedDate": "2025-01-23T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2025-04-01T17:28:00-05:00",
         "changeDate": "2025-06-03T15:36:00-05:00"
       },
       {
@@ -80488,15 +80514,6 @@
         "order": 3,
         "createDate": "2025-06-03T15:36:00-05:00",
         "changeDate": "2025-06-03T15:36:00-05:00"
-      },
-      {
-        "databaseId": "e943d86c-d50a-4708-9d48-161484dcf3ef",
-        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
-        "commissionReceivedAmount": 223.83,
-        "commissionReceivedDate": "2025-08-27T00:00:00-05:00",
-        "order": 8,
-        "createDate": "2025-08-28T15:44:00-05:00",
-        "changeDate": "2025-10-23T11:58:00-05:00"
       },
       {
         "databaseId": "04554907-e889-45ee-9732-6a95b7df66ae",
@@ -80515,6 +80532,15 @@
         "order": 1,
         "createDate": "2025-01-23T16:10:00-06:00",
         "changeDate": "2025-01-23T16:10:00-06:00"
+      },
+      {
+        "databaseId": "ee8bab45-48f1-4bea-9b34-6621dd401166",
+        "agencyCommissionDatabaseId": "9d4f763b-ed62-4b67-b33a-92b7e72649dd",
+        "commissionReceivedAmount": 223.83,
+        "commissionReceivedDate": "2025-01-23T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2025-04-01T17:28:00-05:00",
+        "changeDate": "2025-06-03T15:36:00-05:00"
       }
     ]
   },
@@ -84360,20 +84386,20 @@
     "changeDate": "2025-01-07T12:16:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "dfcc8a86-51fc-40bb-b236-2e250a297118",
-        "agencyCommissionDatabaseId": "93f451f0-7547-437a-aa10-bd8b4688ae16",
-        "commissionReceivedAmount": 1443.0,
-        "commissionReceivedDate": "2025-01-03T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2025-01-23T12:08:00-06:00",
-        "changeDate": "2025-01-23T12:08:00-06:00"
-      },
-      {
         "databaseId": "e80b2b2f-d5b3-4f2e-85a3-b73950ede3c8",
         "agencyCommissionDatabaseId": "93f451f0-7547-437a-aa10-bd8b4688ae16",
         "commissionReceivedAmount": 2922.0,
         "commissionReceivedDate": "2025-01-03T00:00:00-06:00",
         "order": 1,
+        "createDate": "2025-01-23T12:08:00-06:00",
+        "changeDate": "2025-01-23T12:08:00-06:00"
+      },
+      {
+        "databaseId": "dfcc8a86-51fc-40bb-b236-2e250a297118",
+        "agencyCommissionDatabaseId": "93f451f0-7547-437a-aa10-bd8b4688ae16",
+        "commissionReceivedAmount": 1443.0,
+        "commissionReceivedDate": "2025-01-03T00:00:00-06:00",
+        "order": 2,
         "createDate": "2025-01-23T12:08:00-06:00",
         "changeDate": "2025-01-23T12:08:00-06:00"
       }
@@ -88942,15 +88968,6 @@
     "changeDate": "2024-11-11T15:40:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "a7ddb256-c0e1-4f4f-bd2b-c62bb2faa1a1",
-        "agencyCommissionDatabaseId": "6434a57d-f49a-48da-8d56-ce3012d23a52",
-        "commissionReceivedAmount": 1394.64,
-        "commissionReceivedDate": "2024-12-17T00:00:00-06:00",
-        "order": 1,
-        "createDate": "2025-01-23T16:50:00-06:00",
-        "changeDate": "2025-01-23T16:50:00-06:00"
-      },
-      {
         "databaseId": "2a2f0d68-ece8-4a3f-a384-c7a476651912",
         "agencyCommissionDatabaseId": "6434a57d-f49a-48da-8d56-ce3012d23a52",
         "commissionReceivedAmount": 774.8,
@@ -88958,6 +88975,15 @@
         "order": 2,
         "createDate": "2025-01-23T16:51:00-06:00",
         "changeDate": "2025-01-23T16:51:00-06:00"
+      },
+      {
+        "databaseId": "a7ddb256-c0e1-4f4f-bd2b-c62bb2faa1a1",
+        "agencyCommissionDatabaseId": "6434a57d-f49a-48da-8d56-ce3012d23a52",
+        "commissionReceivedAmount": 1394.64,
+        "commissionReceivedDate": "2024-12-17T00:00:00-06:00",
+        "order": 1,
+        "createDate": "2025-01-23T16:50:00-06:00",
+        "changeDate": "2025-01-23T16:50:00-06:00"
       }
     ]
   },
@@ -90424,15 +90450,6 @@
     "changeDate": "2024-11-07T07:14:00-06:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "7b7e1f18-ecec-49d9-b36f-2b3b39be5a8b",
-        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
-        "commissionReceivedAmount": 169.12,
-        "commissionReceivedDate": "2025-03-25T00:00:00-05:00",
-        "order": 4,
-        "createDate": "2025-06-03T15:11:00-05:00",
-        "changeDate": "2025-06-03T15:11:00-05:00"
-      },
-      {
         "databaseId": "09545b50-777b-4d13-8655-913a82a6a4b3",
         "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
         "commissionReceivedAmount": 179.88,
@@ -90440,6 +90457,15 @@
         "order": 8,
         "createDate": "2025-08-28T15:43:00-05:00",
         "changeDate": "2025-08-28T15:43:00-05:00"
+      },
+      {
+        "databaseId": "a719d458-5411-4eca-bb60-e812bd23f586",
+        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
+        "commissionReceivedAmount": 377.78,
+        "commissionReceivedDate": "2025-03-04T00:00:00-06:00",
+        "order": 3,
+        "createDate": "2025-06-03T15:11:00-05:00",
+        "changeDate": "2025-06-03T15:11:00-05:00"
       },
       {
         "databaseId": "705d4dcc-df55-41ee-bfde-26bb842a653a",
@@ -90451,24 +90477,6 @@
         "changeDate": "2025-08-13T09:38:00-05:00"
       },
       {
-        "databaseId": "7decab4b-6c86-4faf-8617-862391ff47c4",
-        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
-        "commissionReceivedAmount": 449.7,
-        "commissionReceivedDate": "2024-12-19T00:00:00-06:00",
-        "order": 1,
-        "createDate": "2025-01-23T16:05:00-06:00",
-        "changeDate": "2025-01-23T16:05:00-06:00"
-      },
-      {
-        "databaseId": "2def61d9-c091-4b4a-a049-53ea7903eeef",
-        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
-        "commissionReceivedAmount": 190.64,
-        "commissionReceivedDate": "2025-04-16T00:00:00-05:00",
-        "order": 5,
-        "createDate": "2025-06-03T15:11:00-05:00",
-        "changeDate": "2025-06-03T15:11:00-05:00"
-      },
-      {
         "databaseId": "5b80a562-c94e-4ad1-a84f-ae8c40a43c5f",
         "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
         "commissionReceivedAmount": 179.88,
@@ -90478,11 +90486,47 @@
         "changeDate": "2025-11-13T11:15:00-06:00"
       },
       {
-        "databaseId": "a719d458-5411-4eca-bb60-e812bd23f586",
+        "databaseId": "7decab4b-6c86-4faf-8617-862391ff47c4",
         "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
-        "commissionReceivedAmount": 377.78,
-        "commissionReceivedDate": "2025-03-04T00:00:00-06:00",
-        "order": 3,
+        "commissionReceivedAmount": 449.7,
+        "commissionReceivedDate": "2024-12-19T00:00:00-06:00",
+        "order": 1,
+        "createDate": "2025-01-23T16:05:00-06:00",
+        "changeDate": "2025-01-23T16:05:00-06:00"
+      },
+      {
+        "databaseId": "7b7e1f18-ecec-49d9-b36f-2b3b39be5a8b",
+        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
+        "commissionReceivedAmount": 169.12,
+        "commissionReceivedDate": "2025-03-25T00:00:00-05:00",
+        "order": 4,
+        "createDate": "2025-06-03T15:11:00-05:00",
+        "changeDate": "2025-06-03T15:11:00-05:00"
+      },
+      {
+        "databaseId": "6c0d4146-093e-46c0-8b3c-038eb1055893",
+        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
+        "commissionReceivedAmount": 179.88,
+        "commissionReceivedDate": "2025-10-27T00:00:00-05:00",
+        "order": 10,
+        "createDate": "2025-11-13T11:15:00-06:00",
+        "changeDate": "2025-11-13T11:15:00-06:00"
+      },
+      {
+        "databaseId": "bd96b07d-d4b2-45c4-abb7-d3cf6ff71cd8",
+        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
+        "commissionReceivedAmount": -18.02,
+        "commissionReceivedDate": "2025-01-23T00:00:00-06:00",
+        "order": 2,
+        "createDate": "2025-04-01T17:15:00-05:00",
+        "changeDate": "2025-06-03T15:11:00-05:00"
+      },
+      {
+        "databaseId": "d8c179b8-fa0c-4b48-873b-0a838e382be1",
+        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
+        "commissionReceivedAmount": 179.88,
+        "commissionReceivedDate": "2025-05-15T00:00:00-05:00",
+        "order": 6,
         "createDate": "2025-06-03T15:11:00-05:00",
         "changeDate": "2025-06-03T15:11:00-05:00"
       },
@@ -90496,31 +90540,13 @@
         "changeDate": "2025-10-23T11:59:00-05:00"
       },
       {
-        "databaseId": "d8c179b8-fa0c-4b48-873b-0a838e382be1",
+        "databaseId": "2def61d9-c091-4b4a-a049-53ea7903eeef",
         "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
-        "commissionReceivedAmount": 179.88,
-        "commissionReceivedDate": "2025-05-15T00:00:00-05:00",
-        "order": 6,
+        "commissionReceivedAmount": 190.64,
+        "commissionReceivedDate": "2025-04-16T00:00:00-05:00",
+        "order": 5,
         "createDate": "2025-06-03T15:11:00-05:00",
         "changeDate": "2025-06-03T15:11:00-05:00"
-      },
-      {
-        "databaseId": "bd96b07d-d4b2-45c4-abb7-d3cf6ff71cd8",
-        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
-        "commissionReceivedAmount": -18.02,
-        "commissionReceivedDate": "2025-01-23T00:00:00-06:00",
-        "order": 2,
-        "createDate": "2025-04-01T17:15:00-05:00",
-        "changeDate": "2025-06-03T15:11:00-05:00"
-      },
-      {
-        "databaseId": "6c0d4146-093e-46c0-8b3c-038eb1055893",
-        "agencyCommissionDatabaseId": "a2b05bbd-9fc0-493f-9087-94d3d7eb7a56",
-        "commissionReceivedAmount": 179.88,
-        "commissionReceivedDate": "2025-10-27T00:00:00-05:00",
-        "order": 10,
-        "createDate": "2025-11-13T11:15:00-06:00",
-        "changeDate": "2025-11-13T11:15:00-06:00"
       }
     ]
   },
@@ -95892,20 +95918,20 @@
     "changeDate": "2024-10-08T17:07:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "f0d99f60-64c6-4716-891e-67979bfd81c6",
-        "agencyCommissionDatabaseId": "9c4e4c91-e158-4711-8ccf-a570e8e2429d",
-        "commissionReceivedAmount": 2224.62,
-        "commissionReceivedDate": "2024-10-16T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2024-10-18T09:43:00-05:00",
-        "changeDate": "2024-10-18T09:43:00-05:00"
-      },
-      {
         "databaseId": "916cf939-c5c6-4623-9d95-3abc91439476",
         "agencyCommissionDatabaseId": "9c4e4c91-e158-4711-8ccf-a570e8e2429d",
         "commissionReceivedAmount": 160.02,
         "commissionReceivedDate": "2024-09-06T00:00:00-05:00",
         "order": 2,
+        "createDate": "2024-10-18T09:43:00-05:00",
+        "changeDate": "2024-10-18T09:43:00-05:00"
+      },
+      {
+        "databaseId": "f0d99f60-64c6-4716-891e-67979bfd81c6",
+        "agencyCommissionDatabaseId": "9c4e4c91-e158-4711-8ccf-a570e8e2429d",
+        "commissionReceivedAmount": 2224.62,
+        "commissionReceivedDate": "2024-10-16T00:00:00-05:00",
+        "order": 1,
         "createDate": "2024-10-18T09:43:00-05:00",
         "changeDate": "2024-10-18T09:43:00-05:00"
       }
@@ -111976,15 +112002,6 @@
     "changeDate": "2024-07-23T14:33:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "1543e893-4d89-497f-a517-90f6b43c1893",
-        "agencyCommissionDatabaseId": "06646879-3a61-442a-89c6-abe4faba60b4",
-        "commissionReceivedAmount": -53.75,
-        "commissionReceivedDate": "2024-06-12T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2024-07-23T14:33:00-05:00",
-        "changeDate": "2024-07-23T14:33:00-05:00"
-      },
-      {
         "databaseId": "23803019-4090-4167-baf6-1d31024f5765",
         "agencyCommissionDatabaseId": "06646879-3a61-442a-89c6-abe4faba60b4",
         "commissionReceivedAmount": -53.75,
@@ -111992,6 +112009,15 @@
         "order": 2,
         "createDate": "2024-08-21T14:30:00-05:00",
         "changeDate": "2024-08-21T14:30:00-05:00"
+      },
+      {
+        "databaseId": "1543e893-4d89-497f-a517-90f6b43c1893",
+        "agencyCommissionDatabaseId": "06646879-3a61-442a-89c6-abe4faba60b4",
+        "commissionReceivedAmount": -53.75,
+        "commissionReceivedDate": "2024-06-12T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2024-07-23T14:33:00-05:00",
+        "changeDate": "2024-07-23T14:33:00-05:00"
       }
     ]
   },
@@ -112086,15 +112112,6 @@
     "changeDate": "2024-07-23T14:16:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "dfbbf4f6-37d3-439a-bc24-d3cb9924d4cd",
-        "agencyCommissionDatabaseId": "0e9afc75-c975-4856-8be1-56808ade88ea",
-        "commissionReceivedAmount": -23.89,
-        "commissionReceivedDate": "2024-06-12T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2024-07-23T14:16:00-05:00",
-        "changeDate": "2024-07-23T14:16:00-05:00"
-      },
-      {
         "databaseId": "8560acb3-66f5-4880-9ed3-c2c92977ca2c",
         "agencyCommissionDatabaseId": "0e9afc75-c975-4856-8be1-56808ade88ea",
         "commissionReceivedAmount": -23.89,
@@ -112102,6 +112119,15 @@
         "order": 2,
         "createDate": "2024-08-21T12:31:00-05:00",
         "changeDate": "2024-08-21T12:31:00-05:00"
+      },
+      {
+        "databaseId": "dfbbf4f6-37d3-439a-bc24-d3cb9924d4cd",
+        "agencyCommissionDatabaseId": "0e9afc75-c975-4856-8be1-56808ade88ea",
+        "commissionReceivedAmount": -23.89,
+        "commissionReceivedDate": "2024-06-12T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2024-07-23T14:16:00-05:00",
+        "changeDate": "2024-07-23T14:16:00-05:00"
       }
     ]
   },
@@ -112131,15 +112157,6 @@
     "changeDate": "2024-07-23T14:11:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "f466fb5a-a935-47aa-9c95-77860b823d0c",
-        "agencyCommissionDatabaseId": "ccb22ab3-4fd0-42f4-8089-970c3c8da3a7",
-        "commissionReceivedAmount": -99.72,
-        "commissionReceivedDate": "2024-08-09T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2024-08-21T12:29:00-05:00",
-        "changeDate": "2024-08-21T12:29:00-05:00"
-      },
-      {
         "databaseId": "422151b2-beb5-4c69-aeae-a9e1c6593f1f",
         "agencyCommissionDatabaseId": "ccb22ab3-4fd0-42f4-8089-970c3c8da3a7",
         "commissionReceivedAmount": -99.72,
@@ -112147,6 +112164,15 @@
         "order": 1,
         "createDate": "2024-07-23T14:11:00-05:00",
         "changeDate": "2024-07-23T14:11:00-05:00"
+      },
+      {
+        "databaseId": "f466fb5a-a935-47aa-9c95-77860b823d0c",
+        "agencyCommissionDatabaseId": "ccb22ab3-4fd0-42f4-8089-970c3c8da3a7",
+        "commissionReceivedAmount": -99.72,
+        "commissionReceivedDate": "2024-08-09T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2024-08-21T12:29:00-05:00",
+        "changeDate": "2024-08-21T12:29:00-05:00"
       }
     ]
   },
@@ -112284,21 +112310,21 @@
     "changeDate": "2024-07-23T12:15:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "85f0a415-bdb5-4af9-8cc3-034a561d8b9e",
-        "agencyCommissionDatabaseId": "05d8bb43-101d-4ffe-a7b2-cd537d29b1da",
-        "commissionReceivedAmount": -269.01,
-        "commissionReceivedDate": "2024-06-12T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2024-07-23T12:15:00-05:00",
-        "changeDate": "2024-08-21T12:16:00-05:00"
-      },
-      {
         "databaseId": "8fa3f6f0-660d-4537-81e1-ce32427d13f1",
         "agencyCommissionDatabaseId": "05d8bb43-101d-4ffe-a7b2-cd537d29b1da",
         "commissionReceivedAmount": -265.77,
         "commissionReceivedDate": "2024-08-09T00:00:00-05:00",
         "order": 2,
         "createDate": "2024-08-21T12:16:00-05:00",
+        "changeDate": "2024-08-21T12:16:00-05:00"
+      },
+      {
+        "databaseId": "85f0a415-bdb5-4af9-8cc3-034a561d8b9e",
+        "agencyCommissionDatabaseId": "05d8bb43-101d-4ffe-a7b2-cd537d29b1da",
+        "commissionReceivedAmount": -269.01,
+        "commissionReceivedDate": "2024-06-12T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2024-07-23T12:15:00-05:00",
         "changeDate": "2024-08-21T12:16:00-05:00"
       }
     ]
@@ -112348,15 +112374,6 @@
     "changeDate": "2024-07-23T12:09:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "65ea8c1c-519a-4a85-9f81-54c8448388fc",
-        "agencyCommissionDatabaseId": "84237475-9273-43c3-97c2-f43a0335fbb7",
-        "commissionReceivedAmount": -3014.64,
-        "commissionReceivedDate": "2024-08-09T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2024-08-21T12:10:00-05:00",
-        "changeDate": "2024-08-21T12:10:00-05:00"
-      },
-      {
         "databaseId": "78a983e2-45e8-4a3a-b77a-252fb64d44d5",
         "agencyCommissionDatabaseId": "84237475-9273-43c3-97c2-f43a0335fbb7",
         "commissionReceivedAmount": -3014.64,
@@ -112364,6 +112381,15 @@
         "order": 1,
         "createDate": "2024-07-23T12:09:00-05:00",
         "changeDate": "2024-07-23T12:09:00-05:00"
+      },
+      {
+        "databaseId": "65ea8c1c-519a-4a85-9f81-54c8448388fc",
+        "agencyCommissionDatabaseId": "84237475-9273-43c3-97c2-f43a0335fbb7",
+        "commissionReceivedAmount": -3014.64,
+        "commissionReceivedDate": "2024-08-09T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2024-08-21T12:10:00-05:00",
+        "changeDate": "2024-08-21T12:10:00-05:00"
       }
     ]
   },
@@ -114330,19 +114356,6 @@
     ]
   },
   {
-    "databaseId": "7a389613-7a1e-4453-b11b-4140af6edae7",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 10.0,
-    "endorsementDatabaseId": "33e5a3d3-0285-4bdb-ba62-8f1e66b778b0",
-    "order": 1,
-    "agencyCommissionTypeValue": 2,
-    "agencyCommissionTypeText": "Net",
-    "createDate": "2024-07-05T15:58:00-05:00",
-    "changeDate": "2024-07-05T15:58:00-05:00",
-    "endorsementAgencyCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "92cf967f-8551-4b1a-977d-a46da0a7e0d8",
     "commissionTypeValue": 0,
     "commissionTypeText": "Percent",
@@ -114364,6 +114377,19 @@
         "changeDate": "2024-07-05T15:58:00-05:00"
       }
     ]
+  },
+  {
+    "databaseId": "7a389613-7a1e-4453-b11b-4140af6edae7",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 10.0,
+    "endorsementDatabaseId": "33e5a3d3-0285-4bdb-ba62-8f1e66b778b0",
+    "order": 1,
+    "agencyCommissionTypeValue": 2,
+    "agencyCommissionTypeText": "Net",
+    "createDate": "2024-07-05T15:58:00-05:00",
+    "changeDate": "2024-07-05T15:58:00-05:00",
+    "endorsementAgencyCommissionPaymentDetail": []
   },
   {
     "databaseId": "2cf71aa2-61da-408e-85af-96dda413e767",
@@ -115013,15 +115039,6 @@
     "changeDate": "2024-06-26T17:55:00-05:00",
     "endorsementAgencyCommissionPaymentDetail": [
       {
-        "databaseId": "d730c674-572c-4ee2-9a0d-ee9b3571b799",
-        "agencyCommissionDatabaseId": "c3bcb935-3db0-4fd7-af2a-ef547d3aa8d6",
-        "commissionReceivedAmount": 267.05,
-        "commissionReceivedDate": "2024-09-25T00:00:00-05:00",
-        "order": 4,
-        "createDate": "2024-10-27T14:52:00-05:00",
-        "changeDate": "2024-10-27T14:52:00-05:00"
-      },
-      {
         "databaseId": "42b7d6e3-56e2-4bdd-abee-5129e44b2c23",
         "agencyCommissionDatabaseId": "c3bcb935-3db0-4fd7-af2a-ef547d3aa8d6",
         "commissionReceivedAmount": 110.73,
@@ -115029,6 +115046,15 @@
         "order": 3,
         "createDate": "2024-08-13T16:06:00-05:00",
         "changeDate": "2024-08-13T16:06:00-05:00"
+      },
+      {
+        "databaseId": "57f3f06c-5401-45c6-b3e3-8418ff99c85e",
+        "agencyCommissionDatabaseId": "c3bcb935-3db0-4fd7-af2a-ef547d3aa8d6",
+        "commissionReceivedAmount": 110.73,
+        "commissionReceivedDate": "2024-07-08T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2024-07-26T15:39:00-05:00",
+        "changeDate": "2024-07-26T15:39:00-05:00"
       },
       {
         "databaseId": "c9bd4412-6a58-43ba-a2ad-f6bf2d25f41e",
@@ -115040,13 +115066,13 @@
         "changeDate": "2024-06-26T17:55:00-05:00"
       },
       {
-        "databaseId": "57f3f06c-5401-45c6-b3e3-8418ff99c85e",
+        "databaseId": "d730c674-572c-4ee2-9a0d-ee9b3571b799",
         "agencyCommissionDatabaseId": "c3bcb935-3db0-4fd7-af2a-ef547d3aa8d6",
-        "commissionReceivedAmount": 110.73,
-        "commissionReceivedDate": "2024-07-08T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2024-07-26T15:39:00-05:00",
-        "changeDate": "2024-07-26T15:39:00-05:00"
+        "commissionReceivedAmount": 267.05,
+        "commissionReceivedDate": "2024-09-25T00:00:00-05:00",
+        "order": 4,
+        "createDate": "2024-10-27T14:52:00-05:00",
+        "changeDate": "2024-10-27T14:52:00-05:00"
       }
     ]
   },
