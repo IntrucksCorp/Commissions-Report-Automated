@@ -1,4 +1,4 @@
-from app.api.client import NowCertsClient
+from app.services.nowcerts_client import NowCertsClient
 from app.api.policies import get_policies_map
 
 

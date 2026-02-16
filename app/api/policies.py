@@ -1,5 +1,6 @@
 from typing import Dict
 
+
 def get_policies_map(client) -> Dict[str, dict]:
     """
     Obtiene todas las pólizas desde /PolicyList y construye un mapa:
@@ -19,7 +20,8 @@ def get_policies_map(client) -> Dict[str, dict]:
 
     policies = client.get_all_paginated(
         endpoint="/PolicyList",
-        orderby="changeDate desc"
+        orderby="changeDate desc",
+        top=500
     )
 
     print(f"✅ Se descargaron {len(policies)} pólizas.")

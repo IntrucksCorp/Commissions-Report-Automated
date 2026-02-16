@@ -1,5 +1,50 @@
 [
   {
+    "databaseId": "5ba49fb8-f961-4faa-8d90-4112cec72ef6",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": null,
+    "endorsementDatabaseId": "e603439a-63cf-4e09-9646-219eaa6c1d70",
+    "order": 2,
+    "createDate": "2026-02-16T09:04:00-06:00",
+    "changeDate": "2026-02-16T09:04:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "90f6f500-1390-4f93-9212-0d8395a2fda3",
+    "agentDatabaseId": "d5aa044c-3937-4365-a840-34b5c4b15000",
+    "agentName": "Kelly Vanessa Vahos Rua - Red",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": null,
+    "endorsementDatabaseId": "e603439a-63cf-4e09-9646-219eaa6c1d70",
+    "order": 3,
+    "createDate": "2026-02-16T09:04:00-06:00",
+    "changeDate": "2026-02-16T09:04:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "97ba1cf5-54d0-430d-964a-3586d666520e",
+    "agentDatabaseId": "a0d922d2-54e8-4118-8b7f-800bba420dcf",
+    "agentName": "Laura Galvis",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 10.0,
+    "endorsementDatabaseId": "e603439a-63cf-4e09-9646-219eaa6c1d70",
+    "order": 1,
+    "createDate": "2026-02-16T09:04:00-06:00",
+    "changeDate": "2026-02-16T09:04:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
     "databaseId": "60f78d93-5201-445a-8520-5cbf7583952b",
     "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
     "agentName": "Veronica Espinal - Binders",
@@ -14910,21 +14955,6 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "4bf952fa-23fb-46f5-a0da-51079004d6e9",
-    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
-    "agentName": "Daniel Marin - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 10.0,
-    "endorsementDatabaseId": "1067981d-36ce-455d-ab6e-00930735e653",
-    "order": 2,
-    "createDate": "2026-01-16T14:30:00-06:00",
-    "changeDate": "2026-01-16T14:30:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "9cea78a9-e3a5-4584-9c4a-9b60d6859bf4",
     "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
     "agentName": "Veronica Espinal - Binders",
@@ -14970,32 +15000,17 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "08bdd0b9-b8dc-4cd5-933b-57624bb99449",
-    "agentDatabaseId": "d6f0d1a4-b965-4c0c-809e-d66d66d532a1",
-    "agentName": "Alejandra Cano - RT",
+    "databaseId": "4bf952fa-23fb-46f5-a0da-51079004d6e9",
+    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
+    "agentName": "Daniel Marin - RT",
     "policyCommissionAgentPaymentTypeValue": 1,
     "policyCommissionAgentPaymentTypeText": "From Base Premium",
     "commissionTypeValue": 0,
     "commissionTypeText": "Percent",
-    "commissionValue": 0.1,
-    "endorsementDatabaseId": "ea0d620c-0f9f-4a2b-a9d9-82db1b5f93c8",
-    "order": 4,
-    "createDate": "2026-01-16T14:30:00-06:00",
-    "changeDate": "2026-01-16T14:30:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
-    "databaseId": "cec75c2e-7f44-4208-b8d1-532bff2a7b3d",
-    "agentDatabaseId": "a2d72bb5-1cea-4bf2-8f31-e0585b611af3",
-    "agentName": "Daniela Berrio Barrera - Blue",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.5,
-    "endorsementDatabaseId": "ea0d620c-0f9f-4a2b-a9d9-82db1b5f93c8",
+    "commissionValue": 10.0,
+    "endorsementDatabaseId": "1067981d-36ce-455d-ab6e-00930735e653",
     "order": 2,
-    "createDate": "2026-01-06T09:54:00-06:00",
+    "createDate": "2026-01-16T14:30:00-06:00",
     "changeDate": "2026-01-16T14:30:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
   },
@@ -15041,6 +15056,36 @@
     "endorsementDatabaseId": "ea0d620c-0f9f-4a2b-a9d9-82db1b5f93c8",
     "order": 5,
     "createDate": "2026-01-16T14:30:00-06:00",
+    "changeDate": "2026-01-16T14:30:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "08bdd0b9-b8dc-4cd5-933b-57624bb99449",
+    "agentDatabaseId": "d6f0d1a4-b965-4c0c-809e-d66d66d532a1",
+    "agentName": "Alejandra Cano - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.1,
+    "endorsementDatabaseId": "ea0d620c-0f9f-4a2b-a9d9-82db1b5f93c8",
+    "order": 4,
+    "createDate": "2026-01-16T14:30:00-06:00",
+    "changeDate": "2026-01-16T14:30:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "cec75c2e-7f44-4208-b8d1-532bff2a7b3d",
+    "agentDatabaseId": "a2d72bb5-1cea-4bf2-8f31-e0585b611af3",
+    "agentName": "Daniela Berrio Barrera - Blue",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.5,
+    "endorsementDatabaseId": "ea0d620c-0f9f-4a2b-a9d9-82db1b5f93c8",
+    "order": 2,
+    "createDate": "2026-01-06T09:54:00-06:00",
     "changeDate": "2026-01-16T14:30:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
   },
@@ -29895,21 +29940,6 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "c3c3e81d-5c00-4c87-919d-8fc0461a3f01",
-    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
-    "agentName": "Daniel Marin - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.1,
-    "endorsementDatabaseId": "dd41d4be-b496-4de8-a7b2-259ce6634086",
-    "order": 6,
-    "createDate": "2025-12-04T11:51:00-06:00",
-    "changeDate": "2025-12-04T11:51:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "5499b4e9-5fdc-4490-acfa-c4313a21153a",
     "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
     "agentName": "Juanita Angel - RT",
@@ -29970,33 +30000,18 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "865d529c-2b98-447e-927c-b3d0be2eb44d",
-    "agentDatabaseId": "ec18348a-cd06-486c-a491-7a3df4473020",
-    "agentName": "Julian Sierra - RT",
+    "databaseId": "c3c3e81d-5c00-4c87-919d-8fc0461a3f01",
+    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
+    "agentName": "Daniel Marin - RT",
     "policyCommissionAgentPaymentTypeValue": 1,
     "policyCommissionAgentPaymentTypeText": "From Base Premium",
     "commissionTypeValue": 0,
     "commissionTypeText": "Percent",
     "commissionValue": 0.1,
-    "endorsementDatabaseId": "8b3f8e84-a777-4648-b8a1-d04028f81f00",
-    "order": 4,
-    "createDate": "2025-12-04T11:49:00-06:00",
-    "changeDate": "2025-12-04T11:49:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
-    "databaseId": "19aaf1e9-e797-429f-91ac-6ffda80b6b2a",
-    "agentDatabaseId": "c74b9aef-4e2f-46ac-ad7b-aed2a11355a8",
-    "agentName": "Valentina Cardona - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.1,
-    "endorsementDatabaseId": "8b3f8e84-a777-4648-b8a1-d04028f81f00",
-    "order": 2,
-    "createDate": "2025-12-04T11:49:00-06:00",
-    "changeDate": "2025-12-04T11:49:00-06:00",
+    "endorsementDatabaseId": "dd41d4be-b496-4de8-a7b2-259ce6634086",
+    "order": 6,
+    "createDate": "2025-12-04T11:51:00-06:00",
+    "changeDate": "2025-12-04T11:51:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
@@ -30040,6 +30055,36 @@
     "commissionValue": 0.1,
     "endorsementDatabaseId": "8b3f8e84-a777-4648-b8a1-d04028f81f00",
     "order": 3,
+    "createDate": "2025-12-04T11:49:00-06:00",
+    "changeDate": "2025-12-04T11:49:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "865d529c-2b98-447e-927c-b3d0be2eb44d",
+    "agentDatabaseId": "ec18348a-cd06-486c-a491-7a3df4473020",
+    "agentName": "Julian Sierra - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.1,
+    "endorsementDatabaseId": "8b3f8e84-a777-4648-b8a1-d04028f81f00",
+    "order": 4,
+    "createDate": "2025-12-04T11:49:00-06:00",
+    "changeDate": "2025-12-04T11:49:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "19aaf1e9-e797-429f-91ac-6ffda80b6b2a",
+    "agentDatabaseId": "c74b9aef-4e2f-46ac-ad7b-aed2a11355a8",
+    "agentName": "Valentina Cardona - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.1,
+    "endorsementDatabaseId": "8b3f8e84-a777-4648-b8a1-d04028f81f00",
+    "order": 2,
     "createDate": "2025-12-04T11:49:00-06:00",
     "changeDate": "2025-12-04T11:49:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
@@ -37785,21 +37830,6 @@
     ]
   },
   {
-    "databaseId": "b74f5933-44e1-4397-87bf-52352aa30d06",
-    "agentDatabaseId": "f3dd41c3-403b-4ef7-9ee4-ca245927fd7c",
-    "agentName": "Sebastian Gomez - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "dedf761f-3fef-4ec8-849f-b395178a1940",
-    "order": 5,
-    "createDate": "2025-11-21T11:06:00-06:00",
-    "changeDate": "2025-11-21T11:06:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "ce9c2852-59c1-4d47-bb9f-b8dd24ec1ae6",
     "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
     "agentName": "Veronica Espinal - Binders",
@@ -37875,6 +37905,21 @@
     "commissionValue": 0.05,
     "endorsementDatabaseId": "dedf761f-3fef-4ec8-849f-b395178a1940",
     "order": 4,
+    "createDate": "2025-11-21T11:06:00-06:00",
+    "changeDate": "2025-11-21T11:06:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "b74f5933-44e1-4397-87bf-52352aa30d06",
+    "agentDatabaseId": "f3dd41c3-403b-4ef7-9ee4-ca245927fd7c",
+    "agentName": "Sebastian Gomez - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "dedf761f-3fef-4ec8-849f-b395178a1940",
+    "order": 5,
     "createDate": "2025-11-21T11:06:00-06:00",
     "changeDate": "2025-11-21T11:06:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
@@ -48204,21 +48249,6 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "29f64fb2-66cf-4c66-ab48-db3a08e623b2",
-    "agentDatabaseId": "fab8d432-41b8-4a24-9946-914226551443",
-    "agentName": "Laura Cristina Rojas - Leader Red",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.2,
-    "endorsementDatabaseId": "3b357639-54bc-4ee4-a6c5-7083ba12e75d",
-    "order": 3,
-    "createDate": "2025-10-08T11:02:00-05:00",
-    "changeDate": "2025-11-19T16:11:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "3b880bce-8978-4af2-a608-9412d287c2a2",
     "agentDatabaseId": "0f28f03f-4d26-41fe-9a86-28a1a1c203d2",
     "agentName": "Jonathan Stick Cortes Mosquera - Red",
@@ -48229,6 +48259,21 @@
     "commissionValue": 1.2,
     "endorsementDatabaseId": "3b357639-54bc-4ee4-a6c5-7083ba12e75d",
     "order": 2,
+    "createDate": "2025-10-08T11:02:00-05:00",
+    "changeDate": "2025-11-19T16:11:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "29f64fb2-66cf-4c66-ab48-db3a08e623b2",
+    "agentDatabaseId": "fab8d432-41b8-4a24-9946-914226551443",
+    "agentName": "Laura Cristina Rojas - Leader Red",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.2,
+    "endorsementDatabaseId": "3b357639-54bc-4ee4-a6c5-7083ba12e75d",
+    "order": 3,
     "createDate": "2025-10-08T11:02:00-05:00",
     "changeDate": "2025-11-19T16:11:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
@@ -68852,31 +68897,6 @@
     ]
   },
   {
-    "databaseId": "1a34bf90-03fd-4eaf-9877-51df84d67e3d",
-    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
-    "agentName": "Daniel Marin - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.083,
-    "endorsementDatabaseId": "b7241220-82bb-4904-9dc7-b8a5e409bcc7",
-    "order": 6,
-    "createDate": "2025-07-23T17:29:00-05:00",
-    "changeDate": "2025-10-17T15:53:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "1f4c7ee1-000c-4dc0-97b6-23cff2ad1178",
-        "agentCommissionDatabaseId": "1a34bf90-03fd-4eaf-9877-51df84d67e3d",
-        "commissionReceivedAmount": 29.7,
-        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-10-31T10:28:00-05:00",
-        "changeDate": "2025-10-31T10:28:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "1278077c-8740-4ffe-9750-f7ff9754e32f",
     "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
     "agentName": "Juanita Angel - RT",
@@ -68893,31 +68913,6 @@
       {
         "databaseId": "16797cd0-f0b3-49f7-9b3d-9a358f84a67a",
         "agentCommissionDatabaseId": "1278077c-8740-4ffe-9750-f7ff9754e32f",
-        "commissionReceivedAmount": 29.7,
-        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-10-31T10:28:00-05:00",
-        "changeDate": "2025-10-31T10:28:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "c58ff3e7-9466-4ffc-ae07-6f7fdf71bfcf",
-    "agentDatabaseId": "ec18348a-cd06-486c-a491-7a3df4473020",
-    "agentName": "Julian Sierra - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.083,
-    "endorsementDatabaseId": "b7241220-82bb-4904-9dc7-b8a5e409bcc7",
-    "order": 3,
-    "createDate": "2025-06-19T15:00:00-05:00",
-    "changeDate": "2025-10-17T15:53:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "5575aef1-a4c8-4e7b-a1bf-f10e6487ca5a",
-        "agentCommissionDatabaseId": "c58ff3e7-9466-4ffc-ae07-6f7fdf71bfcf",
         "commissionReceivedAmount": 29.7,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
         "order": 1,
@@ -69002,27 +68997,52 @@
     ]
   },
   {
-    "databaseId": "2c238152-7a74-40af-a97f-e301bef47d58",
+    "databaseId": "1a34bf90-03fd-4eaf-9877-51df84d67e3d",
     "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
     "agentName": "Daniel Marin - RT",
     "policyCommissionAgentPaymentTypeValue": 1,
     "policyCommissionAgentPaymentTypeText": "From Base Premium",
     "commissionTypeValue": 0,
     "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "0af53c97-e4bd-4139-9310-a5d754826a68",
+    "commissionValue": 0.083,
+    "endorsementDatabaseId": "b7241220-82bb-4904-9dc7-b8a5e409bcc7",
     "order": 6,
-    "createDate": "2025-10-17T15:50:00-05:00",
-    "changeDate": "2025-10-17T15:50:00-05:00",
+    "createDate": "2025-07-23T17:29:00-05:00",
+    "changeDate": "2025-10-17T15:53:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "0b4cd8b8-107f-4dcf-a8b7-f85600a0d5c7",
-        "agentCommissionDatabaseId": "2c238152-7a74-40af-a97f-e301bef47d58",
-        "commissionReceivedAmount": 0.59,
+        "databaseId": "1f4c7ee1-000c-4dc0-97b6-23cff2ad1178",
+        "agentCommissionDatabaseId": "1a34bf90-03fd-4eaf-9877-51df84d67e3d",
+        "commissionReceivedAmount": 29.7,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
         "order": 1,
-        "createDate": "2025-10-31T12:25:00-05:00",
-        "changeDate": "2025-10-31T12:25:00-05:00"
+        "createDate": "2025-10-31T10:28:00-05:00",
+        "changeDate": "2025-10-31T10:28:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "c58ff3e7-9466-4ffc-ae07-6f7fdf71bfcf",
+    "agentDatabaseId": "ec18348a-cd06-486c-a491-7a3df4473020",
+    "agentName": "Julian Sierra - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.083,
+    "endorsementDatabaseId": "b7241220-82bb-4904-9dc7-b8a5e409bcc7",
+    "order": 3,
+    "createDate": "2025-06-19T15:00:00-05:00",
+    "changeDate": "2025-10-17T15:53:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "5575aef1-a4c8-4e7b-a1bf-f10e6487ca5a",
+        "agentCommissionDatabaseId": "c58ff3e7-9466-4ffc-ae07-6f7fdf71bfcf",
+        "commissionReceivedAmount": 29.7,
+        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-10-31T10:28:00-05:00",
+        "changeDate": "2025-10-31T10:28:00-05:00"
       }
     ]
   },
@@ -69069,6 +69089,31 @@
         "databaseId": "4747253d-a46f-4fd3-b07a-73a949b1ebd1",
         "agentCommissionDatabaseId": "0e374809-cba7-4670-903e-4044c2a23a64",
         "commissionReceivedAmount": 17.82,
+        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-10-31T12:25:00-05:00",
+        "changeDate": "2025-10-31T12:25:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "2c238152-7a74-40af-a97f-e301bef47d58",
+    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
+    "agentName": "Daniel Marin - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "0af53c97-e4bd-4139-9310-a5d754826a68",
+    "order": 6,
+    "createDate": "2025-10-17T15:50:00-05:00",
+    "changeDate": "2025-10-17T15:50:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "0b4cd8b8-107f-4dcf-a8b7-f85600a0d5c7",
+        "agentCommissionDatabaseId": "2c238152-7a74-40af-a97f-e301bef47d58",
+        "commissionReceivedAmount": 0.59,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-10-31T12:25:00-05:00",
@@ -73426,13 +73471,13 @@
     "changeDate": "2025-10-16T14:34:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "0889f022-0816-4dd1-acd3-184c19f23f1f",
+        "databaseId": "93a25663-6f9d-4380-8f17-99269da89562",
         "agentCommissionDatabaseId": "08eba1a4-a052-4911-b11e-9dcc344e1bba",
-        "commissionReceivedAmount": 11.36,
+        "commissionReceivedAmount": -11.36,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-11-07T10:19:00-06:00",
-        "changeDate": "2025-11-07T10:19:00-06:00"
+        "order": 2,
+        "createDate": "2025-11-07T10:21:00-06:00",
+        "changeDate": "2025-11-07T10:26:00-06:00"
       },
       {
         "databaseId": "a0381fe5-e4d3-4231-92f7-6e49c3326ec9",
@@ -73444,13 +73489,13 @@
         "changeDate": "2025-11-07T10:23:00-06:00"
       },
       {
-        "databaseId": "93a25663-6f9d-4380-8f17-99269da89562",
+        "databaseId": "0889f022-0816-4dd1-acd3-184c19f23f1f",
         "agentCommissionDatabaseId": "08eba1a4-a052-4911-b11e-9dcc344e1bba",
-        "commissionReceivedAmount": -11.36,
+        "commissionReceivedAmount": 11.36,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-11-07T10:21:00-06:00",
-        "changeDate": "2025-11-07T10:26:00-06:00"
+        "order": 1,
+        "createDate": "2025-11-07T10:19:00-06:00",
+        "changeDate": "2025-11-07T10:19:00-06:00"
       }
     ]
   },
@@ -73469,13 +73514,13 @@
     "changeDate": "2025-10-16T14:34:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "c1206c3b-de1d-4491-b8f4-6238b37fc8b5",
+        "databaseId": "9948dba4-d9a1-4663-9f17-a98dd0003602",
         "agentCommissionDatabaseId": "b1d4807b-b382-49c0-82a3-06be6307ea50",
-        "commissionReceivedAmount": 0.32,
+        "commissionReceivedAmount": -0.32,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-11-07T10:16:00-06:00",
-        "changeDate": "2025-11-07T10:16:00-06:00"
+        "order": 2,
+        "createDate": "2025-11-07T10:21:00-06:00",
+        "changeDate": "2025-11-07T10:26:00-06:00"
       },
       {
         "databaseId": "b898f4ae-bdb1-4e69-b574-8d69325d74da",
@@ -73487,13 +73532,13 @@
         "changeDate": "2025-11-07T10:23:00-06:00"
       },
       {
-        "databaseId": "9948dba4-d9a1-4663-9f17-a98dd0003602",
+        "databaseId": "c1206c3b-de1d-4491-b8f4-6238b37fc8b5",
         "agentCommissionDatabaseId": "b1d4807b-b382-49c0-82a3-06be6307ea50",
-        "commissionReceivedAmount": -0.32,
+        "commissionReceivedAmount": 0.32,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-11-07T10:21:00-06:00",
-        "changeDate": "2025-11-07T10:26:00-06:00"
+        "order": 1,
+        "createDate": "2025-11-07T10:16:00-06:00",
+        "changeDate": "2025-11-07T10:16:00-06:00"
       }
     ]
   },
@@ -73570,13 +73615,13 @@
     "changeDate": "2025-10-16T14:34:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "7dcdb102-1a31-44d8-b443-6ec4734b1255",
+        "databaseId": "1ec6b323-0abd-41e9-b1f1-f7f46514b94a",
         "agentCommissionDatabaseId": "a5642c95-c363-4c97-8124-086aa4b0feb4",
-        "commissionReceivedAmount": 0.32,
+        "commissionReceivedAmount": -0.32,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-11-07T10:19:00-06:00",
-        "changeDate": "2025-11-07T10:19:00-06:00"
+        "order": 2,
+        "createDate": "2025-11-07T10:21:00-06:00",
+        "changeDate": "2025-11-07T10:26:00-06:00"
       },
       {
         "databaseId": "e3837bd0-1b93-449b-80e7-d1e7d4384a1a",
@@ -73588,13 +73633,13 @@
         "changeDate": "2025-11-07T10:23:00-06:00"
       },
       {
-        "databaseId": "1ec6b323-0abd-41e9-b1f1-f7f46514b94a",
+        "databaseId": "7dcdb102-1a31-44d8-b443-6ec4734b1255",
         "agentCommissionDatabaseId": "a5642c95-c363-4c97-8124-086aa4b0feb4",
-        "commissionReceivedAmount": -0.32,
+        "commissionReceivedAmount": 0.32,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-11-07T10:21:00-06:00",
-        "changeDate": "2025-11-07T10:26:00-06:00"
+        "order": 1,
+        "createDate": "2025-11-07T10:19:00-06:00",
+        "changeDate": "2025-11-07T10:19:00-06:00"
       }
     ]
   },
@@ -80374,31 +80419,6 @@
     ]
   },
   {
-    "databaseId": "43f57c29-5521-431c-8d87-aa8cff9aea4c",
-    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
-    "agentName": "Veronica Espinal - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 2.0,
-    "endorsementDatabaseId": "977c6d25-8bb2-4adc-b822-df296998ebdb",
-    "order": 2,
-    "createDate": "2025-09-15T11:38:00-05:00",
-    "changeDate": "2025-10-15T11:39:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "eafae318-9684-4833-b775-30de41c4a66a",
-        "agentCommissionDatabaseId": "43f57c29-5521-431c-8d87-aa8cff9aea4c",
-        "commissionReceivedAmount": 23.76,
-        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-11-05T15:46:00-06:00",
-        "changeDate": "2025-11-05T15:46:00-06:00"
-      }
-    ]
-  },
-  {
     "databaseId": "a2071d2f-b151-43a9-8bc1-ea9feaad18d9",
     "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
     "agentName": "Juanita Angel - RT",
@@ -80466,6 +80486,31 @@
         "databaseId": "067becc4-8e55-4260-a5d4-4933e14f744e",
         "agentCommissionDatabaseId": "603b7bad-40fc-41c9-84a3-6bf693fac729",
         "commissionReceivedAmount": 11.0,
+        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-11-05T15:46:00-06:00",
+        "changeDate": "2025-11-05T15:46:00-06:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "43f57c29-5521-431c-8d87-aa8cff9aea4c",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 2.0,
+    "endorsementDatabaseId": "977c6d25-8bb2-4adc-b822-df296998ebdb",
+    "order": 2,
+    "createDate": "2025-09-15T11:38:00-05:00",
+    "changeDate": "2025-10-15T11:39:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "eafae318-9684-4833-b775-30de41c4a66a",
+        "agentCommissionDatabaseId": "43f57c29-5521-431c-8d87-aa8cff9aea4c",
+        "commissionReceivedAmount": 23.76,
         "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-11-05T15:46:00-06:00",
@@ -91569,21 +91614,6 @@
     ]
   },
   {
-    "databaseId": "60c62bc7-01c9-43d8-b860-353407858973",
-    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
-    "agentName": "Veronica Espinal - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 2.0,
-    "endorsementDatabaseId": "79eda497-e3b5-4d16-ad3d-58fd02b0c95c",
-    "order": 2,
-    "createDate": "2025-09-15T10:29:00-05:00",
-    "changeDate": "2025-10-14T11:03:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "d4ee84db-493b-4972-aa06-07f767e25b38",
     "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
     "agentName": "Daniel Marin - RT",
@@ -91644,36 +91674,6 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "91cee0a7-15ce-4d17-ac7f-ceade06c9f50",
-    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
-    "agentName": "Ana Milena Guzman Calad - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "79eda497-e3b5-4d16-ad3d-58fd02b0c95c",
-    "order": 10,
-    "createDate": "2025-10-14T11:03:00-05:00",
-    "changeDate": "2025-10-14T11:03:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
-    "databaseId": "0571f53d-a53b-4314-afa2-7914a33a1c65",
-    "agentDatabaseId": "c74b9aef-4e2f-46ac-ad7b-aed2a11355a8",
-    "agentName": "Valentina Cardona - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.083,
-    "endorsementDatabaseId": "79eda497-e3b5-4d16-ad3d-58fd02b0c95c",
-    "order": 5,
-    "createDate": "2025-10-14T11:03:00-05:00",
-    "changeDate": "2025-10-14T11:03:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "4d29d92e-64df-4832-a795-3674f50b3890",
     "agentDatabaseId": "f3dd41c3-403b-4ef7-9ee4-ca245927fd7c",
     "agentName": "Sebastian Gomez - RT",
@@ -91699,6 +91699,51 @@
     "commissionValue": 0.05,
     "endorsementDatabaseId": "79eda497-e3b5-4d16-ad3d-58fd02b0c95c",
     "order": 6,
+    "createDate": "2025-10-14T11:03:00-05:00",
+    "changeDate": "2025-10-14T11:03:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "60c62bc7-01c9-43d8-b860-353407858973",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 2.0,
+    "endorsementDatabaseId": "79eda497-e3b5-4d16-ad3d-58fd02b0c95c",
+    "order": 2,
+    "createDate": "2025-09-15T10:29:00-05:00",
+    "changeDate": "2025-10-14T11:03:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "91cee0a7-15ce-4d17-ac7f-ceade06c9f50",
+    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
+    "agentName": "Ana Milena Guzman Calad - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "79eda497-e3b5-4d16-ad3d-58fd02b0c95c",
+    "order": 10,
+    "createDate": "2025-10-14T11:03:00-05:00",
+    "changeDate": "2025-10-14T11:03:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "0571f53d-a53b-4314-afa2-7914a33a1c65",
+    "agentDatabaseId": "c74b9aef-4e2f-46ac-ad7b-aed2a11355a8",
+    "agentName": "Valentina Cardona - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.083,
+    "endorsementDatabaseId": "79eda497-e3b5-4d16-ad3d-58fd02b0c95c",
+    "order": 5,
     "createDate": "2025-10-14T11:03:00-05:00",
     "changeDate": "2025-10-14T11:03:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": []
@@ -100514,21 +100559,6 @@
     ]
   },
   {
-    "databaseId": "257295fe-e1a0-4beb-bce3-24d505e6b466",
-    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
-    "agentName": "Veronica Espinal - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 2.0,
-    "endorsementDatabaseId": "1387f756-0021-43e2-8f1b-4f5668042c9a",
-    "order": 2,
-    "createDate": "2025-09-29T14:49:00-05:00",
-    "changeDate": "2025-09-29T14:49:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "e6d4dbb8-2e4a-42a1-af60-c5bfc5350eb1",
     "agentDatabaseId": "7418adfd-2e77-42fc-8f63-07add4f3341e",
     "agentName": "Jose Giraldo - Binders",
@@ -100539,6 +100569,21 @@
     "commissionValue": 15.0,
     "endorsementDatabaseId": "1387f756-0021-43e2-8f1b-4f5668042c9a",
     "order": 1,
+    "createDate": "2025-09-29T14:49:00-05:00",
+    "changeDate": "2025-09-29T14:49:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "257295fe-e1a0-4beb-bce3-24d505e6b466",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 2.0,
+    "endorsementDatabaseId": "1387f756-0021-43e2-8f1b-4f5668042c9a",
+    "order": 2,
     "createDate": "2025-09-29T14:49:00-05:00",
     "changeDate": "2025-09-29T14:49:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": []
@@ -121536,31 +121581,6 @@
     ]
   },
   {
-    "databaseId": "43642d73-195a-450b-8f37-ae6a7b431064",
-    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
-    "agentName": "Daniel Marin - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "8bdad2d0-9259-4f77-a65f-f15f73046237",
-    "order": 6,
-    "createDate": "2025-09-16T08:37:00-05:00",
-    "changeDate": "2025-09-16T08:37:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "ce2c130f-c73f-407a-81bc-2917f7247f25",
-        "agentCommissionDatabaseId": "43642d73-195a-450b-8f37-ae6a7b431064",
-        "commissionReceivedAmount": -2.66,
-        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-10-01T12:43:00-05:00",
-        "changeDate": "2025-10-01T12:43:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "e24b6987-590e-4177-b465-5fa72d236d59",
     "agentDatabaseId": "a22c25d1-b3c4-4804-8ce2-7d54189127a0",
     "agentName": "Maria Paulina Palacios - RT",
@@ -121577,31 +121597,6 @@
       {
         "databaseId": "04880051-a10b-472c-92e7-062d4b9b8af1",
         "agentCommissionDatabaseId": "e24b6987-590e-4177-b465-5fa72d236d59",
-        "commissionReceivedAmount": -2.66,
-        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-10-01T12:43:00-05:00",
-        "changeDate": "2025-10-01T12:43:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "003d534e-29c8-4c27-8568-bb4386c08e72",
-    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
-    "agentName": "Ana Milena Guzman Calad - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "8bdad2d0-9259-4f77-a65f-f15f73046237",
-    "order": 7,
-    "createDate": "2025-09-16T08:37:00-05:00",
-    "changeDate": "2025-09-16T08:37:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "142ed1a9-f50f-4c8c-806b-68b8a2b483c1",
-        "agentCommissionDatabaseId": "003d534e-29c8-4c27-8568-bb4386c08e72",
         "commissionReceivedAmount": -2.66,
         "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
         "order": 1,
@@ -121686,27 +121681,52 @@
     ]
   },
   {
-    "databaseId": "a4c08da1-0d43-42b2-948c-4f43c803ccb5",
-    "agentDatabaseId": "f3dd41c3-403b-4ef7-9ee4-ca245927fd7c",
-    "agentName": "Sebastian Gomez - RT",
+    "databaseId": "43642d73-195a-450b-8f37-ae6a7b431064",
+    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
+    "agentName": "Daniel Marin - RT",
     "policyCommissionAgentPaymentTypeValue": 1,
     "policyCommissionAgentPaymentTypeText": "From Base Premium",
     "commissionTypeValue": 0,
     "commissionTypeText": "Percent",
     "commissionValue": 0.05,
-    "endorsementDatabaseId": "50c04e2a-3e5e-4b60-b161-304405a60fb3",
-    "order": 3,
-    "createDate": "2025-08-11T14:03:00-05:00",
-    "changeDate": "2025-09-16T08:36:00-05:00",
+    "endorsementDatabaseId": "8bdad2d0-9259-4f77-a65f-f15f73046237",
+    "order": 6,
+    "createDate": "2025-09-16T08:37:00-05:00",
+    "changeDate": "2025-09-16T08:37:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "c870da34-8f31-495c-824b-7e8d6857c0c5",
-        "agentCommissionDatabaseId": "a4c08da1-0d43-42b2-948c-4f43c803ccb5",
-        "commissionReceivedAmount": 2.87,
+        "databaseId": "ce2c130f-c73f-407a-81bc-2917f7247f25",
+        "agentCommissionDatabaseId": "43642d73-195a-450b-8f37-ae6a7b431064",
+        "commissionReceivedAmount": -2.66,
         "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
         "order": 1,
-        "createDate": "2025-10-01T12:42:00-05:00",
-        "changeDate": "2025-10-01T12:42:00-05:00"
+        "createDate": "2025-10-01T12:43:00-05:00",
+        "changeDate": "2025-10-01T12:43:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "003d534e-29c8-4c27-8568-bb4386c08e72",
+    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
+    "agentName": "Ana Milena Guzman Calad - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "8bdad2d0-9259-4f77-a65f-f15f73046237",
+    "order": 7,
+    "createDate": "2025-09-16T08:37:00-05:00",
+    "changeDate": "2025-09-16T08:37:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "142ed1a9-f50f-4c8c-806b-68b8a2b483c1",
+        "agentCommissionDatabaseId": "003d534e-29c8-4c27-8568-bb4386c08e72",
+        "commissionReceivedAmount": -2.66,
+        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-10-01T12:43:00-05:00",
+        "changeDate": "2025-10-01T12:43:00-05:00"
       }
     ]
   },
@@ -121802,6 +121822,31 @@
       {
         "databaseId": "c0d064d9-00d8-41a5-aec2-04ec4b7e4880",
         "agentCommissionDatabaseId": "876155bb-c101-4386-a63b-2edf08d210cb",
+        "commissionReceivedAmount": 2.87,
+        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-10-01T12:42:00-05:00",
+        "changeDate": "2025-10-01T12:42:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "a4c08da1-0d43-42b2-948c-4f43c803ccb5",
+    "agentDatabaseId": "f3dd41c3-403b-4ef7-9ee4-ca245927fd7c",
+    "agentName": "Sebastian Gomez - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "50c04e2a-3e5e-4b60-b161-304405a60fb3",
+    "order": 3,
+    "createDate": "2025-08-11T14:03:00-05:00",
+    "changeDate": "2025-09-16T08:36:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "c870da34-8f31-495c-824b-7e8d6857c0c5",
+        "agentCommissionDatabaseId": "a4c08da1-0d43-42b2-948c-4f43c803ccb5",
         "commissionReceivedAmount": 2.87,
         "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
         "order": 1,
@@ -122354,15 +122399,6 @@
     "changeDate": "2025-09-15T16:31:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "50200996-5ce6-4df4-a9f5-45e5a83eeaa1",
-        "agentCommissionDatabaseId": "dcba5a81-f52b-4961-be76-c4c00242d946",
-        "commissionReceivedAmount": -0.01,
-        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-11-07T13:54:00-06:00",
-        "changeDate": "2025-11-07T13:54:00-06:00"
-      },
-      {
         "databaseId": "3fcf0e68-be8b-4b5a-923d-8ec03a7a4b02",
         "agentCommissionDatabaseId": "dcba5a81-f52b-4961-be76-c4c00242d946",
         "commissionReceivedAmount": 9.86,
@@ -122370,6 +122406,15 @@
         "order": 1,
         "createDate": "2025-10-06T09:47:00-05:00",
         "changeDate": "2025-10-06T09:47:00-05:00"
+      },
+      {
+        "databaseId": "50200996-5ce6-4df4-a9f5-45e5a83eeaa1",
+        "agentCommissionDatabaseId": "dcba5a81-f52b-4961-be76-c4c00242d946",
+        "commissionReceivedAmount": -0.01,
+        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2025-11-07T13:54:00-06:00",
+        "changeDate": "2025-11-07T13:54:00-06:00"
       }
     ]
   },
@@ -122388,15 +122433,6 @@
     "changeDate": "2025-09-15T16:31:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "1e7d5e17-74cb-489f-b474-6d8ff9f8df31",
-        "agentCommissionDatabaseId": "47bac03b-ad3e-4f9c-a116-8a742a677b38",
-        "commissionReceivedAmount": -0.01,
-        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-11-07T13:54:00-06:00",
-        "changeDate": "2025-11-07T13:54:00-06:00"
-      },
-      {
         "databaseId": "c0e17dc0-7bdf-498e-b4da-8095e040c737",
         "agentCommissionDatabaseId": "47bac03b-ad3e-4f9c-a116-8a742a677b38",
         "commissionReceivedAmount": 9.86,
@@ -122404,6 +122440,15 @@
         "order": 1,
         "createDate": "2025-10-06T09:47:00-05:00",
         "changeDate": "2025-10-06T09:47:00-05:00"
+      },
+      {
+        "databaseId": "1e7d5e17-74cb-489f-b474-6d8ff9f8df31",
+        "agentCommissionDatabaseId": "47bac03b-ad3e-4f9c-a116-8a742a677b38",
+        "commissionReceivedAmount": -0.01,
+        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2025-11-07T13:54:00-06:00",
+        "changeDate": "2025-11-07T13:54:00-06:00"
       }
     ]
   },
@@ -133697,81 +133742,6 @@
     ]
   },
   {
-    "databaseId": "1bed1c6f-abac-4e4b-bfd6-0980dfc905e8",
-    "agentDatabaseId": "a22c25d1-b3c4-4804-8ce2-7d54189127a0",
-    "agentName": "Maria Paulina Palacios - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "ca79c527-b70b-4db7-a505-403c421f7986",
-    "order": 7,
-    "createDate": "2025-09-12T09:34:00-05:00",
-    "changeDate": "2025-09-12T09:34:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "81be703c-c7c8-44ff-a5ab-a98fc1dd7fdc",
-        "agentCommissionDatabaseId": "1bed1c6f-abac-4e4b-bfd6-0980dfc905e8",
-        "commissionReceivedAmount": 1.18,
-        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-10-02T17:01:00-05:00",
-        "changeDate": "2025-10-02T17:01:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "9a11fca2-d400-4d43-bda4-025a29d536e6",
-    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
-    "agentName": "Ana Milena Guzman Calad - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "ca79c527-b70b-4db7-a505-403c421f7986",
-    "order": 3,
-    "createDate": "2025-09-05T11:12:00-05:00",
-    "changeDate": "2025-09-12T09:34:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "f62b94e9-7904-4764-b805-650bcc6eba72",
-        "agentCommissionDatabaseId": "9a11fca2-d400-4d43-bda4-025a29d536e6",
-        "commissionReceivedAmount": 1.18,
-        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-10-02T17:01:00-05:00",
-        "changeDate": "2025-10-02T17:01:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "5518ab4d-5a68-439f-b35c-ccbc6a51e3fe",
-    "agentDatabaseId": "d6f0d1a4-b965-4c0c-809e-d66d66d532a1",
-    "agentName": "Alejandra Cano - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "ca79c527-b70b-4db7-a505-403c421f7986",
-    "order": 6,
-    "createDate": "2025-09-12T09:34:00-05:00",
-    "changeDate": "2025-09-12T09:34:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "2ede401c-5508-4c6d-97f1-f770a96dff61",
-        "agentCommissionDatabaseId": "5518ab4d-5a68-439f-b35c-ccbc6a51e3fe",
-        "commissionReceivedAmount": 1.18,
-        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-10-02T17:01:00-05:00",
-        "changeDate": "2025-10-02T17:01:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "54fd2918-116c-48ce-a401-50ca87afc2b1",
     "agentDatabaseId": "1fb3395b-486e-4cfb-a026-e7a7b0512d2c",
     "agentName": "Laura Cifuentes",
@@ -133822,6 +133792,56 @@
     ]
   },
   {
+    "databaseId": "1bed1c6f-abac-4e4b-bfd6-0980dfc905e8",
+    "agentDatabaseId": "a22c25d1-b3c4-4804-8ce2-7d54189127a0",
+    "agentName": "Maria Paulina Palacios - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "ca79c527-b70b-4db7-a505-403c421f7986",
+    "order": 7,
+    "createDate": "2025-09-12T09:34:00-05:00",
+    "changeDate": "2025-09-12T09:34:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "81be703c-c7c8-44ff-a5ab-a98fc1dd7fdc",
+        "agentCommissionDatabaseId": "1bed1c6f-abac-4e4b-bfd6-0980dfc905e8",
+        "commissionReceivedAmount": 1.18,
+        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-10-02T17:01:00-05:00",
+        "changeDate": "2025-10-02T17:01:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "9a11fca2-d400-4d43-bda4-025a29d536e6",
+    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
+    "agentName": "Ana Milena Guzman Calad - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "ca79c527-b70b-4db7-a505-403c421f7986",
+    "order": 3,
+    "createDate": "2025-09-05T11:12:00-05:00",
+    "changeDate": "2025-09-12T09:34:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "f62b94e9-7904-4764-b805-650bcc6eba72",
+        "agentCommissionDatabaseId": "9a11fca2-d400-4d43-bda4-025a29d536e6",
+        "commissionReceivedAmount": 1.18,
+        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-10-02T17:01:00-05:00",
+        "changeDate": "2025-10-02T17:01:00-05:00"
+      }
+    ]
+  },
+  {
     "databaseId": "0f4cd99c-2d99-4450-9d33-e232cbd25067",
     "agentDatabaseId": "f3dd41c3-403b-4ef7-9ee4-ca245927fd7c",
     "agentName": "Sebastian Gomez - RT",
@@ -133838,6 +133858,31 @@
       {
         "databaseId": "e704295c-f845-477f-b03a-a89f5016f49d",
         "agentCommissionDatabaseId": "0f4cd99c-2d99-4450-9d33-e232cbd25067",
+        "commissionReceivedAmount": 1.18,
+        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-10-02T17:01:00-05:00",
+        "changeDate": "2025-10-02T17:01:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "5518ab4d-5a68-439f-b35c-ccbc6a51e3fe",
+    "agentDatabaseId": "d6f0d1a4-b965-4c0c-809e-d66d66d532a1",
+    "agentName": "Alejandra Cano - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "ca79c527-b70b-4db7-a505-403c421f7986",
+    "order": 6,
+    "createDate": "2025-09-12T09:34:00-05:00",
+    "changeDate": "2025-09-12T09:34:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "2ede401c-5508-4c6d-97f1-f770a96dff61",
+        "agentCommissionDatabaseId": "5518ab4d-5a68-439f-b35c-ccbc6a51e3fe",
         "commissionReceivedAmount": 1.18,
         "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
         "order": 1,
@@ -144885,21 +144930,6 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "c6dad8bb-a99f-45ce-9851-dd2a80636115",
-    "agentDatabaseId": "7418adfd-2e77-42fc-8f63-07add4f3341e",
-    "agentName": "Jose Giraldo - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 15.0,
-    "endorsementDatabaseId": "89a311b7-0e28-46b2-a41e-a4064612aaa3",
-    "order": 1,
-    "createDate": "2025-08-26T15:38:00-05:00",
-    "changeDate": "2025-08-26T15:38:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "d17bd8d6-a088-488a-8b08-1190d7cca02b",
     "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
     "agentName": "Veronica Espinal - Binders",
@@ -144910,6 +144940,21 @@
     "commissionValue": 15.0,
     "endorsementDatabaseId": "89a311b7-0e28-46b2-a41e-a4064612aaa3",
     "order": 2,
+    "createDate": "2025-08-26T15:38:00-05:00",
+    "changeDate": "2025-08-26T15:38:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "c6dad8bb-a99f-45ce-9851-dd2a80636115",
+    "agentDatabaseId": "7418adfd-2e77-42fc-8f63-07add4f3341e",
+    "agentName": "Jose Giraldo - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 15.0,
+    "endorsementDatabaseId": "89a311b7-0e28-46b2-a41e-a4064612aaa3",
+    "order": 1,
     "createDate": "2025-08-26T15:38:00-05:00",
     "changeDate": "2025-08-26T15:38:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": []
@@ -168654,74 +168699,6 @@
     ]
   },
   {
-    "databaseId": "c0b24a9d-34af-492d-bec4-483c67e14869",
-    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
-    "agentName": "Veronica Espinal - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 2.0,
-    "endorsementDatabaseId": "c1e61d79-6974-4c9c-9912-139ed7ebff45",
-    "order": 2,
-    "createDate": "2025-08-19T11:34:00-05:00",
-    "changeDate": "2025-08-19T11:34:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "ae1c72a9-5f0b-44aa-991c-33b0c3d51378",
-        "agentCommissionDatabaseId": "c0b24a9d-34af-492d-bec4-483c67e14869",
-        "commissionReceivedAmount": -0.04,
-        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-11-07T13:54:00-06:00",
-        "changeDate": "2025-11-07T13:54:00-06:00"
-      },
-      {
-        "databaseId": "22536289-eba1-411f-b708-8ade7391ca59",
-        "agentCommissionDatabaseId": "c0b24a9d-34af-492d-bec4-483c67e14869",
-        "commissionReceivedAmount": 39.44,
-        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-10-06T09:47:00-05:00",
-        "changeDate": "2025-10-06T09:47:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "cfcaf3ea-338c-41f5-a87c-4840a31632bf",
-    "agentDatabaseId": "7418adfd-2e77-42fc-8f63-07add4f3341e",
-    "agentName": "Jose Giraldo - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 15.0,
-    "endorsementDatabaseId": "c1e61d79-6974-4c9c-9912-139ed7ebff45",
-    "order": 1,
-    "createDate": "2025-08-19T11:34:00-05:00",
-    "changeDate": "2025-08-19T11:34:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "e873574c-0f80-4439-af1c-4a341f777dd4",
-        "agentCommissionDatabaseId": "cfcaf3ea-338c-41f5-a87c-4840a31632bf",
-        "commissionReceivedAmount": -0.34,
-        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-11-07T13:54:00-06:00",
-        "changeDate": "2025-11-07T13:54:00-06:00"
-      },
-      {
-        "databaseId": "19fc5182-ed46-49fd-90ff-5c8a739c2022",
-        "agentCommissionDatabaseId": "cfcaf3ea-338c-41f5-a87c-4840a31632bf",
-        "commissionReceivedAmount": 295.84,
-        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-10-06T09:47:00-05:00",
-        "changeDate": "2025-10-06T09:47:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "08ff947d-0640-4ac4-8f0e-f839aeef8c4e",
     "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
     "agentName": "Daniel Marin - RT",
@@ -168847,27 +168824,70 @@
     ]
   },
   {
-    "databaseId": "59679a86-3505-4441-b1e7-ab512501ca44",
-    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
-    "agentName": "Ana Milena Guzman Calad - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "databaseId": "c0b24a9d-34af-492d-bec4-483c67e14869",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
     "commissionTypeValue": 0,
     "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "d1df313c-0877-4cf8-a44f-88e33cdb9864",
+    "commissionValue": 2.0,
+    "endorsementDatabaseId": "c1e61d79-6974-4c9c-9912-139ed7ebff45",
     "order": 2,
-    "createDate": "2025-08-11T15:33:00-05:00",
-    "changeDate": "2025-08-19T11:32:00-05:00",
+    "createDate": "2025-08-19T11:34:00-05:00",
+    "changeDate": "2025-08-19T11:34:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "409ac45b-dce5-4eb3-8e46-53fad6a6e976",
-        "agentCommissionDatabaseId": "59679a86-3505-4441-b1e7-ab512501ca44",
-        "commissionReceivedAmount": 0.0,
-        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
+        "databaseId": "ae1c72a9-5f0b-44aa-991c-33b0c3d51378",
+        "agentCommissionDatabaseId": "c0b24a9d-34af-492d-bec4-483c67e14869",
+        "commissionReceivedAmount": -0.04,
+        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2025-11-07T13:54:00-06:00",
+        "changeDate": "2025-11-07T13:54:00-06:00"
+      },
+      {
+        "databaseId": "22536289-eba1-411f-b708-8ade7391ca59",
+        "agentCommissionDatabaseId": "c0b24a9d-34af-492d-bec4-483c67e14869",
+        "commissionReceivedAmount": 39.44,
+        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
         "order": 1,
-        "createDate": "2025-09-04T11:02:00-05:00",
-        "changeDate": "2025-09-04T11:02:00-05:00"
+        "createDate": "2025-10-06T09:47:00-05:00",
+        "changeDate": "2025-10-06T09:47:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "cfcaf3ea-338c-41f5-a87c-4840a31632bf",
+    "agentDatabaseId": "7418adfd-2e77-42fc-8f63-07add4f3341e",
+    "agentName": "Jose Giraldo - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 15.0,
+    "endorsementDatabaseId": "c1e61d79-6974-4c9c-9912-139ed7ebff45",
+    "order": 1,
+    "createDate": "2025-08-19T11:34:00-05:00",
+    "changeDate": "2025-08-19T11:34:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "e873574c-0f80-4439-af1c-4a341f777dd4",
+        "agentCommissionDatabaseId": "cfcaf3ea-338c-41f5-a87c-4840a31632bf",
+        "commissionReceivedAmount": -0.34,
+        "commissionReceivedDate": "2025-10-30T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2025-11-07T13:54:00-06:00",
+        "changeDate": "2025-11-07T13:54:00-06:00"
+      },
+      {
+        "databaseId": "19fc5182-ed46-49fd-90ff-5c8a739c2022",
+        "agentCommissionDatabaseId": "cfcaf3ea-338c-41f5-a87c-4840a31632bf",
+        "commissionReceivedAmount": 295.84,
+        "commissionReceivedDate": "2025-09-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-10-06T09:47:00-05:00",
+        "changeDate": "2025-10-06T09:47:00-05:00"
       }
     ]
   },
@@ -168913,6 +168933,31 @@
       {
         "databaseId": "cb1bfd9e-da5e-4aeb-bfb9-1bc56fc2ba40",
         "agentCommissionDatabaseId": "64aa7820-2587-4f5a-b959-5047d1d32fc4",
+        "commissionReceivedAmount": 0.0,
+        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-09-04T11:02:00-05:00",
+        "changeDate": "2025-09-04T11:02:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "59679a86-3505-4441-b1e7-ab512501ca44",
+    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
+    "agentName": "Ana Milena Guzman Calad - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "d1df313c-0877-4cf8-a44f-88e33cdb9864",
+    "order": 2,
+    "createDate": "2025-08-11T15:33:00-05:00",
+    "changeDate": "2025-08-19T11:32:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "409ac45b-dce5-4eb3-8e46-53fad6a6e976",
+        "agentCommissionDatabaseId": "59679a86-3505-4441-b1e7-ab512501ca44",
         "commissionReceivedAmount": 0.0,
         "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
         "order": 1,
@@ -176729,7 +176774,7 @@
     "changeDate": "2025-08-11T11:52:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "76bdf49f-fdf4-46e0-9384-80507d0e3be2",
+        "databaseId": "5310ac98-9ce9-4452-8d0c-ffffd26c0e52",
         "agentCommissionDatabaseId": "41d59a2d-4296-4459-8cfb-d68ae2ac6753",
         "commissionReceivedAmount": 35.0,
         "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
@@ -176738,7 +176783,7 @@
         "changeDate": "2025-09-04T12:39:00-05:00"
       },
       {
-        "databaseId": "5310ac98-9ce9-4452-8d0c-ffffd26c0e52",
+        "databaseId": "76bdf49f-fdf4-46e0-9384-80507d0e3be2",
         "agentCommissionDatabaseId": "41d59a2d-4296-4459-8cfb-d68ae2ac6753",
         "commissionReceivedAmount": 35.0,
         "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
@@ -189794,15 +189839,6 @@
     "changeDate": "2025-07-24T09:14:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "ded56568-3ebe-4f38-b028-e7dc6b6e42fa",
-        "agentCommissionDatabaseId": "8717211d-1041-4047-8a29-b7540d97e245",
-        "commissionReceivedAmount": -0.17,
-        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-09-04T12:21:00-05:00",
-        "changeDate": "2025-09-04T12:21:00-05:00"
-      },
-      {
         "databaseId": "00d5c8b4-b06c-4ce7-85a1-36590d98f639",
         "agentCommissionDatabaseId": "8717211d-1041-4047-8a29-b7540d97e245",
         "commissionReceivedAmount": 3.48,
@@ -189810,6 +189846,15 @@
         "order": 1,
         "createDate": "2025-08-11T11:28:00-05:00",
         "changeDate": "2025-08-11T11:28:00-05:00"
+      },
+      {
+        "databaseId": "ded56568-3ebe-4f38-b028-e7dc6b6e42fa",
+        "agentCommissionDatabaseId": "8717211d-1041-4047-8a29-b7540d97e245",
+        "commissionReceivedAmount": -0.17,
+        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2025-09-04T12:21:00-05:00",
+        "changeDate": "2025-09-04T12:21:00-05:00"
       }
     ]
   },
@@ -189862,15 +189907,6 @@
     "changeDate": "2025-07-24T09:14:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "6808dac0-fdc3-41b5-8941-f90a9572bd63",
-        "agentCommissionDatabaseId": "a1fbe021-8534-485b-bfb8-ba6c84d1ea78",
-        "commissionReceivedAmount": -0.11,
-        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-09-04T12:21:00-05:00",
-        "changeDate": "2025-09-04T12:21:00-05:00"
-      },
-      {
         "databaseId": "1281b1a2-b45b-4ca2-b26b-f385c81fdea0",
         "agentCommissionDatabaseId": "a1fbe021-8534-485b-bfb8-ba6c84d1ea78",
         "commissionReceivedAmount": 2.26,
@@ -189878,6 +189914,15 @@
         "order": 1,
         "createDate": "2025-08-11T11:28:00-05:00",
         "changeDate": "2025-08-11T11:28:00-05:00"
+      },
+      {
+        "databaseId": "6808dac0-fdc3-41b5-8941-f90a9572bd63",
+        "agentCommissionDatabaseId": "a1fbe021-8534-485b-bfb8-ba6c84d1ea78",
+        "commissionReceivedAmount": -0.11,
+        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
+        "order": 2,
+        "createDate": "2025-09-04T12:21:00-05:00",
+        "changeDate": "2025-09-04T12:21:00-05:00"
       }
     ]
   },
@@ -192831,6 +192876,31 @@
     ]
   },
   {
+    "databaseId": "99cc4adf-e680-4a4e-9dc5-1414a8c51bdd",
+    "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
+    "agentName": "Juanita Angel - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.08,
+    "endorsementDatabaseId": "4085cf7f-a8ee-4192-b794-60cf2bab2067",
+    "order": 4,
+    "createDate": "2025-07-23T16:56:00-05:00",
+    "changeDate": "2025-07-23T16:56:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "57a70edf-546e-499a-a693-5387a2059449",
+        "agentCommissionDatabaseId": "99cc4adf-e680-4a4e-9dc5-1414a8c51bdd",
+        "commissionReceivedAmount": 22.98,
+        "commissionReceivedDate": "2025-07-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-08-11T09:01:00-05:00",
+        "changeDate": "2025-08-11T09:01:00-05:00"
+      }
+    ]
+  },
+  {
     "databaseId": "0edbde20-bcf4-46b2-9c15-7a2449a2b446",
     "agentDatabaseId": "ec18348a-cd06-486c-a491-7a3df4473020",
     "agentName": "Julian Sierra - RT",
@@ -192873,31 +192943,6 @@
         "databaseId": "38b68281-b781-400b-be68-c3fff138b8d7",
         "agentCommissionDatabaseId": "7daf3e1e-0076-4dbf-a01f-129c96e2979b",
         "commissionReceivedAmount": 40.0,
-        "commissionReceivedDate": "2025-07-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-08-11T09:01:00-05:00",
-        "changeDate": "2025-08-11T09:01:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "99cc4adf-e680-4a4e-9dc5-1414a8c51bdd",
-    "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
-    "agentName": "Juanita Angel - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.08,
-    "endorsementDatabaseId": "4085cf7f-a8ee-4192-b794-60cf2bab2067",
-    "order": 4,
-    "createDate": "2025-07-23T16:56:00-05:00",
-    "changeDate": "2025-07-23T16:56:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "57a70edf-546e-499a-a693-5387a2059449",
-        "agentCommissionDatabaseId": "99cc4adf-e680-4a4e-9dc5-1414a8c51bdd",
-        "commissionReceivedAmount": 22.98,
         "commissionReceivedDate": "2025-07-30T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-08-11T09:01:00-05:00",
@@ -205179,31 +205224,6 @@
     ]
   },
   {
-    "databaseId": "6e8ece6f-c372-4f06-809e-e8597372f2cf",
-    "agentDatabaseId": "4e554b72-53d6-4940-a33e-5b7bce95b74d",
-    "agentName": "Cristian Andres Senior Garc\u00eda - Director Ventas",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.2,
-    "endorsementDatabaseId": "cf423027-71be-4118-b27a-5430d49ffce5",
-    "order": 3,
-    "createDate": "2025-06-11T15:57:00-05:00",
-    "changeDate": "2025-07-22T08:50:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "d7abe043-658d-4077-bb0f-fa2790680765",
-        "agentCommissionDatabaseId": "6e8ece6f-c372-4f06-809e-e8597372f2cf",
-        "commissionReceivedAmount": 3.0,
-        "commissionReceivedDate": "2025-07-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-08-08T16:32:00-05:00",
-        "changeDate": "2025-08-08T16:32:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "c0a1828a-bed1-436d-81f6-2d8e7a13e722",
     "agentDatabaseId": "a2d72bb5-1cea-4bf2-8f31-e0585b611af3",
     "agentName": "Daniela Berrio Barrera - Blue",
@@ -205221,6 +205241,31 @@
         "databaseId": "ff046d63-9696-4a0e-8c25-348c7a557683",
         "agentCommissionDatabaseId": "c0a1828a-bed1-436d-81f6-2d8e7a13e722",
         "commissionReceivedAmount": 15.0,
+        "commissionReceivedDate": "2025-07-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-08-08T16:32:00-05:00",
+        "changeDate": "2025-08-08T16:32:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "6e8ece6f-c372-4f06-809e-e8597372f2cf",
+    "agentDatabaseId": "4e554b72-53d6-4940-a33e-5b7bce95b74d",
+    "agentName": "Cristian Andres Senior Garc\u00eda - Director Ventas",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.2,
+    "endorsementDatabaseId": "cf423027-71be-4118-b27a-5430d49ffce5",
+    "order": 3,
+    "createDate": "2025-06-11T15:57:00-05:00",
+    "changeDate": "2025-07-22T08:50:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "d7abe043-658d-4077-bb0f-fa2790680765",
+        "agentCommissionDatabaseId": "6e8ece6f-c372-4f06-809e-e8597372f2cf",
+        "commissionReceivedAmount": 3.0,
         "commissionReceivedDate": "2025-07-30T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-08-08T16:32:00-05:00",
@@ -229745,56 +229790,6 @@
     ]
   },
   {
-    "databaseId": "b61ef44c-3ef9-4dbd-86e1-600faf6147ce",
-    "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
-    "agentName": "Juanita Angel - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.08,
-    "endorsementDatabaseId": "27125681-ba4c-4857-9ff7-9873adaf6c03",
-    "order": 8,
-    "createDate": "2025-06-10T14:24:00-05:00",
-    "changeDate": "2025-06-10T14:24:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "5defb6b5-2d45-4ab8-affe-317dfc335023",
-        "agentCommissionDatabaseId": "b61ef44c-3ef9-4dbd-86e1-600faf6147ce",
-        "commissionReceivedAmount": 3.59,
-        "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-06-25T12:40:00-05:00",
-        "changeDate": "2025-06-25T12:40:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "c73f9ec5-f575-48b5-bcde-80fff76ff993",
-    "agentDatabaseId": "ec18348a-cd06-486c-a491-7a3df4473020",
-    "agentName": "Julian Sierra - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.06,
-    "endorsementDatabaseId": "27125681-ba4c-4857-9ff7-9873adaf6c03",
-    "order": 6,
-    "createDate": "2025-06-10T14:24:00-05:00",
-    "changeDate": "2025-06-10T14:24:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "e22b04a3-9370-4796-9d57-8c4d83ebf388",
-        "agentCommissionDatabaseId": "c73f9ec5-f575-48b5-bcde-80fff76ff993",
-        "commissionReceivedAmount": 2.69,
-        "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-06-25T12:40:00-05:00",
-        "changeDate": "2025-06-25T12:40:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "4a1e57bf-313d-449c-82ec-f3ad6ef53ce0",
     "agentDatabaseId": "b271dbba-58fd-4cab-91e1-8399679fe452",
     "agentName": "Valentina Jimenez - CRM",
@@ -229862,6 +229857,56 @@
         "databaseId": "9cc149e5-bfd8-4883-8da5-fa4d05bff9ba",
         "agentCommissionDatabaseId": "8b7c276b-a296-4ea8-a73f-4974e502d042",
         "commissionReceivedAmount": 3.59,
+        "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-06-25T12:40:00-05:00",
+        "changeDate": "2025-06-25T12:40:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "b61ef44c-3ef9-4dbd-86e1-600faf6147ce",
+    "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
+    "agentName": "Juanita Angel - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.08,
+    "endorsementDatabaseId": "27125681-ba4c-4857-9ff7-9873adaf6c03",
+    "order": 8,
+    "createDate": "2025-06-10T14:24:00-05:00",
+    "changeDate": "2025-06-10T14:24:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "5defb6b5-2d45-4ab8-affe-317dfc335023",
+        "agentCommissionDatabaseId": "b61ef44c-3ef9-4dbd-86e1-600faf6147ce",
+        "commissionReceivedAmount": 3.59,
+        "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-06-25T12:40:00-05:00",
+        "changeDate": "2025-06-25T12:40:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "c73f9ec5-f575-48b5-bcde-80fff76ff993",
+    "agentDatabaseId": "ec18348a-cd06-486c-a491-7a3df4473020",
+    "agentName": "Julian Sierra - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.06,
+    "endorsementDatabaseId": "27125681-ba4c-4857-9ff7-9873adaf6c03",
+    "order": 6,
+    "createDate": "2025-06-10T14:24:00-05:00",
+    "changeDate": "2025-06-10T14:24:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "e22b04a3-9370-4796-9d57-8c4d83ebf388",
+        "agentCommissionDatabaseId": "c73f9ec5-f575-48b5-bcde-80fff76ff993",
+        "commissionReceivedAmount": 2.69,
         "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-06-25T12:40:00-05:00",
@@ -242244,31 +242289,6 @@
     ]
   },
   {
-    "databaseId": "bec7257a-844c-442b-ad7f-22541b557006",
-    "agentDatabaseId": "cb91e8e7-1a04-4694-9573-129c8e5cd142",
-    "agentName": "Ana Luc\u00eda Mora",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.2,
-    "endorsementDatabaseId": "15f9ddf4-4db9-45ce-bf01-7e49f5fa1bb3",
-    "order": 4,
-    "createDate": "2025-05-28T15:50:00-05:00",
-    "changeDate": "2025-06-09T10:41:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "66c96b8a-e946-47fe-bca4-af697c4b5eca",
-        "agentCommissionDatabaseId": "bec7257a-844c-442b-ad7f-22541b557006",
-        "commissionReceivedAmount": -21.0,
-        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-09-08T16:58:00-05:00",
-        "changeDate": "2025-09-08T16:58:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "001408c9-2fa1-48b0-aa49-e4aaf5dcdd32",
     "agentDatabaseId": "776fd878-28f3-4118-a234-332bcfda54c3",
     "agentName": "KAREN MORALES",
@@ -242290,6 +242310,31 @@
         "order": 1,
         "createDate": "2025-07-09T11:40:00-05:00",
         "changeDate": "2025-07-09T11:40:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "bec7257a-844c-442b-ad7f-22541b557006",
+    "agentDatabaseId": "cb91e8e7-1a04-4694-9573-129c8e5cd142",
+    "agentName": "Ana Luc\u00eda Mora",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.2,
+    "endorsementDatabaseId": "15f9ddf4-4db9-45ce-bf01-7e49f5fa1bb3",
+    "order": 4,
+    "createDate": "2025-05-28T15:50:00-05:00",
+    "changeDate": "2025-06-09T10:41:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "66c96b8a-e946-47fe-bca4-af697c4b5eca",
+        "agentCommissionDatabaseId": "bec7257a-844c-442b-ad7f-22541b557006",
+        "commissionReceivedAmount": -21.0,
+        "commissionReceivedDate": "2025-08-29T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-09-08T16:58:00-05:00",
+        "changeDate": "2025-09-08T16:58:00-05:00"
       }
     ]
   },
@@ -254529,31 +254574,6 @@
     ]
   },
   {
-    "databaseId": "211f3970-ccd1-4111-b984-8caedbbecea9",
-    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
-    "agentName": "Veronica Espinal - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 15.0,
-    "endorsementDatabaseId": "c21c5a8b-2322-45ee-a540-441568e5c3f1",
-    "order": 3,
-    "createDate": "2025-05-22T15:06:00-05:00",
-    "changeDate": "2025-05-22T15:06:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "4248979e-ed0e-4159-a201-457b0f95b4bc",
-        "agentCommissionDatabaseId": "211f3970-ccd1-4111-b984-8caedbbecea9",
-        "commissionReceivedAmount": 22.05,
-        "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-06-20T16:18:00-05:00",
-        "changeDate": "2025-06-20T16:18:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "1cce7e39-9ed4-4ee9-be22-5b403151986c",
     "agentDatabaseId": "d5aa044c-3937-4365-a840-34b5c4b15000",
     "agentName": "Kelly Vanessa Vahos Rua - Red",
@@ -254596,6 +254616,31 @@
         "databaseId": "a571029b-75b1-4718-a3c0-7958dadf4061",
         "agentCommissionDatabaseId": "561045e7-e6be-4768-adf7-cbb5af251beb",
         "commissionReceivedAmount": 5.0,
+        "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-06-20T16:18:00-05:00",
+        "changeDate": "2025-06-20T16:18:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "211f3970-ccd1-4111-b984-8caedbbecea9",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 15.0,
+    "endorsementDatabaseId": "c21c5a8b-2322-45ee-a540-441568e5c3f1",
+    "order": 3,
+    "createDate": "2025-05-22T15:06:00-05:00",
+    "changeDate": "2025-05-22T15:06:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "4248979e-ed0e-4159-a201-457b0f95b4bc",
+        "agentCommissionDatabaseId": "211f3970-ccd1-4111-b984-8caedbbecea9",
+        "commissionReceivedAmount": 22.05,
         "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-06-20T16:18:00-05:00",
@@ -266394,31 +266439,6 @@
     ]
   },
   {
-    "databaseId": "3437184d-4de3-403e-b0cf-7a62c37eeb8b",
-    "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
-    "agentName": "Juanita Angel - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.06,
-    "endorsementDatabaseId": "43343d5e-b7fd-4d58-8f02-106f83054b8e",
-    "order": 5,
-    "createDate": "2025-05-20T10:02:00-05:00",
-    "changeDate": "2025-05-20T10:02:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "fdd40587-38ec-49d2-a2fa-320e17df6578",
-        "agentCommissionDatabaseId": "3437184d-4de3-403e-b0cf-7a62c37eeb8b",
-        "commissionReceivedAmount": 41.45,
-        "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-06-06T17:04:00-05:00",
-        "changeDate": "2025-06-06T17:04:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "5c06a3da-3b16-4552-8cba-f6bfa54ad54b",
     "agentDatabaseId": "b271dbba-58fd-4cab-91e1-8399679fe452",
     "agentName": "Valentina Jimenez - CRM",
@@ -266435,31 +266455,6 @@
       {
         "databaseId": "6c8254c0-8037-4410-8627-c984dd7e3684",
         "agentCommissionDatabaseId": "5c06a3da-3b16-4552-8cba-f6bfa54ad54b",
-        "commissionReceivedAmount": 41.45,
-        "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-06-06T17:04:00-05:00",
-        "changeDate": "2025-06-06T17:04:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "c204e3f2-e27f-456b-a422-2403691134f9",
-    "agentDatabaseId": "fab8d432-41b8-4a24-9946-914226551443",
-    "agentName": "Laura Cristina Rojas - Leader Red",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.06,
-    "endorsementDatabaseId": "43343d5e-b7fd-4d58-8f02-106f83054b8e",
-    "order": 9,
-    "createDate": "2025-05-20T10:02:00-05:00",
-    "changeDate": "2025-05-20T10:02:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "860173fb-22cc-48a2-9a43-3c24d6b1509b",
-        "agentCommissionDatabaseId": "c204e3f2-e27f-456b-a422-2403691134f9",
         "commissionReceivedAmount": 41.45,
         "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
         "order": 1,
@@ -266510,6 +266505,56 @@
       {
         "databaseId": "642fbe31-a876-429b-851d-be7213f37269",
         "agentCommissionDatabaseId": "a18876e3-5153-4aaf-bdcb-148b73f562b5",
+        "commissionReceivedAmount": 41.45,
+        "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-06-06T17:04:00-05:00",
+        "changeDate": "2025-06-06T17:04:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "3437184d-4de3-403e-b0cf-7a62c37eeb8b",
+    "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
+    "agentName": "Juanita Angel - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.06,
+    "endorsementDatabaseId": "43343d5e-b7fd-4d58-8f02-106f83054b8e",
+    "order": 5,
+    "createDate": "2025-05-20T10:02:00-05:00",
+    "changeDate": "2025-05-20T10:02:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "fdd40587-38ec-49d2-a2fa-320e17df6578",
+        "agentCommissionDatabaseId": "3437184d-4de3-403e-b0cf-7a62c37eeb8b",
+        "commissionReceivedAmount": 41.45,
+        "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-06-06T17:04:00-05:00",
+        "changeDate": "2025-06-06T17:04:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "c204e3f2-e27f-456b-a422-2403691134f9",
+    "agentDatabaseId": "fab8d432-41b8-4a24-9946-914226551443",
+    "agentName": "Laura Cristina Rojas - Leader Red",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.06,
+    "endorsementDatabaseId": "43343d5e-b7fd-4d58-8f02-106f83054b8e",
+    "order": 9,
+    "createDate": "2025-05-20T10:02:00-05:00",
+    "changeDate": "2025-05-20T10:02:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "860173fb-22cc-48a2-9a43-3c24d6b1509b",
+        "agentCommissionDatabaseId": "c204e3f2-e27f-456b-a422-2403691134f9",
         "commissionReceivedAmount": 41.45,
         "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
         "order": 1,
@@ -278749,31 +278794,6 @@
     ]
   },
   {
-    "databaseId": "7003d55b-bedf-4849-ad4c-55bb660cf950",
-    "agentDatabaseId": "7418adfd-2e77-42fc-8f63-07add4f3341e",
-    "agentName": "Jose Giraldo - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 15.0,
-    "endorsementDatabaseId": "6e24fdf2-83b0-4a62-8dfe-3645f021b139",
-    "order": 1,
-    "createDate": "2025-05-12T10:41:00-05:00",
-    "changeDate": "2025-05-12T10:41:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "8d19a431-5e7a-49e4-94fa-4ebd4d2a6337",
-        "agentCommissionDatabaseId": "7003d55b-bedf-4849-ad4c-55bb660cf950",
-        "commissionReceivedAmount": 9.52,
-        "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-07-10T11:32:00-05:00",
-        "changeDate": "2025-07-10T11:32:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "d9be77d9-013e-4c0e-856a-9e1b8dbf1c91",
     "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
     "agentName": "Veronica Espinal - Binders",
@@ -278791,6 +278811,31 @@
         "databaseId": "ba1e0e05-65d0-4322-87be-f4ef3ad41163",
         "agentCommissionDatabaseId": "d9be77d9-013e-4c0e-856a-9e1b8dbf1c91",
         "commissionReceivedAmount": 1.24,
+        "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-07-10T11:32:00-05:00",
+        "changeDate": "2025-07-10T11:32:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "7003d55b-bedf-4849-ad4c-55bb660cf950",
+    "agentDatabaseId": "7418adfd-2e77-42fc-8f63-07add4f3341e",
+    "agentName": "Jose Giraldo - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 15.0,
+    "endorsementDatabaseId": "6e24fdf2-83b0-4a62-8dfe-3645f021b139",
+    "order": 1,
+    "createDate": "2025-05-12T10:41:00-05:00",
+    "changeDate": "2025-05-12T10:41:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "8d19a431-5e7a-49e4-94fa-4ebd4d2a6337",
+        "agentCommissionDatabaseId": "7003d55b-bedf-4849-ad4c-55bb660cf950",
+        "commissionReceivedAmount": 9.52,
         "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-07-10T11:32:00-05:00",
@@ -290784,56 +290829,6 @@
     ]
   },
   {
-    "databaseId": "541645f0-057c-4e53-a199-bccbde8d0c65",
-    "agentDatabaseId": "d5aa044c-3937-4365-a840-34b5c4b15000",
-    "agentName": "Kelly Vanessa Vahos Rua - Red",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 30.0,
-    "endorsementDatabaseId": "48a9072e-19c6-48fc-a41a-6040849c1c96",
-    "order": 1,
-    "createDate": "2025-04-23T10:29:00-05:00",
-    "changeDate": "2025-04-23T10:29:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "005c309c-f644-4817-8e3c-9cafcee4da43",
-        "agentCommissionDatabaseId": "541645f0-057c-4e53-a199-bccbde8d0c65",
-        "commissionReceivedAmount": 210.0,
-        "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-05-12T10:39:00-05:00",
-        "changeDate": "2025-05-12T10:39:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "2e94dec5-9856-45c0-95e8-d5f67bd2a0df",
-    "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
-    "agentName": "Juanita Angel - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 10.0,
-    "endorsementDatabaseId": "48a9072e-19c6-48fc-a41a-6040849c1c96",
-    "order": 2,
-    "createDate": "2025-04-23T10:29:00-05:00",
-    "changeDate": "2025-04-23T10:29:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "d7e25d30-446d-4e55-bd83-1de2ab55465c",
-        "agentCommissionDatabaseId": "2e94dec5-9856-45c0-95e8-d5f67bd2a0df",
-        "commissionReceivedAmount": 70.0,
-        "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-05-12T10:39:00-05:00",
-        "changeDate": "2025-05-12T10:39:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "4f083710-aa73-4a25-a777-c3c291b0dc92",
     "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
     "agentName": "Veronica Espinal - Binders",
@@ -290876,31 +290871,6 @@
         "databaseId": "b1fc3c87-8d99-42fc-a3e4-4076a8f1138f",
         "agentCommissionDatabaseId": "15e4fd42-9f8d-475f-9c91-0564e4788f31",
         "commissionReceivedAmount": 87.25,
-        "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-05-12T10:39:00-05:00",
-        "changeDate": "2025-05-12T10:39:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "7fedd99a-007b-4584-a3b2-75f00b465206",
-    "agentDatabaseId": "416d0667-664a-4688-8ab2-5a293f0ff8f9",
-    "agentName": "Diego Ospina",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.06,
-    "endorsementDatabaseId": "cf14da11-9c6c-40b6-bf16-aefef0624aba",
-    "order": 6,
-    "createDate": "2025-04-23T10:29:00-05:00",
-    "changeDate": "2025-04-23T10:29:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "d1d140a3-7560-4acb-b9f7-81300b2bbfc4",
-        "agentCommissionDatabaseId": "7fedd99a-007b-4584-a3b2-75f00b465206",
-        "commissionReceivedAmount": 3.49,
         "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-05-12T10:39:00-05:00",
@@ -290975,6 +290945,81 @@
       {
         "databaseId": "ee60a7c9-30fe-4958-adf2-0687fc1e2705",
         "agentCommissionDatabaseId": "a288b856-1f81-4b88-b166-c79320c479e3",
+        "commissionReceivedAmount": 3.49,
+        "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-05-12T10:39:00-05:00",
+        "changeDate": "2025-05-12T10:39:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "541645f0-057c-4e53-a199-bccbde8d0c65",
+    "agentDatabaseId": "d5aa044c-3937-4365-a840-34b5c4b15000",
+    "agentName": "Kelly Vanessa Vahos Rua - Red",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 30.0,
+    "endorsementDatabaseId": "48a9072e-19c6-48fc-a41a-6040849c1c96",
+    "order": 1,
+    "createDate": "2025-04-23T10:29:00-05:00",
+    "changeDate": "2025-04-23T10:29:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "005c309c-f644-4817-8e3c-9cafcee4da43",
+        "agentCommissionDatabaseId": "541645f0-057c-4e53-a199-bccbde8d0c65",
+        "commissionReceivedAmount": 210.0,
+        "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-05-12T10:39:00-05:00",
+        "changeDate": "2025-05-12T10:39:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "2e94dec5-9856-45c0-95e8-d5f67bd2a0df",
+    "agentDatabaseId": "e2be299d-55de-4e58-903e-64cc9cc6a5de",
+    "agentName": "Juanita Angel - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 10.0,
+    "endorsementDatabaseId": "48a9072e-19c6-48fc-a41a-6040849c1c96",
+    "order": 2,
+    "createDate": "2025-04-23T10:29:00-05:00",
+    "changeDate": "2025-04-23T10:29:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "d7e25d30-446d-4e55-bd83-1de2ab55465c",
+        "agentCommissionDatabaseId": "2e94dec5-9856-45c0-95e8-d5f67bd2a0df",
+        "commissionReceivedAmount": 70.0,
+        "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-05-12T10:39:00-05:00",
+        "changeDate": "2025-05-12T10:39:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "7fedd99a-007b-4584-a3b2-75f00b465206",
+    "agentDatabaseId": "416d0667-664a-4688-8ab2-5a293f0ff8f9",
+    "agentName": "Diego Ospina",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.06,
+    "endorsementDatabaseId": "cf14da11-9c6c-40b6-bf16-aefef0624aba",
+    "order": 6,
+    "createDate": "2025-04-23T10:29:00-05:00",
+    "changeDate": "2025-04-23T10:29:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "d1d140a3-7560-4acb-b9f7-81300b2bbfc4",
+        "agentCommissionDatabaseId": "7fedd99a-007b-4584-a3b2-75f00b465206",
         "commissionReceivedAmount": 3.49,
         "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
         "order": 1,
@@ -303159,31 +303204,6 @@
     ]
   },
   {
-    "databaseId": "fa989710-bb6b-46dd-aaf4-95c8cf62f227",
-    "agentDatabaseId": "b4311698-a524-451e-97f3-b50534378e08",
-    "agentName": "Juan Camilo Ramirez Restrepo",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 1.0,
-    "endorsementDatabaseId": "19630a20-a0d1-49ac-87dc-d3b3ee4df387",
-    "order": 2,
-    "createDate": "2025-04-02T10:59:00-05:00",
-    "changeDate": "2025-04-21T09:10:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "fceaf87a-817b-4e18-9568-2b533ebfc75c",
-        "agentCommissionDatabaseId": "fa989710-bb6b-46dd-aaf4-95c8cf62f227",
-        "commissionReceivedAmount": 128.08,
-        "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-05-08T11:17:00-05:00",
-        "changeDate": "2025-05-08T11:17:00-05:00"
-      }
-    ]
-  },
-  {
     "databaseId": "baa22416-cbff-4168-b6fb-63c599ebd0ad",
     "agentDatabaseId": "4e554b72-53d6-4940-a33e-5b7bce95b74d",
     "agentName": "Cristian Andres Senior Garc\u00eda - Director Ventas",
@@ -303201,6 +303221,31 @@
         "databaseId": "18be18a8-1453-43d0-b305-7e6964b9534f",
         "agentCommissionDatabaseId": "baa22416-cbff-4168-b6fb-63c599ebd0ad",
         "commissionReceivedAmount": 44.83,
+        "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-05-08T11:17:00-05:00",
+        "changeDate": "2025-05-08T11:17:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "fa989710-bb6b-46dd-aaf4-95c8cf62f227",
+    "agentDatabaseId": "b4311698-a524-451e-97f3-b50534378e08",
+    "agentName": "Juan Camilo Ramirez Restrepo",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 1.0,
+    "endorsementDatabaseId": "19630a20-a0d1-49ac-87dc-d3b3ee4df387",
+    "order": 2,
+    "createDate": "2025-04-02T10:59:00-05:00",
+    "changeDate": "2025-04-21T09:10:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "fceaf87a-817b-4e18-9568-2b533ebfc75c",
+        "agentCommissionDatabaseId": "fa989710-bb6b-46dd-aaf4-95c8cf62f227",
+        "commissionReceivedAmount": 128.08,
         "commissionReceivedDate": "2025-04-30T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-05-08T11:17:00-05:00",
@@ -326284,73 +326329,23 @@
     ]
   },
   {
-    "databaseId": "dc92a9b5-3e53-40a5-bd61-3472e08934a6",
-    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
-    "agentName": "Veronica Espinal - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 2.0,
-    "endorsementDatabaseId": "cd5ebfba-eea0-4fc1-bb71-56cd1978a139",
-    "order": 2,
-    "createDate": "2025-03-27T08:29:00-05:00",
-    "changeDate": "2025-03-27T08:29:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "5f661b69-dde8-4f1c-8cdb-466609ee0246",
-        "agentCommissionDatabaseId": "dc92a9b5-3e53-40a5-bd61-3472e08934a6",
-        "commissionReceivedAmount": 30.02,
-        "commissionReceivedDate": "2025-03-28T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-04-03T11:38:00-05:00",
-        "changeDate": "2025-04-03T11:38:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "42e93b02-3e51-40a9-94b5-162c76afc781",
-    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
-    "agentName": "Daniel Marin - RT",
+    "databaseId": "536bd000-8f16-4a97-9a6a-6be7df5e3086",
+    "agentDatabaseId": "b271dbba-58fd-4cab-91e1-8399679fe452",
+    "agentName": "Valentina Jimenez - CRM",
     "policyCommissionAgentPaymentTypeValue": 1,
     "policyCommissionAgentPaymentTypeText": "From Base Premium",
     "commissionTypeValue": 0,
     "commissionTypeText": "Percent",
     "commissionValue": 0.05,
     "endorsementDatabaseId": "cd5ebfba-eea0-4fc1-bb71-56cd1978a139",
-    "order": 5,
+    "order": 7,
     "createDate": "2025-03-27T08:29:00-05:00",
     "changeDate": "2025-03-27T08:29:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "78ed759b-8934-416c-88c6-89e76f7c702c",
-        "agentCommissionDatabaseId": "42e93b02-3e51-40a9-94b5-162c76afc781",
+        "databaseId": "3c671e73-93ea-4358-9ccc-e37566424957",
+        "agentCommissionDatabaseId": "536bd000-8f16-4a97-9a6a-6be7df5e3086",
         "commissionReceivedAmount": 7.5,
-        "commissionReceivedDate": "2025-03-28T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-04-03T11:38:00-05:00",
-        "changeDate": "2025-04-03T11:38:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "5b8f7f3a-057c-43c7-bb9a-0e016349134e",
-    "agentDatabaseId": "416d0667-664a-4688-8ab2-5a293f0ff8f9",
-    "agentName": "Diego Ospina",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.08,
-    "endorsementDatabaseId": "cd5ebfba-eea0-4fc1-bb71-56cd1978a139",
-    "order": 8,
-    "createDate": "2025-03-27T08:29:00-05:00",
-    "changeDate": "2025-03-27T08:29:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "e7f891cb-8d40-44a0-9e77-47c0848a3a98",
-        "agentCommissionDatabaseId": "5b8f7f3a-057c-43c7-bb9a-0e016349134e",
-        "commissionReceivedAmount": 12.01,
         "commissionReceivedDate": "2025-03-28T00:00:00-05:00",
         "order": 1,
         "createDate": "2025-04-03T11:38:00-05:00",
@@ -326375,31 +326370,6 @@
       {
         "databaseId": "f9f1e8d4-c0c2-498a-8c20-d9e6b9479400",
         "agentCommissionDatabaseId": "3a5a1d69-ff1d-43d1-be90-c5d5dfb9aaa5",
-        "commissionReceivedAmount": 7.5,
-        "commissionReceivedDate": "2025-03-28T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-04-03T11:38:00-05:00",
-        "changeDate": "2025-04-03T11:38:00-05:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "69e982c9-b232-4aec-aa97-5d06bfc30db1",
-    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
-    "agentName": "Ana Milena Guzman Calad - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.05,
-    "endorsementDatabaseId": "cd5ebfba-eea0-4fc1-bb71-56cd1978a139",
-    "order": 3,
-    "createDate": "2025-03-27T08:29:00-05:00",
-    "changeDate": "2025-03-27T08:29:00-05:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "e2019b51-33dc-4109-b201-d87c2950981c",
-        "agentCommissionDatabaseId": "69e982c9-b232-4aec-aa97-5d06bfc30db1",
         "commissionReceivedAmount": 7.5,
         "commissionReceivedDate": "2025-03-28T00:00:00-05:00",
         "order": 1,
@@ -326484,6 +326454,31 @@
     ]
   },
   {
+    "databaseId": "dc92a9b5-3e53-40a5-bd61-3472e08934a6",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 2.0,
+    "endorsementDatabaseId": "cd5ebfba-eea0-4fc1-bb71-56cd1978a139",
+    "order": 2,
+    "createDate": "2025-03-27T08:29:00-05:00",
+    "changeDate": "2025-03-27T08:29:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "5f661b69-dde8-4f1c-8cdb-466609ee0246",
+        "agentCommissionDatabaseId": "dc92a9b5-3e53-40a5-bd61-3472e08934a6",
+        "commissionReceivedAmount": 30.02,
+        "commissionReceivedDate": "2025-03-28T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-04-03T11:38:00-05:00",
+        "changeDate": "2025-04-03T11:38:00-05:00"
+      }
+    ]
+  },
+  {
     "databaseId": "c5743197-04f9-4be3-acfa-98ff484574a9",
     "agentDatabaseId": "5e371a9d-3e46-4414-9a33-06e10d260bf4",
     "agentName": "Samuel Pulgarin - RT",
@@ -326509,22 +326504,72 @@
     ]
   },
   {
-    "databaseId": "536bd000-8f16-4a97-9a6a-6be7df5e3086",
-    "agentDatabaseId": "b271dbba-58fd-4cab-91e1-8399679fe452",
-    "agentName": "Valentina Jimenez - CRM",
+    "databaseId": "42e93b02-3e51-40a9-94b5-162c76afc781",
+    "agentDatabaseId": "febdaf3d-37c6-4497-8c2e-2e294a64220c",
+    "agentName": "Daniel Marin - RT",
     "policyCommissionAgentPaymentTypeValue": 1,
     "policyCommissionAgentPaymentTypeText": "From Base Premium",
     "commissionTypeValue": 0,
     "commissionTypeText": "Percent",
     "commissionValue": 0.05,
     "endorsementDatabaseId": "cd5ebfba-eea0-4fc1-bb71-56cd1978a139",
-    "order": 7,
+    "order": 5,
     "createDate": "2025-03-27T08:29:00-05:00",
     "changeDate": "2025-03-27T08:29:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "3c671e73-93ea-4358-9ccc-e37566424957",
-        "agentCommissionDatabaseId": "536bd000-8f16-4a97-9a6a-6be7df5e3086",
+        "databaseId": "78ed759b-8934-416c-88c6-89e76f7c702c",
+        "agentCommissionDatabaseId": "42e93b02-3e51-40a9-94b5-162c76afc781",
+        "commissionReceivedAmount": 7.5,
+        "commissionReceivedDate": "2025-03-28T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-04-03T11:38:00-05:00",
+        "changeDate": "2025-04-03T11:38:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "5b8f7f3a-057c-43c7-bb9a-0e016349134e",
+    "agentDatabaseId": "416d0667-664a-4688-8ab2-5a293f0ff8f9",
+    "agentName": "Diego Ospina",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.08,
+    "endorsementDatabaseId": "cd5ebfba-eea0-4fc1-bb71-56cd1978a139",
+    "order": 8,
+    "createDate": "2025-03-27T08:29:00-05:00",
+    "changeDate": "2025-03-27T08:29:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "e7f891cb-8d40-44a0-9e77-47c0848a3a98",
+        "agentCommissionDatabaseId": "5b8f7f3a-057c-43c7-bb9a-0e016349134e",
+        "commissionReceivedAmount": 12.01,
+        "commissionReceivedDate": "2025-03-28T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-04-03T11:38:00-05:00",
+        "changeDate": "2025-04-03T11:38:00-05:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "69e982c9-b232-4aec-aa97-5d06bfc30db1",
+    "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
+    "agentName": "Ana Milena Guzman Calad - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.05,
+    "endorsementDatabaseId": "cd5ebfba-eea0-4fc1-bb71-56cd1978a139",
+    "order": 3,
+    "createDate": "2025-03-27T08:29:00-05:00",
+    "changeDate": "2025-03-27T08:29:00-05:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "e2019b51-33dc-4109-b201-d87c2950981c",
+        "agentCommissionDatabaseId": "69e982c9-b232-4aec-aa97-5d06bfc30db1",
         "commissionReceivedAmount": 7.5,
         "commissionReceivedDate": "2025-03-28T00:00:00-05:00",
         "order": 1,
@@ -327043,13 +327088,13 @@
     "changeDate": "2025-03-27T02:17:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "19dd9874-63a8-45a3-95a6-3c2a32d4e97f",
+        "databaseId": "a254baf6-70cd-473e-a5de-5e1961082702",
         "agentCommissionDatabaseId": "94d381a9-dad9-45f2-b7dc-2eed70150e33",
-        "commissionReceivedAmount": null,
-        "commissionReceivedDate": "2025-09-09T00:00:00-05:00",
-        "order": 3,
-        "createDate": "2025-09-09T10:41:00-05:00",
-        "changeDate": "2025-09-09T10:41:00-05:00"
+        "commissionReceivedAmount": 1.37,
+        "commissionReceivedDate": "2025-05-15T00:00:00-05:00",
+        "order": 1,
+        "createDate": "2025-04-03T16:46:00-05:00",
+        "changeDate": "2025-05-08T12:49:00-05:00"
       },
       {
         "databaseId": "b124fd00-461d-401d-a012-5c789ecef83e",
@@ -327061,13 +327106,13 @@
         "changeDate": "2025-09-09T10:41:00-05:00"
       },
       {
-        "databaseId": "a254baf6-70cd-473e-a5de-5e1961082702",
+        "databaseId": "19dd9874-63a8-45a3-95a6-3c2a32d4e97f",
         "agentCommissionDatabaseId": "94d381a9-dad9-45f2-b7dc-2eed70150e33",
-        "commissionReceivedAmount": 1.37,
-        "commissionReceivedDate": "2025-05-15T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-04-03T16:46:00-05:00",
-        "changeDate": "2025-05-08T12:49:00-05:00"
+        "commissionReceivedAmount": null,
+        "commissionReceivedDate": "2025-09-09T00:00:00-05:00",
+        "order": 3,
+        "createDate": "2025-09-09T10:41:00-05:00",
+        "changeDate": "2025-09-09T10:41:00-05:00"
       }
     ]
   },
@@ -327086,12 +327131,12 @@
     "changeDate": "2025-03-27T02:17:00-05:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "c4f76079-4f7c-4fe4-bc60-5072858baf71",
+        "databaseId": "41fbae0b-bb45-4a53-a954-24653a17df82",
         "agentCommissionDatabaseId": "649db27c-6497-4e3c-984b-7a6e83c0a269",
         "commissionReceivedAmount": 0.68,
         "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
-        "order": 3,
-        "createDate": "2025-09-09T10:41:00-05:00",
+        "order": 1,
+        "createDate": "2025-04-03T16:46:00-05:00",
         "changeDate": "2025-09-09T10:41:00-05:00"
       },
       {
@@ -327104,12 +327149,12 @@
         "changeDate": "2025-09-09T10:41:00-05:00"
       },
       {
-        "databaseId": "41fbae0b-bb45-4a53-a954-24653a17df82",
+        "databaseId": "c4f76079-4f7c-4fe4-bc60-5072858baf71",
         "agentCommissionDatabaseId": "649db27c-6497-4e3c-984b-7a6e83c0a269",
         "commissionReceivedAmount": 0.68,
         "commissionReceivedDate": "2025-05-30T00:00:00-05:00",
-        "order": 1,
-        "createDate": "2025-04-03T16:46:00-05:00",
+        "order": 3,
+        "createDate": "2025-09-09T10:41:00-05:00",
         "changeDate": "2025-09-09T10:41:00-05:00"
       }
     ]
@@ -351045,6 +351090,31 @@
     ]
   },
   {
+    "databaseId": "63ec8fb7-2802-4e98-bdf0-d1df06549a7d",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 15.0,
+    "endorsementDatabaseId": "22d92703-c91d-4e9c-be21-34018283b47a",
+    "order": 1,
+    "createDate": "2025-02-28T00:50:00-06:00",
+    "changeDate": "2025-02-28T00:50:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "5614b83d-b24d-491b-9177-e07d15998570",
+        "agentCommissionDatabaseId": "63ec8fb7-2802-4e98-bdf0-d1df06549a7d",
+        "commissionReceivedAmount": -0.81,
+        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
+        "order": 1,
+        "createDate": "2025-02-28T00:50:00-06:00",
+        "changeDate": "2025-02-28T00:50:00-06:00"
+      }
+    ]
+  },
+  {
     "databaseId": "69842877-1c2d-4d6e-a02c-94dc237471df",
     "agentDatabaseId": "c42dfd43-7eac-4e36-aff0-79b9047117a2",
     "agentName": "Miguel Angel Zapata Guiral",
@@ -351073,31 +351143,6 @@
         "commissionReceivedAmount": -0.26,
         "commissionReceivedDate": "2025-02-28T00:00:00-06:00",
         "order": 2,
-        "createDate": "2025-02-28T00:50:00-06:00",
-        "changeDate": "2025-02-28T00:50:00-06:00"
-      }
-    ]
-  },
-  {
-    "databaseId": "63ec8fb7-2802-4e98-bdf0-d1df06549a7d",
-    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
-    "agentName": "Veronica Espinal - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 15.0,
-    "endorsementDatabaseId": "22d92703-c91d-4e9c-be21-34018283b47a",
-    "order": 1,
-    "createDate": "2025-02-28T00:50:00-06:00",
-    "changeDate": "2025-02-28T00:50:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "5614b83d-b24d-491b-9177-e07d15998570",
-        "agentCommissionDatabaseId": "63ec8fb7-2802-4e98-bdf0-d1df06549a7d",
-        "commissionReceivedAmount": -0.81,
-        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
-        "order": 1,
         "createDate": "2025-02-28T00:50:00-06:00",
         "changeDate": "2025-02-28T00:50:00-06:00"
       }
@@ -360524,21 +360569,6 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "aa511685-2c3f-408b-b376-3a98b2a42434",
-    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
-    "agentName": "Veronica Espinal - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 2.0,
-    "endorsementDatabaseId": "e4a4a08f-1cd0-4a42-a0c3-e35cceb6b07a",
-    "order": 2,
-    "createDate": "2025-02-26T07:00:00-06:00",
-    "changeDate": "2025-02-26T07:00:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "ec34fe22-aaaa-4602-9ed1-0427b8fe5f66",
     "agentDatabaseId": "be0275cf-a4a4-4f35-9c64-4eab34278018",
     "agentName": "Bryan Alejandro Arango",
@@ -360554,21 +360584,6 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "6dd3381c-9057-4a66-b9d1-794df460b595",
-    "agentDatabaseId": "bb7a7e46-cedc-4f1d-8435-b7b7932bd206",
-    "agentName": "CAROLINA PEREZ GARCIA - Green",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 1.0,
-    "endorsementDatabaseId": "e4a4a08f-1cd0-4a42-a0c3-e35cceb6b07a",
-    "order": 3,
-    "createDate": "2025-02-26T07:00:00-06:00",
-    "changeDate": "2025-02-26T07:00:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "db8e31e2-860f-41cb-b70a-b811df5fb9a7",
     "agentDatabaseId": "1fb3395b-486e-4cfb-a026-e7a7b0512d2c",
     "agentName": "Laura Cifuentes",
@@ -360579,6 +360594,36 @@
     "commissionValue": 10.0,
     "endorsementDatabaseId": "e4a4a08f-1cd0-4a42-a0c3-e35cceb6b07a",
     "order": 1,
+    "createDate": "2025-02-26T07:00:00-06:00",
+    "changeDate": "2025-02-26T07:00:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "aa511685-2c3f-408b-b376-3a98b2a42434",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 2.0,
+    "endorsementDatabaseId": "e4a4a08f-1cd0-4a42-a0c3-e35cceb6b07a",
+    "order": 2,
+    "createDate": "2025-02-26T07:00:00-06:00",
+    "changeDate": "2025-02-26T07:00:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "6dd3381c-9057-4a66-b9d1-794df460b595",
+    "agentDatabaseId": "bb7a7e46-cedc-4f1d-8435-b7b7932bd206",
+    "agentName": "CAROLINA PEREZ GARCIA - Green",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 1.0,
+    "endorsementDatabaseId": "e4a4a08f-1cd0-4a42-a0c3-e35cceb6b07a",
+    "order": 3,
     "createDate": "2025-02-26T07:00:00-06:00",
     "changeDate": "2025-02-26T07:00:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
@@ -370508,21 +370553,6 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "e496f52f-45dd-4fe5-8ce0-d5f1a72a6d32",
-    "agentDatabaseId": "416d0667-664a-4688-8ab2-5a293f0ff8f9",
-    "agentName": "Diego Ospina",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.08,
-    "endorsementDatabaseId": "0613a8aa-17c5-4607-8b0a-4cf4d90f9ab9",
-    "order": 4,
-    "createDate": "2025-02-21T08:40:00-06:00",
-    "changeDate": "2025-02-21T08:40:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "4a76fe8e-fd57-4444-aebb-f32df8ff9e73",
     "agentDatabaseId": "1fb3395b-486e-4cfb-a026-e7a7b0512d2c",
     "agentName": "Laura Cifuentes",
@@ -370533,6 +370563,21 @@
     "commissionValue": 10.0,
     "endorsementDatabaseId": "0613a8aa-17c5-4607-8b0a-4cf4d90f9ab9",
     "order": 1,
+    "createDate": "2025-02-21T08:40:00-06:00",
+    "changeDate": "2025-02-21T08:40:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "e496f52f-45dd-4fe5-8ce0-d5f1a72a6d32",
+    "agentDatabaseId": "416d0667-664a-4688-8ab2-5a293f0ff8f9",
+    "agentName": "Diego Ospina",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.08,
+    "endorsementDatabaseId": "0613a8aa-17c5-4607-8b0a-4cf4d90f9ab9",
+    "order": 4,
     "createDate": "2025-02-21T08:40:00-06:00",
     "changeDate": "2025-02-21T08:40:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
@@ -370553,21 +370598,6 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
-    "databaseId": "449440eb-c8c3-4aed-b6fc-610bcb4d2ee3",
-    "agentDatabaseId": "a0d922d2-54e8-4118-8b7f-800bba420dcf",
-    "agentName": "Laura Galvis",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 10.0,
-    "endorsementDatabaseId": "6fcba676-6473-404b-9d7d-ae33c9599eb1",
-    "order": 1,
-    "createDate": "2025-02-21T08:31:00-06:00",
-    "changeDate": "2025-02-21T08:31:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
     "databaseId": "6f4e5454-321e-4e55-ae18-ee58b89f8223",
     "agentDatabaseId": "c42dfd43-7eac-4e36-aff0-79b9047117a2",
     "agentName": "Miguel Angel Zapata Guiral",
@@ -370578,6 +370608,21 @@
     "commissionValue": 0.5,
     "endorsementDatabaseId": "6fcba676-6473-404b-9d7d-ae33c9599eb1",
     "order": 3,
+    "createDate": "2025-02-21T08:31:00-06:00",
+    "changeDate": "2025-02-21T08:31:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
+    "databaseId": "449440eb-c8c3-4aed-b6fc-610bcb4d2ee3",
+    "agentDatabaseId": "a0d922d2-54e8-4118-8b7f-800bba420dcf",
+    "agentName": "Laura Galvis",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 10.0,
+    "endorsementDatabaseId": "6fcba676-6473-404b-9d7d-ae33c9599eb1",
+    "order": 1,
     "createDate": "2025-02-21T08:31:00-06:00",
     "changeDate": "2025-02-21T08:31:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
@@ -378987,20 +379032,38 @@
     "changeDate": "2025-01-23T16:10:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "a0a5f3aa-f57f-4c94-95ff-239de00b118b",
+        "databaseId": "453ecaf7-690c-463c-bd88-ecd1f21c9890",
         "agentCommissionDatabaseId": "585709ba-267f-4df0-b5fd-e42adbaba1db",
         "commissionReceivedAmount": 4.48,
         "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
-        "order": 2,
-        "createDate": "2025-04-01T17:28:00-05:00",
+        "order": 4,
+        "createDate": "2025-06-03T15:45:00-05:00",
         "changeDate": "2025-06-25T14:37:00-05:00"
       },
       {
-        "databaseId": "b6aaef97-cbe1-48a4-9c20-5c34a4a303a6",
+        "databaseId": "9cd1a186-cb13-4d77-8f0d-db25527a2e99",
+        "agentCommissionDatabaseId": "585709ba-267f-4df0-b5fd-e42adbaba1db",
+        "commissionReceivedAmount": 22.37,
+        "commissionReceivedDate": "2025-11-28T00:00:00-06:00",
+        "order": 7,
+        "createDate": "2025-12-26T10:16:00-06:00",
+        "changeDate": "2025-12-26T10:16:00-06:00"
+      },
+      {
+        "databaseId": "8e261c01-3a3a-4b0a-b2b3-bdd8f86ad2ca",
+        "agentCommissionDatabaseId": "585709ba-267f-4df0-b5fd-e42adbaba1db",
+        "commissionReceivedAmount": 14.92,
+        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
+        "order": 1,
+        "createDate": "2025-01-23T16:10:00-06:00",
+        "changeDate": "2025-01-23T16:10:00-06:00"
+      },
+      {
+        "databaseId": "df2e92b9-bd20-4daf-abae-b5a4ae98a166",
         "agentCommissionDatabaseId": "585709ba-267f-4df0-b5fd-e42adbaba1db",
         "commissionReceivedAmount": 4.48,
         "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
-        "order": 5,
+        "order": 3,
         "createDate": "2025-06-03T15:45:00-05:00",
         "changeDate": "2025-06-25T14:37:00-05:00"
       },
@@ -379014,39 +379077,21 @@
         "changeDate": "2025-06-25T14:37:00-05:00"
       },
       {
-        "databaseId": "df2e92b9-bd20-4daf-abae-b5a4ae98a166",
+        "databaseId": "b6aaef97-cbe1-48a4-9c20-5c34a4a303a6",
         "agentCommissionDatabaseId": "585709ba-267f-4df0-b5fd-e42adbaba1db",
         "commissionReceivedAmount": 4.48,
         "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
-        "order": 3,
+        "order": 5,
         "createDate": "2025-06-03T15:45:00-05:00",
         "changeDate": "2025-06-25T14:37:00-05:00"
       },
       {
-        "databaseId": "8e261c01-3a3a-4b0a-b2b3-bdd8f86ad2ca",
-        "agentCommissionDatabaseId": "585709ba-267f-4df0-b5fd-e42adbaba1db",
-        "commissionReceivedAmount": 14.92,
-        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
-        "order": 1,
-        "createDate": "2025-01-23T16:10:00-06:00",
-        "changeDate": "2025-01-23T16:10:00-06:00"
-      },
-      {
-        "databaseId": "9cd1a186-cb13-4d77-8f0d-db25527a2e99",
-        "agentCommissionDatabaseId": "585709ba-267f-4df0-b5fd-e42adbaba1db",
-        "commissionReceivedAmount": 22.37,
-        "commissionReceivedDate": "2025-11-28T00:00:00-06:00",
-        "order": 7,
-        "createDate": "2025-12-26T10:16:00-06:00",
-        "changeDate": "2025-12-26T10:16:00-06:00"
-      },
-      {
-        "databaseId": "453ecaf7-690c-463c-bd88-ecd1f21c9890",
+        "databaseId": "a0a5f3aa-f57f-4c94-95ff-239de00b118b",
         "agentCommissionDatabaseId": "585709ba-267f-4df0-b5fd-e42adbaba1db",
         "commissionReceivedAmount": 4.48,
         "commissionReceivedDate": "2025-06-30T00:00:00-05:00",
-        "order": 4,
-        "createDate": "2025-06-03T15:45:00-05:00",
+        "order": 2,
+        "createDate": "2025-04-01T17:28:00-05:00",
         "changeDate": "2025-06-25T14:37:00-05:00"
       }
     ]
@@ -381283,31 +381328,6 @@
     ]
   },
   {
-    "databaseId": "b7235401-cd70-4514-8560-5334b7a13010",
-    "agentDatabaseId": "561b683c-7f0f-4cab-9d1b-01d3da659480",
-    "agentName": "Omar Carpintero - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.06,
-    "endorsementDatabaseId": "c945d828-4764-496e-b32a-80097dab1eca",
-    "order": 4,
-    "createDate": "2025-01-22T16:31:00-06:00",
-    "changeDate": "2025-01-22T16:31:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "4e0c2ea2-dd2e-4841-81f4-879535396bb1",
-        "agentCommissionDatabaseId": "b7235401-cd70-4514-8560-5334b7a13010",
-        "commissionReceivedAmount": 6.95,
-        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
-        "order": 1,
-        "createDate": "2025-01-22T16:31:00-06:00",
-        "changeDate": "2025-01-22T16:31:00-06:00"
-      }
-    ]
-  },
-  {
     "databaseId": "8abe2c93-12db-4413-8b54-b91f2355e757",
     "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
     "agentName": "Veronica Espinal - Binders",
@@ -381383,31 +381403,6 @@
     ]
   },
   {
-    "databaseId": "45ef2b18-faec-4022-806f-49cb9fd5f6d5",
-    "agentDatabaseId": "b271dbba-58fd-4cab-91e1-8399679fe452",
-    "agentName": "Valentina Jimenez - CRM",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.06,
-    "endorsementDatabaseId": "c945d828-4764-496e-b32a-80097dab1eca",
-    "order": 2,
-    "createDate": "2025-01-22T16:31:00-06:00",
-    "changeDate": "2025-01-22T16:31:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "13b1466d-fd55-4c0e-b1d2-e76a815ea8da",
-        "agentCommissionDatabaseId": "45ef2b18-faec-4022-806f-49cb9fd5f6d5",
-        "commissionReceivedAmount": 6.95,
-        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
-        "order": 1,
-        "createDate": "2025-01-22T16:31:00-06:00",
-        "changeDate": "2025-01-22T16:31:00-06:00"
-      }
-    ]
-  },
-  {
     "databaseId": "2239b0cf-e68f-4556-ac8d-162431372c7b",
     "agentDatabaseId": "b44dda05-08dc-4cf1-814d-95c8ef8e3ffc",
     "agentName": "Ana Milena Guzman Calad - RT",
@@ -381433,31 +381428,6 @@
     ]
   },
   {
-    "databaseId": "7bead1f3-3452-4097-a36a-c500583899b4",
-    "agentDatabaseId": "c74b9aef-4e2f-46ac-ad7b-aed2a11355a8",
-    "agentName": "Valentina Cardona - RT",
-    "policyCommissionAgentPaymentTypeValue": 1,
-    "policyCommissionAgentPaymentTypeText": "From Base Premium",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 0.08,
-    "endorsementDatabaseId": "c945d828-4764-496e-b32a-80097dab1eca",
-    "order": 8,
-    "createDate": "2025-01-22T16:31:00-06:00",
-    "changeDate": "2025-01-22T16:31:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": [
-      {
-        "databaseId": "65fb36be-e017-4c4f-8290-9af616d4d6e1",
-        "agentCommissionDatabaseId": "7bead1f3-3452-4097-a36a-c500583899b4",
-        "commissionReceivedAmount": 9.27,
-        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
-        "order": 1,
-        "createDate": "2025-01-22T16:31:00-06:00",
-        "changeDate": "2025-01-22T16:31:00-06:00"
-      }
-    ]
-  },
-  {
     "databaseId": "2d7051df-69db-4d22-9c1d-3e2dc2befc6c",
     "agentDatabaseId": "e9c9f988-98d6-4376-9aec-efe5dff09463",
     "agentName": "Rudiar Saltar\u00e9n Ram\u00edrez - RN",
@@ -381474,6 +381444,81 @@
       {
         "databaseId": "25b22e27-e933-4c3d-9a28-07cb5671dc5e",
         "agentCommissionDatabaseId": "2d7051df-69db-4d22-9c1d-3e2dc2befc6c",
+        "commissionReceivedAmount": 9.27,
+        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
+        "order": 1,
+        "createDate": "2025-01-22T16:31:00-06:00",
+        "changeDate": "2025-01-22T16:31:00-06:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "b7235401-cd70-4514-8560-5334b7a13010",
+    "agentDatabaseId": "561b683c-7f0f-4cab-9d1b-01d3da659480",
+    "agentName": "Omar Carpintero - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.06,
+    "endorsementDatabaseId": "c945d828-4764-496e-b32a-80097dab1eca",
+    "order": 4,
+    "createDate": "2025-01-22T16:31:00-06:00",
+    "changeDate": "2025-01-22T16:31:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "4e0c2ea2-dd2e-4841-81f4-879535396bb1",
+        "agentCommissionDatabaseId": "b7235401-cd70-4514-8560-5334b7a13010",
+        "commissionReceivedAmount": 6.95,
+        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
+        "order": 1,
+        "createDate": "2025-01-22T16:31:00-06:00",
+        "changeDate": "2025-01-22T16:31:00-06:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "45ef2b18-faec-4022-806f-49cb9fd5f6d5",
+    "agentDatabaseId": "b271dbba-58fd-4cab-91e1-8399679fe452",
+    "agentName": "Valentina Jimenez - CRM",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.06,
+    "endorsementDatabaseId": "c945d828-4764-496e-b32a-80097dab1eca",
+    "order": 2,
+    "createDate": "2025-01-22T16:31:00-06:00",
+    "changeDate": "2025-01-22T16:31:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "13b1466d-fd55-4c0e-b1d2-e76a815ea8da",
+        "agentCommissionDatabaseId": "45ef2b18-faec-4022-806f-49cb9fd5f6d5",
+        "commissionReceivedAmount": 6.95,
+        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
+        "order": 1,
+        "createDate": "2025-01-22T16:31:00-06:00",
+        "changeDate": "2025-01-22T16:31:00-06:00"
+      }
+    ]
+  },
+  {
+    "databaseId": "7bead1f3-3452-4097-a36a-c500583899b4",
+    "agentDatabaseId": "c74b9aef-4e2f-46ac-ad7b-aed2a11355a8",
+    "agentName": "Valentina Cardona - RT",
+    "policyCommissionAgentPaymentTypeValue": 1,
+    "policyCommissionAgentPaymentTypeText": "From Base Premium",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 0.08,
+    "endorsementDatabaseId": "c945d828-4764-496e-b32a-80097dab1eca",
+    "order": 8,
+    "createDate": "2025-01-22T16:31:00-06:00",
+    "changeDate": "2025-01-22T16:31:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": [
+      {
+        "databaseId": "65fb36be-e017-4c4f-8290-9af616d4d6e1",
+        "agentCommissionDatabaseId": "7bead1f3-3452-4097-a36a-c500583899b4",
         "commissionReceivedAmount": 9.27,
         "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
         "order": 1,
@@ -387117,20 +387162,20 @@
     "changeDate": "2025-01-10T16:33:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": [
       {
-        "databaseId": "ca6342d1-6fee-4100-a7a5-978c3b72887a",
-        "agentCommissionDatabaseId": "af57ce33-9cdf-450f-a1ce-2b6c5f126f9f",
-        "commissionReceivedAmount": 50.0,
-        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
-        "order": 1,
-        "createDate": "2025-02-28T00:10:00-06:00",
-        "changeDate": "2025-02-28T00:10:00-06:00"
-      },
-      {
         "databaseId": "1c4d5811-ddcc-4f69-8fb0-9db622e95bc6",
         "agentCommissionDatabaseId": "af57ce33-9cdf-450f-a1ce-2b6c5f126f9f",
         "commissionReceivedAmount": -30.0,
         "commissionReceivedDate": "2025-02-28T00:00:00-06:00",
         "order": 2,
+        "createDate": "2025-02-28T00:10:00-06:00",
+        "changeDate": "2025-02-28T00:10:00-06:00"
+      },
+      {
+        "databaseId": "ca6342d1-6fee-4100-a7a5-978c3b72887a",
+        "agentCommissionDatabaseId": "af57ce33-9cdf-450f-a1ce-2b6c5f126f9f",
+        "commissionReceivedAmount": 50.0,
+        "commissionReceivedDate": "2025-01-30T00:00:00-06:00",
+        "order": 1,
         "createDate": "2025-02-28T00:10:00-06:00",
         "changeDate": "2025-02-28T00:10:00-06:00"
       }
@@ -390892,6 +390937,21 @@
     "endorsementAgentsCommissionPaymentDetail": []
   },
   {
+    "databaseId": "453a0157-ee50-466d-8aa5-5172da0de27b",
+    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
+    "agentName": "Veronica Espinal - Binders",
+    "policyCommissionAgentPaymentTypeValue": 0,
+    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
+    "commissionTypeValue": 0,
+    "commissionTypeText": "Percent",
+    "commissionValue": 2.0,
+    "endorsementDatabaseId": "1d147336-8e38-40a6-9db7-d3417c608e17",
+    "order": 2,
+    "createDate": "2025-01-09T14:00:00-06:00",
+    "changeDate": "2025-01-09T14:00:00-06:00",
+    "endorsementAgentsCommissionPaymentDetail": []
+  },
+  {
     "databaseId": "2fe02a63-2acf-4bc6-b23f-de2434034655",
     "agentDatabaseId": "bb7a7e46-cedc-4f1d-8435-b7b7932bd206",
     "agentName": "CAROLINA PEREZ GARCIA - Green",
@@ -390917,21 +390977,6 @@
     "commissionValue": 10.0,
     "endorsementDatabaseId": "1d147336-8e38-40a6-9db7-d3417c608e17",
     "order": 1,
-    "createDate": "2025-01-09T14:00:00-06:00",
-    "changeDate": "2025-01-09T14:00:00-06:00",
-    "endorsementAgentsCommissionPaymentDetail": []
-  },
-  {
-    "databaseId": "453a0157-ee50-466d-8aa5-5172da0de27b",
-    "agentDatabaseId": "4ec20c17-f999-4968-986d-05af649fe2e2",
-    "agentName": "Veronica Espinal - Binders",
-    "policyCommissionAgentPaymentTypeValue": 0,
-    "policyCommissionAgentPaymentTypeText": "From Agency Commission",
-    "commissionTypeValue": 0,
-    "commissionTypeText": "Percent",
-    "commissionValue": 2.0,
-    "endorsementDatabaseId": "1d147336-8e38-40a6-9db7-d3417c608e17",
-    "order": 2,
     "createDate": "2025-01-09T14:00:00-06:00",
     "changeDate": "2025-01-09T14:00:00-06:00",
     "endorsementAgentsCommissionPaymentDetail": []
