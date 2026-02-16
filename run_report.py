@@ -61,7 +61,18 @@ def main(date_from="2025-12-01", date_to=None):
     # 3. Exportar a Excel (pasa el rango para metadata)
     output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
-    filename = f"endorsements_commission_report_{date_from.replace('-', '')}_to_{date_to.replace('-', '')}.xlsx"
+
+    # 🧹 Limpiar archivos antiguos en output/
+    import glob
+    old_files = glob.glob(os.path.join(output_dir, "*.xlsx"))
+    for f in old_files:
+        try:
+            os.remove(f)
+            # print(f"🗑️ Archivo antiguo eliminado: {os.path.basename(f)}")
+        except Exception as e:
+            print(f"⚠️ No se pudo eliminar {f}: {e}")
+
+    filename = f"reporte_comisiones_{date_from}_{date_to}.xlsx"
     filepath = os.path.join(output_dir, filename)
 
     print(f"\n🔹 Exportando a Excel...")

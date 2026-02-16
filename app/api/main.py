@@ -1,4 +1,5 @@
 import os
+import glob
 import logging
 from datetime import datetime
 from fastapi import FastAPI, Depends, HTTPException, Query
@@ -119,7 +120,16 @@ async def generate_report_endpoint(
         # 2. Guardar en Excel temporalmente
         output_dir = "output"
         os.makedirs(output_dir, exist_ok=True)
-        filename = f"report_{date_from}_{date_to}_{datetime.now().strftime('%H%M%S')}.xlsx"
+
+        # 🧹 Limpiar archivos antiguos en output/ para evitar saturación
+        old_files = glob.glob(os.path.join(output_dir, "*.xlsx"))
+        for f in old_files:
+            try:
+                os.remove(f)
+            except Exception as e:
+                logger.warning(f"No se pudo eliminar archivo antiguo {f}: {e}")
+
+        filename = f"reporte_comisiones_{date_from}_{date_to}.xlsx"
         filepath = os.path.join(output_dir, filename)
 
         logger.info(
@@ -130,7 +140,7 @@ async def generate_report_endpoint(
         # 3. Retornar archivo
         return FileResponse(
             path=filepath,
-            filename=f"endorsements_report_{date_from}_{date_to}.xlsx",
+            filename=filename,
             media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
 
