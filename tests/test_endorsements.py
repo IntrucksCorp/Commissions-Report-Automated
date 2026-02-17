@@ -1,4 +1,5 @@
-from app.api.client import NowCertsClient
+from app.services.nowcerts_client import NowCertsClient
+
 
 def test_policy_endorsement_detail_list(client: NowCertsClient):
     print("\n📄 Probando PolicyEndorsementDetailList")

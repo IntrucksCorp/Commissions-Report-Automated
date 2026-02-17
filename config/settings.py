@@ -16,17 +16,15 @@ load_dotenv(dotenv_path=ENV_PATH)
 # --------------------------------------------------
 # API BASE
 # --------------------------------------------------
-NOWCERTS_API_BASE_URL = "https://api.nowcerts.com/api"
+NOWCERTS_API_BASE_URL = os.getenv(
+    "NOWCERTS_API_BASE_URL", "https://api.nowcerts.com/api")
 
 # --------------------------------------------------
 # AUTH
 # --------------------------------------------------
-NOWCERTS_ACCESS_TOKEN = os.getenv("NOWCERTS_ACCESS_TOKEN")
-
-if not NOWCERTS_ACCESS_TOKEN:
-    raise RuntimeError(
-        f"❌ Falta NOWCERTS_ACCESS_TOKEN en el .env ({ENV_PATH})"
-    )
+NOWCERTS_USERNAME = os.getenv("NOWCERTS_USERNAME")
+NOWCERTS_PASSWORD = os.getenv("NOWCERTS_PASSWORD")
+NOWCERTS_AGENCY_ID = os.getenv("NOWCERTS_AGENCY_ID")
 
 # --------------------------------------------------
 # REQUEST SETTINGS

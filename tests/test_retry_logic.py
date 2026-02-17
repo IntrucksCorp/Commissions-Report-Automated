@@ -1,12 +1,13 @@
 import unittest
 from unittest.mock import MagicMock, patch
-from app.api.client import NowCertsClient
+from app.services.nowcerts_client import NowCertsClient
 import time
 
 
 class TestNowCertsClientRetry(unittest.TestCase):
     @patch("app.api.client.requests.Session")
-    @patch("app.api.client.time.sleep", return_value=None)  # No esperar en tests
+    # No esperar en tests
+    @patch("app.api.client.time.sleep", return_value=None)
     def test_get_retry_on_429(self, mock_sleep, mock_session_class):
         # Configurar el mock de la sesión
         mock_session = mock_session_class.return_value

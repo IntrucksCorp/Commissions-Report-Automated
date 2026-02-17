@@ -1,4 +1,5 @@
-from app.api.client import NowCertsClient
+from app.services.nowcerts_client import NowCertsClient
+
 
 def main():
     client = NowCertsClient()
