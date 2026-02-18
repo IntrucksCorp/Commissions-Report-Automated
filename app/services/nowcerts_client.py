@@ -209,37 +209,56 @@ class NowCertsClient:
         self,
         endpoint: str,
         *,
-        top: int = 500,
+        top: int = settings.DEFAULT_TOP,
         skip_start: int = 0,
         orderby: Optional[str] = None,
         select: Optional[str] = None,
         filter: Optional[str] = None,
         max_pages: Optional[int] = None,
-        sleep_seconds: float = 0.7
+        sleep_seconds: float = 0.5
     ) -> List[Dict[str, Any]]:
         """
-        Descarga todos los registros de un endpoint paginado de NowCerts usando OData.
-
-        Usa los parámetros de consulta OData:
-            $top: Número máximo de elementos a devolver por página.
-            $skip: Número de elementos a omitir.
-            $orderby: Criterios de ordenación.
-            $select: Propiedades específicas a devolver.
-            $filter: Criterios de filtrado.
+        Descarga todos los registros y los retorna como una lista.
+        (Mantiene compatibilidad con código existente).
         """
+        return list(self.yield_all_paginated(
+            endpoint,
+            top=top,
+            skip_start=skip_start,
+            orderby=orderby,
+            select=select,
+            filter=filter,
+            max_pages=max_pages,
+            sleep_seconds=sleep_seconds
+        ))
 
-        all_items: List[Dict[str, Any]] = []
+    def yield_all_paginated(
+        self,
+        endpoint: str,
+        *,
+        top: int = settings.DEFAULT_TOP,
+        skip_start: int = 0,
+        orderby: Optional[str] = None,
+        select: Optional[str] = None,
+        filter: Optional[str] = None,
+        max_pages: Optional[int] = None,
+        sleep_seconds: float = 0.5,
+        save_snapshot: bool = False
+    ):
+        """
+        Generador que descarga registros de un endpoint paginado de NowCerts.
+        Permite procesar datos sin cargar todo en memoria.
+        """
         skip = skip_start
         page = 0
-        # request_count = 0 # Removed as per new rate limit logic
-        start_time = time.time()
+        total_yielded = 0
 
         logger.info(
-            f"🚀 Iniciando descarga paginada de '{endpoint}' (top={top}, skip={skip_start})")
-        if select:
-            logger.info(f"   $select: {select}")
+            f"🚀 Iniciando descarga paginada (stream) de '{endpoint}' (top={top}, skip={skip_start})")
         if filter:
             logger.info(f"   $filter: {filter}")
+
+        all_items_for_snapshot = [] if save_snapshot else None
 
         while True:
             params: Dict[str, Any] = {
@@ -254,47 +273,46 @@ class NowCertsClient:
             if filter:
                 params["$filter"] = filter
 
-            # Control de rate limit: 0.7s por página = ~85 req/min
-            # Esto es más fluido que esperar 60s de golpe como en la versión anterior
+            # Control de rate limit amigable
             if page > 0 and sleep_seconds > 0:
                 time.sleep(sleep_seconds)
 
-            # Usar self.get que ya maneja login, reintentos y timeouts
             data = self.get(endpoint, params=params)
 
-            # NowCerts devuelve directamente lista o { value: [...] }
             if isinstance(data, dict) and "value" in data:
                 items = data["value"]
             else:
                 items = data
 
-            logger.info(
-                f"📦 [{endpoint}] Página {page + 1}: {len(items)} registros (total: {len(all_items) + len(items)})")
-
             if not items:
                 break
 
-            all_items.extend(items)
+            for item in items:
+                yield item
+                total_yielded += 1
 
-            # Última página
+            logger.info(
+                f"📦 [{endpoint}] Página {page + 1}: {len(items)} registros (total: {total_yielded})")
+
+            if save_snapshot:
+                all_items_for_snapshot.extend(items)
+
             if len(items) < top:
                 break
 
             skip += top
             page += 1
 
-            # Límite artificial (modo test)
             if max_pages and page >= max_pages:
                 logger.info("🧪 Límite de páginas alcanzado (modo test)")
                 break
 
-            # Sleep entre páginas para ser amigable con la API
-            if sleep_seconds > 0:
-                time.sleep(sleep_seconds)
+        logger.info(f"✅ Total descargado (stream): {total_yielded} registros")
 
-        logger.info(f"✅ Total descargado: {len(all_items)} registros")
+        if save_snapshot and all_items_for_snapshot:
+            self._save_snapshot(endpoint, all_items_for_snapshot)
 
-        # Guardar snapshot opcional
+    def _save_snapshot(self, endpoint, all_items):
         try:
             os.makedirs("data_raw", exist_ok=True)
             safe_name = endpoint.strip("/").replace("/", "_")
@@ -305,5 +323,3 @@ class NowCertsClient:
         except Exception as e:
             logger.warning(
                 f"⚠️ No se pudo guardar snapshot de {endpoint}: {e}")
-
-        return all_items

@@ -1,6 +1,7 @@
 from datetime import datetime
 from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
+from openpyxl.cell import WriteOnlyCell
 
 
 # Colores profesionales
@@ -23,9 +24,10 @@ THIN_BORDER = Border(
 
 def export_endorsements_to_excel(endorsements, filename, date_from=None, date_to=None):
     """
-    Exporta endorsements a Excel con formato simplificado y metadata.
+    Exporta endorsements a Excel con formato profesional.
+    Optimizado usando ws.append() para mayor velocidad sin los riesgos de stream XML de write_only.
     """
-    print(f"🔹 Exportando a Excel en '{filename}' ...")
+    print(f"🔹 Exportando a Excel (Optimized Mode) en '{filename}' ...")
 
     wb = Workbook()
     ws = wb.active
@@ -39,49 +41,38 @@ def export_endorsements_to_excel(endorsements, filename, date_from=None, date_to
         [f"Generado el:", datetime.now().strftime("%Y-%m-%d %H:%M:%S")],
         []  # Fila vacía
     ]
-
     for row in metadata:
         ws.append(row)
 
-    # Estilo para el título
+    # Estilo título
     ws["A1"].font = Font(bold=True, size=14)
 
-    start_row_headers = len(metadata) + 1
-
-    # Headers simplificados
+    # ---- Headers ----
     headers = [
-        "Endorsement ID",
-        "Endorsement Date",
-        "Endorsement Amount",
-        "Endorsement Type",
-        "MGA",
-        "Policy Number",
-        "Policy Effective",
-        "Policy Expiration",
-        "Insured",
-        "Agent/CSR",
-        "Agency Commission",
-        "Agent Commission",
+        "Endorsement ID", "Endorsement Date", "Endorsement Amount",
+        "Endorsement Type", "MGA", "Policy Number",
+        "Policy Effective", "Policy Expiration", "Insured",
+        "Agent/CSR", "Agency Commission", "Agent Commission"
     ]
 
-    # Escribir headers en la fila correspondiente
-    for col, header in enumerate(headers, 1):
-        cell = ws.cell(row=start_row_headers, column=col, value=header)
+    ws.append(headers)
+    header_row_idx = len(metadata) + 1
+
+    for col_idx, header in enumerate(headers, 1):
+        cell = ws.cell(row=header_row_idx, column=col_idx)
         cell.font = HEADER_FONT
         cell.fill = HEADER_FILL
         cell.alignment = Alignment(
             horizontal="center", vertical="center", wrap_text=True)
         cell.border = THIN_BORDER
 
-    ws.row_dimensions[start_row_headers].height = 35
-
-    current_row = start_row_headers + 1
+    ws.row_dimensions[header_row_idx].height = 35
 
     # ---- Contenido ----
+    count = 0
     for e in endorsements:
         endorsement_type_raw = e.get("endorsement_type") or ""
-        endorsement_type = endorsement_type_raw.lower()
-        is_cancel = "cancel" in endorsement_type
+        is_cancel = "cancel" in endorsement_type_raw.lower()
 
         amount = safe_money(e.get("endorsement_amount"))
         if is_cancel and amount > 0:
@@ -90,89 +81,58 @@ def export_endorsements_to_excel(endorsements, filename, date_from=None, date_to
         agency_comm = safe_money(e.get("agency_commission"))
         agent_comm = safe_money(e.get("agent_commission"))
 
-        # Si es cancel, las comisiones también en negativo
         if is_cancel:
-            if agency_comm > 0:
-                agency_comm = -agency_comm
-            if agent_comm > 0:
-                agent_comm = -agent_comm
+            agency_comm = -abs(agency_comm) if agency_comm != 0 else 0
+            agent_comm = -abs(agent_comm) if agent_comm != 0 else 0
 
-        total_comm = agency_comm + agent_comm
+        # Escribir fila usando append
+        ws.append([
+            e.get("endorsement_id"),
+            _format_date(e.get("endorsement_effective")),
+            amount,
+            endorsement_type_raw,
+            e.get("mga"),
+            e.get("policy_number"),
+            _format_date(e.get("policy_effective_date")),
+            _format_date(e.get("policy_expiration_date")),
+            e.get("insured"),
+            e.get("agent"),
+            agency_comm,
+            agent_comm
+        ])
 
-        row_idx = current_row
+        count += 1
+        current_row = ws.max_row
 
-        # Escribir datos
-        ws.cell(row=row_idx, column=1, value=e.get("endorsement_id"))
-        ws.cell(row=row_idx, column=2, value=_format_date(
-            e.get("endorsement_effective")))
-        ws.cell(row=row_idx, column=3, value=amount)
-        ws.cell(row=row_idx, column=4, value=endorsement_type_raw)
-        ws.cell(row=row_idx, column=5, value=e.get("mga"))
-        ws.cell(row=row_idx, column=6, value=e.get("policy_number"))
-        ws.cell(row=row_idx, column=7, value=_format_date(
-            e.get("policy_effective_date")))
-        ws.cell(row=row_idx, column=8, value=_format_date(
-            e.get("policy_expiration_date")))
-        ws.cell(row=row_idx, column=9, value=e.get("insured"))
-        ws.cell(row=row_idx, column=10, value=e.get(
-            "agent"))  # Agente individual
-        ws.cell(row=row_idx, column=11, value=agency_comm)
-        ws.cell(row=row_idx, column=12, value=agent_comm)
-
-        # Formato dinero
-        ws.cell(row=row_idx, column=3).number_format = MONEY_FORMAT
-        ws.cell(row=row_idx, column=11).number_format = MONEY_FORMAT
-        ws.cell(row=row_idx, column=12).number_format = MONEY_FORMAT
-
-        # Si es cancel: valores en rojo
-        if is_cancel:
-            ws.cell(row=row_idx, column=3).font = Font(
-                name="Arial", size=10, color="FF0000")
-            ws.cell(row=row_idx, column=11).font = Font(
-                name="Arial", size=10, color="FF0000")
-            ws.cell(row=row_idx, column=12).font = Font(
-                name="Arial", size=10, color="FF0000")
-
-        # Font y bordes
-        for col in range(1, len(headers) + 1):
-            cell = ws.cell(row=row_idx, column=col)
+        # Aplicar estilos a la fila recién agregada
+        for col_idx in range(1, 13):
+            cell = ws.cell(row=current_row, column=col_idx)
             cell.font = NORMAL_FONT
             cell.border = THIN_BORDER
             cell.alignment = Alignment(vertical="center", wrap_text=False)
 
-        ws.row_dimensions[row_idx].height = 20
+            # Formato dinero (columnas 3, 11, 12)
+            if col_idx in [3, 11, 12]:
+                cell.number_format = MONEY_FORMAT
+                if is_cancel:
+                    cell.font = Font(name="Arial", size=10, color="FF0000")
 
-        current_row += 1
+        ws.row_dimensions[current_row].height = 20
+
+        if count % 100 == 0:
+            print(f"   ... procesadas {count} filas")
 
     # ---- Ancho de columnas ----
-    widths = {
-        "A": 36,  # Endorsement ID
-        "B": 16,  # Date
-        "C": 18,  # Amount
-        "D": 26,  # Type
-        "E": 32,  # MGA
-        "F": 20,  # Policy
-        "G": 15,  # Effective
-        "H": 15,  # Expiration
-        "I": 30,  # Insured
-        "J": 30,  # Agent/CSR (individual)
-        "K": 18,  # Agency Comm
-        "L": 18,  # Agent Comm
-    }
+    widths = [36, 16, 18, 26, 32, 20, 15, 15, 30, 30, 18, 18]
+    for i, w in enumerate(widths, 1):
+        ws.column_dimensions[chr(64 + i)].width = w
 
-    for col, width in widths.items():
-        ws.column_dimensions[col].width = width
-
-    # Congelar header y primera columna
-    ws.freeze_panes = "B2"
-
-    # Agregar autofiltros
+    # Congelar y Autofiltro
+    ws.freeze_panes = "B" + str(header_row_idx + 1)
     ws.auto_filter.ref = ws.dimensions
-    print("✅ Autofiltros agregados a todas las columnas")
 
     wb.save(filename)
-    print(f"✅ Excel generado: {filename}")
-    print(f"   Total de filas: {current_row - 1:,}")
+    print(f"✅ Excel generado: {filename} (Total: {count} filas)")
 
 
 # -----------------------
@@ -185,7 +145,7 @@ def _format_date(value):
         return None
     try:
         # Si viene como "2025-12-13T00:00:00" o "2025-12-13"
-        date_str = value.split("T")[0]
+        date_str = str(value).split("T")[0]
         # Separar año-mes-día
         parts = date_str.split("-")
         if len(parts) == 3:

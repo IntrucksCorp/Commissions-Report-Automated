@@ -108,20 +108,17 @@ async def generate_report_endpoint(
         raise HTTPException(status_code=400, detail=str(e))
 
     try:
-        # 1. Generar datos del reporte
+        # 1. Generar datos del reporte (Generator)
         logger.info(
-            f"⏳ Generando datos del reporte unificado desde {date_from} hasta {date_to}...")
+            f"⏳ Iniciando flujo de datos para el reporte unificado desde {date_from} hasta {date_to}...")
         unified_endorsements = generate_unified_endorsements(
             client, date_from=date_from, date_to=date_to)
 
-        if not unified_endorsements:
-            return {"status": "success", "message": "No se encontraron comisiones para el período indicado.", "data": []}
-
-        # 2. Guardar en Excel temporalmente
+        # 2. Guardar en Excel temporalmente (Consumiendo el generador)
         output_dir = "output"
         os.makedirs(output_dir, exist_ok=True)
 
-        # 🧹 Limpiar archivos antiguos en output/ para evitar saturación
+        # 🧹 Limpiar archivos antiguos en output/
         old_files = glob.glob(os.path.join(output_dir, "*.xlsx"))
         for f in old_files:
             try:
@@ -132,8 +129,7 @@ async def generate_report_endpoint(
         filename = f"reporte_comisiones_{date_from}_{date_to}.xlsx"
         filepath = os.path.join(output_dir, filename)
 
-        logger.info(
-            f"💾 Exportando {len(unified_endorsements)} filas a Excel...")
+        logger.info(f"💾 Generando y exportando a Excel: {filename} ...")
         export_endorsements_to_excel(
             unified_endorsements, filepath, date_from=date_from, date_to=date_to)
 

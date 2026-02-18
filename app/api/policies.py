@@ -1,7 +1,7 @@
 from typing import Dict
 
 
-def get_policies_map(client) -> Dict[str, dict]:
+def get_policies_map(client, max_pages=None) -> Dict[str, dict]:
     """
     Obtiene todas las pólizas desde /PolicyList y construye un mapa:
 
@@ -18,17 +18,18 @@ def get_policies_map(client) -> Dict[str, dict]:
 
     print("🔹 Descargando pólizas desde /PolicyList ...")
 
-    policies = client.get_all_paginated(
+    policies = client.yield_all_paginated(
         endpoint="/PolicyList",
         orderby="changeDate desc",
-        top=500
+        top=2000,
+        max_pages=max_pages
     )
 
-    print(f"✅ Se descargaron {len(policies)} pólizas.")
-
     policies_map = {}
+    count = 0
 
     for p in policies:
+        count += 1
         # Construir Agents
         agents_list = p.get("agents", [])
         agents = ", ".join(
@@ -53,6 +54,6 @@ def get_policies_map(client) -> Dict[str, dict]:
             "expiration_date": p.get("expirationDate"),
         }
 
-    print("✅ Mapa de pólizas construido correctamente.")
+    print(f"✅ Mapa de {count} pólizas construido correctamente.")
 
     return policies_map
