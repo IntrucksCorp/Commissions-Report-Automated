@@ -128,8 +128,14 @@ def export_endorsements_to_excel(endorsements, filename, date_from=None, date_to
         ws.column_dimensions[chr(64 + i)].width = w
 
     # Congelar y Autofiltro
-    ws.freeze_panes = "B" + str(header_row_idx + 1)
-    ws.auto_filter.ref = ws.dimensions
+    # Congelar desde la fila abajo de los headers para que estos siempre sean visibles
+    # "A" + str(header_row_idx + 1) congela las filas 1 hasta header_row_idx
+    ws.freeze_panes = "A" + str(header_row_idx + 1)
+
+    # El filtro debe empezar en la fila de los headers
+    first_col = "A"
+    last_col = chr(64 + len(headers))
+    ws.auto_filter.ref = f"{first_col}{header_row_idx}:{last_col}{ws.max_row}"
 
     wb.save(filename)
     print(f"✅ Excel generado: {filename} (Total: {count} filas)")
