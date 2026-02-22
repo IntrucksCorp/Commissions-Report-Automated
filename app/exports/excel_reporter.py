@@ -26,26 +26,17 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
     """
     Exporta endorsements a Excel con 2 hojas:
     1. Endorsement Detail (Detalle completo)
-    2. Agent Summary (Resumen por agente)
+    2. Agent Summary (Resumen por agente mensual)
     """
     print(f"🔹 Exportando a Excel en '{filename}' ...")
 
-    # Convertir a lista para permitir múltiples iteraciones (evita que el generador se agote)
+    # Convertir a lista para permitir múltiples iteraciones
     endorsements_list = list(endorsements)
 
-    # 1. Extraer mes y año del período
-    try:
-        date_obj = datetime.strptime(date_from, "%Y-%m-%d")
-        month_name = date_obj.strftime("%B")
-        year = date_obj.strftime("%Y")
-    except:
-        month_name = "N/A"
-        year = "N/A"
-
-    # 2. Crear Workbook
+    # 1. Crear Workbook
     wb = Workbook()
 
-    # --- Hoja 1: Endorsement Detail (Ahora es la PRIMERA) ---
+    # --- Hoja 1: Endorsement Detail ---
     ws_detail = wb.active
     ws_detail.title = "Endorsement Detail"
     
@@ -141,10 +132,10 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
 
     print(f"💾 Hoja 'Endorsement Detail' creada: {detail_count} filas")
 
-    # --- Hoja 2: Agent Summary (Ahora es la SEGUNDA) ---
+    # --- Hoja 2: Agent Summary (MENSUAL) ---
     ws_summary = wb.create_sheet("Agent Summary")
     
-    # Procesar datos para resumen por agente
+    # Procesar datos para resumen por agente Y MES
     agent_summary_dict = {}
     
     for e in endorsements_list:
@@ -152,6 +143,20 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
         if not agent:
             continue
         
+        # Extraer fecha del endorsement para agrupar por mes
+        eff_date_raw = e.get("endorsement_effective")
+        try:
+            # "2025-12-13T00:00:00" -> "December", "2025"
+            date_str = str(eff_date_raw).split("T")[0]
+            date_obj = datetime.strptime(date_str, "%Y-%m-%d")
+            m_name = date_obj.strftime("%B")
+            y_val = date_obj.strftime("%Y")
+            sort_key_date = date_obj.strftime("%Y%m") # Para ordenamiento cronológico
+        except:
+            m_name = "N/A"
+            y_val = "N/A"
+            sort_key_date = "000000"
+
         agent_comm = safe_money(e.get("agent_commission"))
         
         # Detectar si es cancelación para el signo
@@ -161,27 +166,40 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
         elif "cancel" in endorsement_type_raw.lower():
              agent_comm = -abs(agent_comm) if agent_comm != 0 else 0
 
-        if agent not in agent_summary_dict:
-            agent_summary_dict[agent] = {
+        # La clave de agrupación es (agente, año, mes)
+        group_key = (agent, y_val, m_name)
+        if group_key not in agent_summary_dict:
+            agent_summary_dict[group_key] = {
                 "count": 0,
-                "total_agent_comm": 0.0
+                "total_agent_comm": 0.0,
+                "sort_date": sort_key_date
             }
         
-        agent_summary_dict[agent]["count"] += 1
-        agent_summary_dict[agent]["total_agent_comm"] += agent_comm
+        agent_summary_dict[group_key]["count"] += 1
+        agent_summary_dict[group_key]["total_agent_comm"] += agent_comm
 
-    # Filtrar agentes con comisión != 0 y ordenar
-    filtered_agents = []
-    for agent, data in agent_summary_dict.items():
+    # Filtrar y preparar para ordenar
+    filtered_groups = []
+    for key, data in agent_summary_dict.items():
         if abs(data["total_agent_comm"]) > 0.001:
-            filtered_agents.append({
-                "agent": agent,
+            filtered_groups.append({
+                "agent": key[0],
+                "year": key[1],
+                "month": key[2],
                 "count": data["count"],
-                "total": data["total_agent_comm"]
+                "total": data["total_agent_comm"],
+                "sort_date": data["sort_date"]
             })
 
-    # Ordenar: Total DESC, luego Agent ASC
-    filtered_agents.sort(key=lambda x: (-x["total"], x["agent"]))
+    # Ordenar: Fecha DESC (sort_date), luego Total DESC, luego Agent ASC
+    filtered_groups.sort(key=lambda x: (x["sort_date"], -x["total"], x["agent"]), reverse=False)
+    # Queremos los meses más recientes arriba, así que invertimos el sort_date en el key o invertimos el resultado
+    filtered_groups.sort(key=lambda x: (x["sort_date"], x["total"]), reverse=True)
+    # Mejor así: Fecha DESC, luego dentro de ese mes por Total DESC
+    filtered_groups.sort(key=lambda x: x["sort_date"], reverse=True)
+    
+    # Re-ordenar final: Meses recientes primero, y dentro de cada mes, mayor comisión primero
+    filtered_groups.sort(key=lambda x: (x["sort_date"], x["total"]), reverse=True)
 
     summary_headers = ["Agent/CSR", "Month", "Year", "Total Endorsements", "Total Agent Commission"]
     ws_summary.append(summary_headers)
@@ -200,13 +218,13 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
     summary_total_count = 0
     summary_total_comm = 0
     
-    for agent_data in filtered_agents:
+    for gdata in filtered_groups:
         ws_summary.append([
-            agent_data["agent"],
-            month_name,
-            year,
-            agent_data["count"],
-            agent_data["total"]
+            gdata["agent"],
+            gdata["month"],
+            gdata["year"],
+            gdata["count"],
+            gdata["total"]
         ])
         
         # Estilos celdas
@@ -220,11 +238,11 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
             elif col_idx == 5:
                 cell.alignment = Alignment(horizontal="right", vertical="center")
                 cell.number_format = MONEY_FORMAT
-                if agent_data["total"] < 0:
+                if gdata["total"] < 0:
                      cell.font = Font(name="Arial", size=10, color="FF0000")
         
-        summary_total_count += agent_data["count"]
-        summary_total_comm += agent_data["total"]
+        summary_total_count += gdata["count"]
+        summary_total_comm += gdata["total"]
         ws_summary.row_dimensions[row_idx].height = 20
         row_idx += 1
 
@@ -260,7 +278,7 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
     ws_summary.freeze_panes = "B2"
     ws_summary.auto_filter.ref = f"A1:E{last_row_summary-1}"
 
-    print(f"💾 Hoja 'Agent Summary' creada: {len(filtered_agents)} agentes para {month_name} {year}")
+    print(f"💾 Hoja 'Agent Summary' creada: {len(filtered_groups)} filas (Mensual)")
 
     # 4. Validar Totales
     assert abs(summary_total_comm - detail_total_agent_comm) < 0.01, f"Error: Totales no coinciden. Summary: {summary_total_comm}, Detail: {detail_total_agent_comm}"
