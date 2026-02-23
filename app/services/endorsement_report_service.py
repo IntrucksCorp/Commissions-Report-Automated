@@ -65,6 +65,7 @@ def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
     from app.services.commision_calculator import calculate_agency_commission
 
     count_yielded = 0
+    seen_endorsements = set()
     for e in endorsements_gen:
         e_date_full = e.get("date")
         if not e_date_full:
@@ -82,8 +83,17 @@ def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
             print(f"⏹️ Fecha límite alcanzada ({e_date}). Finalizando stream.")
             break
 
-        policy_id = e.get("policyId")
         endorsement_id = e.get("databaseId")
+        if not endorsement_id:
+            continue
+
+        # --- DE-DUPLICACIÓN ---
+        if endorsement_id in seen_endorsements:
+            # print(f"⚠️ Endorsement duplicado detectado ({endorsement_id}). Saltando...")
+            continue
+        seen_endorsements.add(endorsement_id)
+
+        policy_id = e.get("policyId")
         policy_data = policies_map.get(policy_id, {})
 
         # Obtener comisiones indexadas
