@@ -29,15 +29,22 @@ def calculate_agency_commission(agency_commissions_list, endorsement_amount):
         return total
     
     for comm in agency_commissions_list:
-        commission_percent = comm.get("commissionValue")
+        commission_value = comm.get("commissionValue")
+        commission_type = comm.get("commissionTypeText", "Percent")
         
         # Saltar si no hay valor o es None
-        if commission_percent is None:
+        if commission_value is None:
             continue
             
         try:
-            percent = float(commission_percent)
-            commission_amount = amount * (percent / 100.0)
+            val = float(commission_value)
+            if commission_type == "Fixed Value":
+                # Es un monto fijo (Agency Fee)
+                commission_amount = val
+            else:
+                # Es un porcentaje (Comisión tradicional)
+                commission_amount = amount * (val / 100.0)
+            
             total += commission_amount
         except (ValueError, TypeError):
             continue
@@ -77,25 +84,29 @@ def calculate_agent_commission(agent_commissions_list, endorsement_amount, agenc
         agency_amount = 0
     
     for comm in agent_commissions_list:
-        commission_percent = comm.get("commissionValue")
+        commission_value = comm.get("commissionValue")
+        commission_type = comm.get("commissionTypeText", "Percent")
         payment_type = comm.get("policyCommissionAgentPaymentTypeText", "")
         
         # Saltar si no hay valor o es None
-        if commission_percent is None:
+        if commission_value is None:
             continue
             
         try:
-            percent = float(commission_percent)
+            val = float(commission_value)
             
-            # Determinar la base sobre la cual calcular
-            if "From Agency Commission" in payment_type:
-                # Se calcula sobre la comisión de agencia
-                calculation_base = agency_amount
+            if commission_type == "Fixed Value":
+                # Es un monto fijo para el agente
+                commission_amount = val
             else:
-                # "From Base Premium" o cualquier otro: se calcula sobre el monto del endorsement
-                calculation_base = base_amount
+                # Es un porcentaje, determinar la base
+                if "From Agency Commission" in payment_type:
+                    calculation_base = agency_amount
+                else:
+                    calculation_base = base_amount
+                
+                commission_amount = calculation_base * (val / 100.0)
             
-            commission_amount = calculation_base * (percent / 100.0)
             total += commission_amount
             
         except (ValueError, TypeError):
