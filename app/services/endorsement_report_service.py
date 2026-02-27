@@ -4,26 +4,108 @@ from app.services.validators import parse_date, get_today_utc_str, validate_date
 from datetime import timedelta
 
 
-def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
+def normalize_text_for_search(text):
+    """
+    Normaliza texto para búsqueda eliminando acentos y convirtiendo a mayúsculas.
+    """
+    if not text:
+        return ""
+    
+    # Reemplazos de caracteres acentuados
+    replacements = {
+        'Á': 'A', 'É': 'E', 'Í': 'I', 'Ó': 'O', 'Ú': 'U',
+        'Ñ': 'N',
+        'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u',
+        'ñ': 'n'
+    }
+    
+    result = str(text).upper().strip()
+    for old, new in replacements.items():
+        result = result.replace(old, new)
+    
+    return result
+
+
+def agent_matches_filter(agent_name, agent_filter):
+    """
+    Verifica si un nombre de agente coincide con el filtro.
+    Soporta múltiples estrategias de matching.
+    
+    Args:
+        agent_name: Nombre completo del agente (ej: "Sara Tobón - Red")
+        agent_filter: Filtro aplicado (ej: "Sara Tobón" o "SARA TOBON")
+    
+    Returns:
+        bool: True si hay match, False si no
+    """
+    if not agent_filter:
+        return True
+    
+    # Normalizar ambos textos
+    agent_normalized = normalize_text_for_search(agent_name)
+    filter_normalized = normalize_text_for_search(agent_filter)
+    
+    # Estrategia 1: Match directo en el string completo
+    # "SARA TOBON" en "SARA TOBON - RED" ✅
+    if filter_normalized in agent_normalized:
+        return True
+    
+    # Estrategia 2: Extraer solo la parte del nombre (antes del guion)
+    # "Sara Tobón - Red" -> "SARA TOBON"
+    name_part = agent_normalized.split(" - ")[0].strip() if " - " in agent_normalized else agent_normalized
+    
+    # Match en la parte del nombre
+    if filter_normalized in name_part:
+        return True
+    
+    # Match inverso (el nombre está en el filtro)
+    if name_part in filter_normalized:
+        return True
+    
+    # Estrategia 3: Match por palabras individuales
+    # "SARA TOBON" debe encontrar "SARA TOBON - RED"
+    # Cada palabra del filtro debe estar en el nombre
+    filter_words = set(filter_normalized.split())
+    name_words = set(name_part.split())
+    
+    if filter_words.issubset(name_words):
+        return True
+    
+    # Estrategia 4: Match flexible (al menos una palabra coincide)
+    # Útil para nombres parciales
+    if any(word in name_words for word in filter_words if len(word) > 2):
+        # Solo si todas las palabras del filtro aparecen
+        return filter_words.issubset(name_words)
+    
+    return False
+
+
+def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None, agent_filter=None):
     """
     Generador que produce endorsements con detalle por agente.
     Usa filtrado en API y streaming para mayor eficiencia.
+    
+    Args:
+        client: Cliente de NowCerts
+        date_from: Fecha inicial (YYYY-MM-DD)
+        date_to: Fecha final (YYYY-MM-DD), opcional
+        agent_filter: Nombre del agente para filtrar (ej: "SARA TOBON"), opcional
     """
     if date_to is None:
         date_to = get_today_utc_str()
 
     print(f"🔹 Generando reporte unificado (Streaming) ...")
     print(f"📅 Rango: {date_from} a {date_to}")
+    if agent_filter:
+        print(f"👤 Filtro de agente: {agent_filter}")
 
-    # 1. Descargar catálogos/lookups (estos sí en memoria)
+    # 1. Descargar catálogos/lookups
     policies_map = get_policies_map(client)
 
-    # Construir filtro OData para fechas
-    # date ge 'YYYY-MM-DD' and date le 'YYYY-MM-DD'
     odata_filter = f"date ge '{date_from}' and date le '{date_to}'"
     print(f"🔍 Filtro OData: {odata_filter}")
 
-    # Descargar comisiones (lookups) - Usamos top=2000 para rapidez
+    # Descargar comisiones
     print("🔹 Descargando comisiones de agencia...")
     agency_comms_list = client.get_all_paginated(
         endpoint="/PolicyEndorsementAgencyCommissionDetailList",
@@ -38,7 +120,7 @@ def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
         top=2000
     )
 
-    # Indexar comisiones por endorsementDatabaseId para búsqueda O(1)
+    # Indexar comisiones
     agency_by_endorsement = {}
     for a in agency_comms_list:
         eid = a.get("endorsementDatabaseId")
@@ -51,13 +133,10 @@ def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
         if eid:
             agents_by_endorsement.setdefault(eid, []).append(a)
 
-    # 2. Descargar Endorsements usando STREAMING (Generador)
-    # NOTA: Se eliminó el filtro OData ($filter) porque la API retorna 500
-    # en este endpoint específico al intentar filtrar por fechas.
+    # 2. Descargar Endorsements usando STREAMING
     endorsements_gen = client.yield_all_paginated(
         endpoint="/PolicyEndorsementDetailList",
-        # filter=odata_filter,  <-- Desactivado por inestabilidad de la API
-        orderby="date desc",    # Ordenado desde la API para permitir early-stop
+        orderby="date desc",
         top=2000
     )
 
@@ -65,21 +144,21 @@ def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
     from app.services.commision_calculator import calculate_agency_commission
 
     count_yielded = 0
+    count_filtered_by_agent = 0
     seen_endorsements = set()
+    
     for e in endorsements_gen:
         e_date_full = e.get("date")
         if not e_date_full:
             continue
 
-        e_date = e_date_full[:10]  # Formato YYYY-MM-DD
+        e_date = e_date_full[:10]
 
-        # Filtro local
+        # Filtro local por fecha
         if e_date > date_to:
-            continue  # Todavía no llegamos al rango deseado
+            continue
 
         if e_date < date_from:
-            # Optimizacion: Como vienen en 'date desc', si llegamos a fechas
-            # menores que date_from, ya no habrán más registros válidos.
             print(f"⏹️ Fecha límite alcanzada ({e_date}). Finalizando stream.")
             break
 
@@ -87,61 +166,58 @@ def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
         if not endorsement_id:
             continue
 
-        # --- DE-DUPLICACIÓN ---
+        # DE-DUPLICACIÓN
         if endorsement_id in seen_endorsements:
-            # print(f"⚠️ Endorsement duplicado detectado ({endorsement_id}). Saltando...")
             continue
         seen_endorsements.add(endorsement_id)
 
         policy_id = e.get("policyId")
         policy_data = policies_map.get(policy_id, {})
 
-        # Obtener comisiones indexadas
+        # Obtener comisiones
         e_agency_comms = agency_by_endorsement.get(endorsement_id, [])
         e_agent_comms = agents_by_endorsement.get(endorsement_id, [])
 
         endorsement_amount = e.get("amount", 0)
 
-        # Determinar si hay algún "Agency Fee" (Fixed Value en Agencia)
+        # Determinar tipo
         has_fixed_agency_comm = any(c.get("commissionTypeText") == "Fixed Value" for c in e_agency_comms)
         original_type = e.get("endorsementTypeText") or ""
         
-        # Calcular comisión de agencia (soporta Fixed y Percent)
-        agency_commission_total = calculate_agency_commission(
-            e_agency_comms, endorsement_amount)
+        # Calcular comisión de agencia
+        agency_commission_total = calculate_agency_commission(e_agency_comms, endorsement_amount)
         
-        # --- NUEVO: Si el tipo de endorsement es "Agency Fee", el monto mismo es la comisión ---
         is_agency_fee_type = "Agency Fee" in original_type
         if is_agency_fee_type and agency_commission_total == 0:
             agency_commission_total = endorsement_amount
             
-        # Si tiene un cobro fijo o es de tipo Agency Fee, lo etiquetamos como "Agency Fee"
         display_type = "Agency Fee" if (has_fixed_agency_comm or is_agency_fee_type) else original_type
 
-        # PRE-FILTRO: Calcular total de comisiones de agentes
-        # Si AMBAS comisiones son 0, saltar
+        # PRE-FILTRO: Calcular total
         total_agent_comm = sum(
-            calculate_agent_commission_value(
-                ac, endorsement_amount, agency_commission_total)
+            calculate_agent_commission_value(ac, endorsement_amount, agency_commission_total)
             for ac in e_agent_comms
         )
 
         if agency_commission_total == 0 and total_agent_comm == 0:
             continue
 
-        # Si hay comisiones de agentes asociadas, procesarlas individualmente
+        # Procesar agentes
         if e_agent_comms:
             for agent_comm in e_agent_comms:
                 agent_name = agent_comm.get("agentName", "").strip()
                 if not agent_name:
                     continue
 
+                # *** FILTRO POR AGENTE (MEJORADO) ***
+                if not agent_matches_filter(agent_name, agent_filter):
+                    count_filtered_by_agent += 1
+                    continue
+
                 agent_val = calculate_agent_commission_value(
                     agent_comm, endorsement_amount, agency_commission_total
                 )
 
-                # Para Agency Fee, permitimos incluso si el valor del agente es 0
-                # (aunque para otros tipos el filtro de 0-0 se mantiene arriba)
                 if not is_agency_fee_type and agency_commission_total == 0 and agent_val == 0:
                     continue
 
@@ -153,15 +229,17 @@ def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
                 yield record
                 count_yielded += 1
         else:
-            # Sin agent commissions, usar agentes de la póliza
-            # Esto es vital para las Agency Fees que vienen como endorsements sin comisiones de agentes
+            # Sin agent commissions
             agents_raw = policy_data.get("agents", "")
-            agents_list = [a.strip() for a in agents_raw.split(
-                ",") if a.strip()] if agents_raw else []
+            agents_list = [a.strip() for a in agents_raw.split(",") if a.strip()] if agents_raw else []
 
             if not agents_list:
-                # Si no hay agentes en la póliza, generamos una fila vacía para capturar la comisión
                 if agency_commission_total > 0:
+                    # Si hay filtro activo, saltar filas sin agente
+                    if agent_filter:
+                        count_filtered_by_agent += 1
+                        continue
+                        
                     yield create_record(
                         e, policy_data, endorsement_id, policy_id,
                         "", agency_commission_total, 0,
@@ -171,7 +249,11 @@ def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
                 continue
 
             for agent_name in agents_list:
-                # Emitimos una fila por cada agente con el total de la agencia
+                # *** FILTRO POR AGENTE (MEJORADO) ***
+                if not agent_matches_filter(agent_name, agent_filter):
+                    count_filtered_by_agent += 1
+                    continue
+                
                 yield create_record(
                     e, policy_data, endorsement_id, policy_id,
                     agent_name, agency_commission_total, 0,
@@ -179,8 +261,9 @@ def generate_unified_endorsements(client, date_from="2025-12-01", date_to=None):
                 )
                 count_yielded += 1
 
-    print(
-        f"✅ Proceso de generación finalizado. Total filas enviadas: {count_yielded}")
+    print(f"✅ Proceso finalizado. Filas enviadas: {count_yielded}")
+    if agent_filter:
+        print(f"🔍 Filas filtradas por agente: {count_filtered_by_agent}")
 
 
 def calculate_agent_commission_value(agent_comm, endorsement_amount, agency_commission_total):
@@ -208,25 +291,18 @@ def calculate_agent_commission_value(agent_comm, endorsement_amount, agency_comm
 def create_record(e, policy_data, endorsement_id, policy_id, agent_individual, agency_comm, agent_comm, display_type=None):
     """Crea un registro unificado."""
     return {
-        # --- IDs ---
         "endorsement_id": endorsement_id,
         "policy_id": policy_id,
-
-        # --- Policy info ---
         "policy_number": policy_data.get("policy_number"),
         "mga": policy_data.get("mga"),
         "insured": policy_data.get("insured"),
-        "agent": agent_individual,  # Solo el agente individual de esta fila
+        "agent": agent_individual,
         "policy_effective_date": policy_data.get("effective_date"),
         "policy_expiration_date": policy_data.get("expiration_date"),
-
-        # --- Endorsement info ---
         "endorsement_type": display_type or e.get("endorsementTypeText"),
         "endorsement_effective": e.get("date"),
         "endorsement_amount": e.get("amount"),
         "endorsement_status": e.get("statusText"),
-
-        # --- Commissions ---
         "agency_commission": agency_comm,
         "agent_commission": agent_comm,
     }
