@@ -55,10 +55,10 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
 
     # Headers Detail
     headers_detail = [
-        "Endorsement ID", "Endorsement Date", "Endorsement Amount",
+        "Agent/CSR", "Endorsement Date", "Endorsement Amount",
         "Endorsement Type", "MGA", "Policy Number",
         "Policy Effective", "Policy Expiration", "Insured",
-        "Agent/CSR", "Agency Commission", "Agent Commission"
+        "Agency Commission", "Agent Commission"
     ]
     ws_detail.append(headers_detail)
     header_row_detail = len(metadata) + 1
@@ -91,7 +91,7 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
             agent_comm = -abs(agent_comm) if agent_comm != 0 else 0
 
         ws_detail.append([
-            e.get("endorsement_id"),
+            e.get("agent"),
             _format_date(e.get("endorsement_effective")),
             amount,
             endorsement_type_raw,
@@ -100,7 +100,6 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
             _format_date(e.get("policy_effective_date")),
             _format_date(e.get("policy_expiration_date")),
             e.get("insured"),
-            e.get("agent"),
             agency_comm,
             agent_comm
         ])
@@ -109,26 +108,26 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
         detail_count += 1
         curr_row = ws_detail.max_row
 
-        for col_idx in range(1, 13):
+        for col_idx in range(1, 12):
             cell = ws_detail.cell(row=curr_row, column=col_idx)
             cell.font = NORMAL_FONT
             cell.border = THIN_BORDER
             cell.alignment = Alignment(vertical="center", wrap_text=False)
 
-            if col_idx in [3, 11, 12]:
+            if col_idx in [3, 10, 11]:
                 cell.number_format = MONEY_FORMAT
-                if (col_idx == 3 and amount < 0) or (col_idx == 11 and agency_comm < 0) or (col_idx == 12 and agent_comm < 0):
+                if (col_idx == 3 and amount < 0) or (col_idx == 10 and agency_comm < 0) or (col_idx == 11 and agent_comm < 0):
                     cell.font = Font(name="Arial", size=10, color="FF0000")
 
         ws_detail.row_dimensions[curr_row].height = 20
 
     # Column Widths Detail
-    detail_widths = [36, 16, 18, 26, 32, 20, 15, 15, 30, 30, 18, 18]
+    detail_widths = [30, 16, 18, 26, 32, 20, 15, 15, 30, 18, 18]
     for i, w in enumerate(detail_widths, 1):
         ws_detail.column_dimensions[chr(64 + i)].width = w
 
     ws_detail.freeze_panes = "A" + str(header_row_detail + 1)
-    ws_detail.auto_filter.ref = f"A{header_row_detail}:L{ws_detail.max_row}"
+    ws_detail.auto_filter.ref = f"A{header_row_detail}:K{ws_detail.max_row}"
 
     print(f"💾 Hoja 'Endorsement Detail' creada: {detail_count} filas")
 

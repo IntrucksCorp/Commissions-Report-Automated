@@ -47,12 +47,12 @@ def main(date_from="2025-12-01", date_to=None, agent=None):
     client = NowCertsClient()
 
     # 2. Generar datos con filtro de agente
-    unified_endorsements = generate_unified_endorsements(
+    unified_endorsements = list(generate_unified_endorsements(
         client, 
         date_from=date_from, 
         date_to=date_to,
         agent_filter=agent  # ← NUEVO PARÁMETRO
-    )
+    ))
 
     if not unified_endorsements:
         print("⚠️ No hay datos para el reporte en este período.")
