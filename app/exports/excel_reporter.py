@@ -71,11 +71,53 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
         cell.border = THIN_BORDER
     ws_detail.row_dimensions[header_row_detail].height = 35
 
+    # Sort data by agent for grouping
+    endorsements_list.sort(key=lambda x: (x.get("agent") or "").lower())
+
     # Contenido Detail
     detail_count = 0
+    detail_total_agency_comm = 0
     detail_total_agent_comm = 0
     
+    current_agent = None
+    agent_agency_sum = 0
+    agent_agent_sum = 0
+    
+    SUBTOTAL_FILL = PatternFill(start_color="F2F2F2", end_color="F2F2F2", fill_type="solid")
+    SUBTOTAL_FONT = Font(bold=True, name="Arial", size=10)
+
+    def append_subtotal_row(ws, agent_name, agency_sum, agent_sum, is_grand_total=False):
+        label = "GRAND TOTAL" if is_grand_total else f"Total {agent_name or 'N/A'}"
+        ws.append([
+            label,
+            None, None, None, None, None, None, None, None,
+            agency_sum,
+            agent_sum
+        ])
+        row_num = ws.max_row
+        for col_idx in range(1, 12):
+            cell = ws.cell(row=row_num, column=col_idx)
+            cell.font = SUBTOTAL_FONT
+            cell.fill = SUBTOTAL_FILL if not is_grand_total else PatternFill(start_color="D9D9D9", end_color="D9D9D9", fill_type="solid")
+            cell.border = THIN_BORDER
+            if col_idx in [10, 11]:
+                cell.number_format = MONEY_FORMAT
+                val = agency_sum if col_idx == 10 else agent_sum
+                if val < 0:
+                    cell.font = Font(bold=True, name="Arial", size=10, color="FF0000")
+        ws.row_dimensions[row_num].height = 20
+
     for e in endorsements_list:
+        agent = e.get("agent")
+        
+        # Detect agent change for subtotal
+        if current_agent is not None and agent != current_agent:
+            append_subtotal_row(ws_detail, current_agent, agent_agency_sum, agent_agent_sum)
+            agent_agency_sum = 0
+            agent_agent_sum = 0
+        
+        current_agent = agent
+        
         endorsement_type_raw = e.get("endorsement_type") or ""
         is_cancel = "cancel" in endorsement_type_raw.lower()
 
@@ -89,6 +131,14 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
         if is_cancel:
             agency_comm = -abs(agency_comm) if agency_comm != 0 else 0
             agent_comm = -abs(agent_comm) if agent_comm != 0 else 0
+
+        # Accumulate totals
+        agent_agency_sum += agency_comm
+        agent_agent_sum += agent_comm
+        
+        detail_total_agency_comm += agency_comm
+        detail_total_agent_comm += agent_comm
+        detail_count += 1
 
         ws_detail.append([
             e.get("agent"),
@@ -104,8 +154,6 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
             agent_comm
         ])
 
-        detail_total_agent_comm += agent_comm
-        detail_count += 1
         curr_row = ws_detail.max_row
 
         for col_idx in range(1, 12):
@@ -120,6 +168,13 @@ def export_endorsements_to_excel(endorsements, filename, date_from="2025-12-01",
                     cell.font = Font(name="Arial", size=10, color="FF0000")
 
         ws_detail.row_dimensions[curr_row].height = 20
+
+    # Final subtotals
+    if current_agent is not None or detail_count > 0:
+        append_subtotal_row(ws_detail, current_agent, agent_agency_sum, agent_agent_sum)
+        
+        # Grand Total Row
+        append_subtotal_row(ws_detail, None, detail_total_agency_comm, detail_total_agent_comm, is_grand_total=True)
 
     # Column Widths Detail
     detail_widths = [30, 16, 18, 26, 32, 20, 15, 15, 30, 18, 18]
